@@ -80,6 +80,7 @@ python github_pr_analyzer.py --token ghp_abc123 octocat/hello-world
 Basic usage when installed as a package:
 ```
 github-pr-analyzer --token ghp_abc123 octocat/hello-world
+python github_pr_analyzer.py --token ghp_abc123 --output runline.txt --limit 20 runelite/runelite
 ```
 
 Using the provided example scripts:

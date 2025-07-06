@@ -8,16 +8,18 @@ This script analyzes a GitHub repository to find pull requests that:
 3. Include test classes
 
 Usage:
-    python github_pr_analyzer.py [--token GITHUB_TOKEN] [--output OUTPUT_FILE] owner/repo
+    python github_pr_analyzer.py [--token GITHUB_TOKEN] [--output OUTPUT_FILE] [--limit LIMIT] owner/repo
 
 Arguments:
     owner/repo      GitHub repository in the format "owner/repo"
     --token         GitHub personal access token (optional but recommended to avoid rate limits)
     --output        Output file path to save results (optional)
+    --limit         Maximum number of matching PRs to find (default: 20)
 
 Examples:
     python github_pr_analyzer.py --token ghp_abc123 octocat/hello-world
     python github_pr_analyzer.py --token ghp_abc123 --output results.txt octocat/hello-world
+    python github_pr_analyzer.py --token ghp_abc123 --limit 10 octocat/hello-world
 """
 
 import argparse
@@ -33,6 +35,7 @@ def parse_arguments():
     parser.add_argument('repo', help='GitHub repository in the format "owner/repo"')
     parser.add_argument('--token', help='GitHub personal access token (optional but recommended)')
     parser.add_argument('--output', help='Output file path to save results (optional)')
+    parser.add_argument('--limit', type=int, default=20, help='Maximum number of matching PRs to find (default: 20)')
     return parser.parse_args()
 
 
@@ -46,8 +49,15 @@ def get_github_api_headers(token=None):
     return headers
 
 
-def get_pull_requests(owner, repo, headers):
-    """Fetch all pull requests from a GitHub repository."""
+def get_pull_requests(owner, repo, headers, since_date=None):
+    """Fetch all pull requests from a GitHub repository.
+    
+    Args:
+        owner (str): Repository owner
+        repo (str): Repository name
+        headers (dict): API request headers
+        since_date (datetime, optional): Filter PRs updated at or after this date
+    """
     all_prs = []
     page = 1
     per_page = 100
@@ -55,10 +65,15 @@ def get_pull_requests(owner, repo, headers):
     while True:
         url = f'https://api.github.com/repos/{owner}/{repo}/pulls'
         params = {
-            'state': 'all',  # Get all PRs (open, closed, merged)
+            'state': 'closed',  # Get only closed PRs (includes merged PRs)
             'per_page': per_page,
             'page': page
         }
+        
+        # Add date filter if provided
+        if since_date:
+            # Convert datetime to ISO 8601 format for the GitHub API
+            params['since'] = since_date.isoformat()
         
         response = requests.get(url, headers=headers, params=params)
         
@@ -109,15 +124,21 @@ def main():
     """Main function to run the script."""
     args = parse_arguments()
     
-    # Set up output file if specified
+    # Set up output file
     output_file = None
-    if args.output:
-        try:
-            output_file = open(args.output, 'w')
-            print(f"Results will be saved to {args.output}")
-        except Exception as e:
-            print(f"Error opening output file: {e}")
-            print("Results will only be displayed on screen")
+    output_filename = args.output
+    
+    # If no output file specified, create a default one with timestamp
+    if not output_filename:
+        timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+        output_filename = f"pr_results_{timestamp}.txt"
+    
+    try:
+        output_file = open(output_filename, 'w')
+        print(f"Results will be saved to {output_filename}")
+    except Exception as e:
+        print(f"Error opening output file: {e}")
+        print("Results will only be displayed on screen")
     
     # Function to print to both console and file if specified
     def print_output(message):
@@ -135,18 +156,19 @@ def main():
     # Set up API headers
     headers = get_github_api_headers(args.token)
     
-    # Get all PRs
-    print(f"Fetching pull requests for {owner}/{repo}...")
-    all_prs = get_pull_requests(owner, repo, headers)
-    print(f"Found {len(all_prs)} pull requests in total.")
-    
     # Target date: November 1, 2024
     target_date = datetime.datetime(2024, 11, 1, tzinfo=datetime.timezone.utc)
     
+    # Get closed PRs with date filter applied at the API level
+    print(f"Fetching closed pull requests for {owner}/{repo} updated after {target_date.strftime('%Y-%m-%d')}...")
+    all_prs = get_pull_requests(owner, repo, headers, target_date)
+    print(f"Found {len(all_prs)} pull requests in total.")
+    
     # Filter and analyze PRs
     filtered_prs = []
+    pr_limit = args.limit
     
-    print("Analyzing pull requests...")
+    print(f"Analyzing pull requests (limit: {pr_limit} matching PRs)...")
     for pr in all_prs:
         pr_number = pr['number']
         
@@ -186,11 +208,20 @@ def main():
                     'author': pr['user']['login'],
                     'test_files': test_files
                 })
+                
+                # Check if we've reached the limit of matching PRs
+                if len(filtered_prs) >= pr_limit:
+                    print(f"Reached limit of {pr_limit} matching PRs. Stopping analysis.")
+                    break
     
     # Display results
     print_output("\nResults:")
     print_output(f"Found {len(filtered_prs)} PRs with 2-4 file changes that include test classes, merged after November 2024:")
     print_output("\n" + "-" * 80)
+    
+    # Check if we need to break out of the main loop
+    if len(filtered_prs) >= pr_limit:
+        print_output(f"Note: Analysis stopped after finding {pr_limit} matching PRs.")
     
     # Sort by merge date (newest first)
     filtered_prs.sort(key=lambda x: x['merged_at'], reverse=True)
@@ -207,7 +238,7 @@ def main():
     # Close output file if opened
     if output_file:
         output_file.close()
-        print(f"Results have been saved to {args.output}")
+        print(f"Results have been saved to {output_filename}")
 
 
 if __name__ == "__main__":
