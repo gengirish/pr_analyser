@@ -5,7 +5,7 @@ GitHub PR Analyzer
 This script analyzes a GitHub repository to find pull requests that:
 1. Have 2 to 4 file changes
 2. Were merged after November 2024
-3. Include test classes
+3. Include both source code files and test classes
 
 Usage:
     python github_pr_analyzer.py [--token GITHUB_TOKEN] [--output OUTPUT_FILE] [--limit LIMIT] owner/repo
@@ -31,7 +31,7 @@ from dateutil import parser as date_parser
 
 def parse_arguments():
     """Parse command line arguments."""
-    parser = argparse.ArgumentParser(description='Find GitHub PRs with 2-4 file changes that include test classes, merged after Nov 2024')
+    parser = argparse.ArgumentParser(description='Find GitHub PRs with 2-4 file changes that include both source code files and test classes, merged after Nov 2024')
     parser.add_argument('repo', help='GitHub repository in the format "owner/repo"')
     parser.add_argument('--token', help='GitHub personal access token (optional but recommended)')
     parser.add_argument('--output', help='Output file path to save results (optional)')
@@ -186,9 +186,11 @@ def main():
         
         # Check if PR has 2 to 4 file changes
         if 2 <= len(files) <= 4:
-            # Check if any of the files are test files
+            # Check if any of the files are test files and source code files
             has_test_files = False
+            has_source_files = False
             test_files = []
+            source_files = []
             
             for file in files:
                 filename = file['filename'].lower()
@@ -196,9 +198,14 @@ def main():
                 if 'test' in filename or 'spec' in filename:
                     has_test_files = True
                     test_files.append(file['filename'])
+                # Check for source code files (excluding test files, documentation, etc.)
+                elif (filename.endswith(('.py', '.js', '.java', '.cpp', '.c', '.h', '.cs', '.go', '.rb', '.php', '.ts', '.swift')) and
+                      not any(exclude in filename for exclude in ['readme', 'license', 'changelog', 'docs/', 'doc/', 'example'])):
+                    has_source_files = True
+                    source_files.append(file['filename'])
             
-            # Only include PRs that have test files
-            if has_test_files:
+            # Only include PRs that have both test files and source code files
+            if has_test_files and has_source_files:
                 filtered_prs.append({
                     'number': pr_number,
                     'title': pr['title'],
@@ -206,7 +213,8 @@ def main():
                     'url': pr['html_url'],
                     'files_changed': len(files),
                     'author': pr['user']['login'],
-                    'test_files': test_files
+                    'test_files': test_files,
+                    'source_files': source_files
                 })
                 
                 # Check if we've reached the limit of matching PRs
@@ -216,7 +224,7 @@ def main():
     
     # Display results
     print_output("\nResults:")
-    print_output(f"Found {len(filtered_prs)} PRs with 2-4 file changes that include test classes, merged after November 2024:")
+    print_output(f"Found {len(filtered_prs)} PRs with 2-4 file changes that include both source code files and test classes, merged after November 2024:")
     print_output("\n" + "-" * 80)
     
     # Check if we need to break out of the main loop
@@ -231,6 +239,7 @@ def main():
         print_output(f"  Author: {pr['author']}")
         print_output(f"  Merged: {pr['merged_at'].strftime('%Y-%m-%d %H:%M:%S')}")
         print_output(f"  Files changed: {pr['files_changed']}")
+        print_output(f"  Source files: {', '.join(pr['source_files'])}")
         print_output(f"  Test files: {', '.join(pr['test_files'])}")
         print_output(f"  URL: {pr['url']}")
         print_output("-" * 80)

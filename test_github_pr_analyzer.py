@@ -5,6 +5,8 @@ Test script for GitHub PR Analyzer
 This script tests the GitHub PR Analyzer by mocking GitHub API responses.
 It doesn't make actual API calls, so it can be used without a GitHub token
 and without hitting API rate limits.
+
+Tests the functionality to ensure PRs have both source code files and test files.
 """
 
 import datetime
@@ -79,12 +81,12 @@ class TestGitHubPRAnalyzer(unittest.TestCase):
 
         # Sample PR files data
         self.pr_files = {
-            101: [{"filename": "file1.js"}, {"filename": "file2.js"}, {"filename": "file3.js"}],
+            101: [{"filename": "src/component.js"}, {"filename": "src/utils.js"}, {"filename": "tests/component.test.js"}],
             102: [{"filename": "README.md"}],
-            103: [{"filename": "api.js"}, {"filename": "api.test.js"}, {"filename": "models/user.js"}, 
-                  {"filename": "controllers/user.js"}, {"filename": "routes/user.js"}],
+            103: [{"filename": "src/api.js"}, {"filename": "tests/api.test.js"}, {"filename": "src/models/user.js"}, 
+                  {"filename": "src/controllers/user.js"}, {"filename": "src/routes/user.js"}],
             104: [{"filename": "package.json"}, {"filename": "package-lock.json"}],
-            105: [{"filename": "feature.js"}, {"filename": "feature.test.js"}]
+            105: [{"filename": "src/feature.js"}, {"filename": "tests/feature.test.js"}]
         }
 
     def mock_get_pull_requests(self, *args, **kwargs):
@@ -102,7 +104,7 @@ class TestGitHubPRAnalyzer(unittest.TestCase):
     def test_main_function(self, mock_args, mock_get_pr_files, mock_get_prs, mock_stdout):
         """Test the main function with mock data."""
         # Mock command line arguments
-        mock_args.return_value = MagicMock(repo='test/repo', token=None)
+        mock_args.return_value = MagicMock(repo='test/repo', token=None, limit=20, output=None)
         
         # Mock API functions
         mock_get_prs.side_effect = self.mock_get_pull_requests
@@ -115,14 +117,15 @@ class TestGitHubPRAnalyzer(unittest.TestCase):
         output = mock_stdout.getvalue()
         
         # Check that the correct PRs were identified
-        self.assertIn("Found 2 PRs with 2+ file changes merged after November 2024", output)
+        self.assertIn("Found 1 PRs with 2-4 file changes that include both source code files and test classes, merged after November 2024", output)
         self.assertIn("PR #101: Feature: Add new component", output)
-        self.assertIn("PR #104: Fix: Update dependencies", output)
+        self.assertNotIn("PR #104: Fix: Update dependencies", output)
         
         # Check that excluded PRs are not in the output
-        self.assertNotIn("PR #102: Fix: Update README", output)
-        self.assertNotIn("PR #103: Feature: Refactor API", output)
-        self.assertNotIn("PR #105: WIP: New feature", output)
+        self.assertNotIn("PR #102: Fix: Update README", output)  # Too few files
+        self.assertNotIn("PR #103: Feature: Refactor API", output)  # Too early date
+        self.assertNotIn("PR #104: Fix: Update dependencies", output)  # No source code and test files
+        self.assertNotIn("PR #105: WIP: New feature", output)  # Not merged
 
 
 if __name__ == '__main__':
