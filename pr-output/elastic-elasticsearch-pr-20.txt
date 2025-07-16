@@ -1,0 +1,166 @@
+
+Results:
+Found 20 PRs with 2-4 file changes that include both source code files and test classes, merged after November 2024:
+
+--------------------------------------------------------------------------------
+Note: Analysis stopped after finding 20 matching PRs.
+PR #131173: Add attribute count to SamlAttribute toString
+  Author: tvernum
+  Merged: 2025-07-16 03:44:09
+  Files changed: 3
+  Source files: x-pack/plugin/security/src/main/java/org/elasticsearch/xpack/security/authc/saml/SamlAttributes.java
+  Test files: x-pack/plugin/security/src/test/java/org/elasticsearch/xpack/security/authc/saml/SamlAttributesTests.java
+  URL: https://github.com/elastic/elasticsearch/pull/131173
+--------------------------------------------------------------------------------
+PR #131339: [8.19] Fail request when all target shards fail in runtime (#131177)
+  Author: dnhatn
+  Merged: 2025-07-16 00:28:25
+  Files changed: 3
+  Source files: x-pack/plugin/esql/src/main/java/org/elasticsearch/xpack/esql/plugin/ComputeService.java
+  Test files: test/external-modules/error-query/src/javaRestTest/java/org/elasticsearch/test/esql/EsqlPartialResultsIT.java, x-pack/plugin/esql/src/internalClusterTest/java/org/elasticsearch/xpack/esql/action/EsqlNodeFailureIT.java
+  URL: https://github.com/elastic/elasticsearch/pull/131339
+--------------------------------------------------------------------------------
+PR #131338: [8.19] Fix match_only_text for keyword multi-fields with ignore_above (#131314)
+  Author: jordan-powers
+  Merged: 2025-07-15 23:49:32
+  Files changed: 3
+  Source files: modules/mapper-extras/src/main/java/org/elasticsearch/index/mapper/extras/MatchOnlyTextFieldMapper.java, server/src/main/java/org/elasticsearch/index/mapper/KeywordFieldMapper.java
+  Test files: modules/mapper-extras/src/yamlRestTest/resources/rest-api-spec/test/match_only_text/10_basic.yml
+  URL: https://github.com/elastic/elasticsearch/pull/131338
+--------------------------------------------------------------------------------
+PR #131337: [9.1] Fail request when all target shards fail in runtime (#131177)
+  Author: dnhatn
+  Merged: 2025-07-15 23:39:25
+  Files changed: 3
+  Source files: x-pack/plugin/esql/src/main/java/org/elasticsearch/xpack/esql/plugin/ComputeService.java
+  Test files: test/external-modules/error-query/src/javaRestTest/java/org/elasticsearch/test/esql/EsqlPartialResultsIT.java, x-pack/plugin/esql/src/internalClusterTest/java/org/elasticsearch/xpack/esql/action/EsqlNodeFailureIT.java
+  URL: https://github.com/elastic/elasticsearch/pull/131337
+--------------------------------------------------------------------------------
+PR #131333: [9.1] Fix match_only_text for keyword multi-fields with ignore_above (#131314)
+  Author: jordan-powers
+  Merged: 2025-07-15 23:28:12
+  Files changed: 3
+  Source files: modules/mapper-extras/src/main/java/org/elasticsearch/index/mapper/extras/MatchOnlyTextFieldMapper.java, server/src/main/java/org/elasticsearch/index/mapper/KeywordFieldMapper.java
+  Test files: modules/mapper-extras/src/yamlRestTest/resources/rest-api-spec/test/match_only_text/10_basic.yml
+  URL: https://github.com/elastic/elasticsearch/pull/131333
+--------------------------------------------------------------------------------
+PR #131177: Fail request when all target shards fail in runtime
+  Author: dnhatn
+  Merged: 2025-07-15 22:31:32
+  Files changed: 3
+  Source files: x-pack/plugin/esql/src/main/java/org/elasticsearch/xpack/esql/plugin/ComputeService.java
+  Test files: test/external-modules/error-query/src/javaRestTest/java/org/elasticsearch/test/esql/EsqlPartialResultsIT.java, x-pack/plugin/esql/src/internalClusterTest/java/org/elasticsearch/xpack/esql/action/EsqlNodeFailureIT.java
+  URL: https://github.com/elastic/elasticsearch/pull/131177
+--------------------------------------------------------------------------------
+PR #131314: Fix match_only_text for keyword multi-fields with ignore_above
+  Author: jordan-powers
+  Merged: 2025-07-15 22:19:28
+  Files changed: 3
+  Source files: modules/mapper-extras/src/main/java/org/elasticsearch/index/mapper/extras/MatchOnlyTextFieldMapper.java, server/src/main/java/org/elasticsearch/index/mapper/KeywordFieldMapper.java
+  Test files: modules/mapper-extras/src/yamlRestTest/resources/rest-api-spec/test/match_only_text/10_basic.yml
+  URL: https://github.com/elastic/elasticsearch/pull/131314
+--------------------------------------------------------------------------------
+PR #131305: [8.19] Refactor and simplify missing index & unavailability handling (#131252)
+  Author: smalyshev
+  Merged: 2025-07-15 18:05:12
+  Files changed: 4
+  Source files: x-pack/plugin/esql/src/main/java/org/elasticsearch/xpack/esql/action/EsqlExecutionInfo.java, x-pack/plugin/esql/src/main/java/org/elasticsearch/xpack/esql/session/EsqlCCSUtils.java, x-pack/plugin/esql/src/main/java/org/elasticsearch/xpack/esql/session/EsqlSession.java
+  Test files: x-pack/plugin/esql/src/test/java/org/elasticsearch/xpack/esql/session/EsqlCCSUtilsTests.java
+  URL: https://github.com/elastic/elasticsearch/pull/131305
+--------------------------------------------------------------------------------
+PR #131304: [9.1] Refactor and simplify missing index & unavailability handling (#131252)
+  Author: smalyshev
+  Merged: 2025-07-15 17:34:53
+  Files changed: 3
+  Source files: x-pack/plugin/esql/src/main/java/org/elasticsearch/xpack/esql/session/EsqlCCSUtils.java, x-pack/plugin/esql/src/main/java/org/elasticsearch/xpack/esql/session/EsqlSession.java
+  Test files: x-pack/plugin/esql/src/test/java/org/elasticsearch/xpack/esql/session/EsqlCCSUtilsTests.java
+  URL: https://github.com/elastic/elasticsearch/pull/131304
+--------------------------------------------------------------------------------
+PR #131252: Refactor and simplify missing index & unavailability handling
+  Author: smalyshev
+  Merged: 2025-07-15 16:19:07
+  Files changed: 3
+  Source files: x-pack/plugin/esql/src/main/java/org/elasticsearch/xpack/esql/session/EsqlCCSUtils.java, x-pack/plugin/esql/src/main/java/org/elasticsearch/xpack/esql/session/EsqlSession.java
+  Test files: x-pack/plugin/esql/src/test/java/org/elasticsearch/xpack/esql/session/EsqlCCSUtilsTests.java
+  URL: https://github.com/elastic/elasticsearch/pull/131252
+--------------------------------------------------------------------------------
+PR #131288: [8.19] Granting `kibana_system` role access to the cases analytics indices
+  Author: adcoelho
+  Merged: 2025-07-15 12:34:30
+  Files changed: 3
+  Source files: x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/security/authz/store/KibanaOwnedReservedRoleDescriptors.java, x-pack/plugin/core/src/main/java/org/elasticsearch/xpack/core/security/authz/store/ReservedRolesStore.java
+  Test files: x-pack/plugin/core/src/test/java/org/elasticsearch/xpack/core/security/authz/store/ReservedRolesStoreTests.java
+  URL: https://github.com/elastic/elasticsearch/pull/131288
+--------------------------------------------------------------------------------
+PR #131196: [Profiling] Manually downsample to 20k events if required
+  Author: rockdaboot
+  Merged: 2025-07-15 11:11:00
+  Files changed: 4
+  Source files: x-pack/plugin/profiling/src/main/java/org/elasticsearch/xpack/profiling/action/GetStackTracesResponse.java, x-pack/plugin/profiling/src/main/java/org/elasticsearch/xpack/profiling/action/GetStackTracesResponseBuilder.java, x-pack/plugin/profiling/src/main/java/org/elasticsearch/xpack/profiling/action/TransportGetStackTracesAction.java
+  Test files: x-pack/plugin/profiling/src/test/java/org/elasticsearch/xpack/profiling/action/GetStackTracesResponseTests.java
+  URL: https://github.com/elastic/elasticsearch/pull/131196
+--------------------------------------------------------------------------------
+PR #131145: [8.19] Fix testStopQueryLocal (#131130)
+  Author: dnhatn
+  Merged: 2025-07-15 02:51:40
+  Files changed: 3
+  Source files: x-pack/plugin/esql/src/main/java/org/elasticsearch/xpack/esql/plugin/QueryPragmas.java
+  Test files: muted-tests.yml, x-pack/plugin/esql/src/internalClusterTest/java/org/elasticsearch/xpack/esql/action/CrossClusterAsyncQueryStopIT.java
+  URL: https://github.com/elastic/elasticsearch/pull/131145
+--------------------------------------------------------------------------------
+PR #131216: [8.19] [ML] Including max_tokens through the Service API for Anthropic (#131113)
+  Author: jonathan-buttner
+  Merged: 2025-07-14 15:41:54
+  Files changed: 3
+  Source files: x-pack/plugin/inference/src/main/java/org/elasticsearch/xpack/inference/services/anthropic/AnthropicService.java
+  Test files: x-pack/plugin/inference/src/test/java/org/elasticsearch/xpack/inference/services/anthropic/AnthropicServiceTests.java
+  URL: https://github.com/elastic/elasticsearch/pull/131216
+--------------------------------------------------------------------------------
+PR #131219: [8.18] [ML] Including max_tokens through the Service API for Anthropic (#131113)
+  Author: jonathan-buttner
+  Merged: 2025-07-14 15:35:08
+  Files changed: 3
+  Source files: x-pack/plugin/inference/src/main/java/org/elasticsearch/xpack/inference/services/anthropic/AnthropicService.java
+  Test files: x-pack/plugin/inference/src/test/java/org/elasticsearch/xpack/inference/services/anthropic/AnthropicServiceTests.java
+  URL: https://github.com/elastic/elasticsearch/pull/131219
+--------------------------------------------------------------------------------
+PR #131218: [9.0] [ML] Including max_tokens through the Service API for Anthropic (#131113)
+  Author: jonathan-buttner
+  Merged: 2025-07-14 15:32:24
+  Files changed: 3
+  Source files: x-pack/plugin/inference/src/main/java/org/elasticsearch/xpack/inference/services/anthropic/AnthropicService.java
+  Test files: x-pack/plugin/inference/src/test/java/org/elasticsearch/xpack/inference/services/anthropic/AnthropicServiceTests.java
+  URL: https://github.com/elastic/elasticsearch/pull/131218
+--------------------------------------------------------------------------------
+PR #131215: [9.1] [ML] Including max_tokens through the Service API for Anthropic (#131113)
+  Author: jonathan-buttner
+  Merged: 2025-07-14 15:28:06
+  Files changed: 3
+  Source files: x-pack/plugin/inference/src/main/java/org/elasticsearch/xpack/inference/services/anthropic/AnthropicService.java
+  Test files: x-pack/plugin/inference/src/test/java/org/elasticsearch/xpack/inference/services/anthropic/AnthropicServiceTests.java
+  URL: https://github.com/elastic/elasticsearch/pull/131215
+--------------------------------------------------------------------------------
+PR #131202: Add bulk processing capabilities to ES91Int4VectorsScorer
+  Author: iverase
+  Merged: 2025-07-14 13:58:41
+  Files changed: 4
+  Source files: benchmarks/src/main/java/org/elasticsearch/benchmark/vector/Int4ScorerBenchmark.java, libs/simdvec/src/main/java/org/elasticsearch/simdvec/ES91Int4VectorsScorer.java, libs/simdvec/src/main21/java/org/elasticsearch/simdvec/internal/vectorization/MemorySegmentES91Int4VectorsScorer.java
+  Test files: libs/simdvec/src/test/java/org/elasticsearch/simdvec/internal/vectorization/ES91Int4VectorScorerTests.java
+  URL: https://github.com/elastic/elasticsearch/pull/131202
+--------------------------------------------------------------------------------
+PR #131193: [9.1] Move streams status actions to cluster:monitor group (#131015)
+  Author: lukewhiting
+  Merged: 2025-07-14 13:32:43
+  Files changed: 3
+  Source files: modules/streams/src/main/java/org/elasticsearch/rest/streams/logs/StreamsStatusAction.java
+  Test files: x-pack/plugin/security/qa/operator-privileges-tests/src/javaRestTest/java/org/elasticsearch/xpack/security/operator/Constants.java
+  URL: https://github.com/elastic/elasticsearch/pull/131193
+--------------------------------------------------------------------------------
+PR #131192: [8.19] Move streams status actions to cluster:monitor group (#131015)
+  Author: lukewhiting
+  Merged: 2025-07-14 13:29:41
+  Files changed: 3
+  Source files: modules/streams/src/main/java/org/elasticsearch/rest/streams/logs/StreamsStatusAction.java
+  Test files: x-pack/plugin/security/qa/operator-privileges-tests/src/javaRestTest/java/org/elasticsearch/xpack/security/operator/Constants.java
+  URL: https://github.com/elastic/elasticsearch/pull/131192
+--------------------------------------------------------------------------------

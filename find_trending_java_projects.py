@@ -32,7 +32,8 @@ DEFAULT_GITHUB_TOKEN = os.environ.get('GITHUB_TOKEN')
 
 def parse_arguments():
     """Parse command line arguments."""
-    parser = argparse.ArgumentParser(description='Find trending Java projects and analyze their PRs')
+    parser = argparse.ArgumentParser(description='Find trending projects for a given language and analyze their PRs')
+    parser.add_argument('--language', default='java', help='Programming language to search for trending projects (default: java)')
     parser.add_argument('--token', help='GitHub personal access token (optional but recommended, defaults to GITHUB_TOKEN environment variable if set)')
     parser.add_argument('--limit', type=int, default=20, help='Maximum number of matching PRs to find per repository (default: 20)')
     args = parser.parse_args()
@@ -55,27 +56,27 @@ def get_github_api_headers(token=None):
     return headers
 
 
-def get_trending_java_projects(headers, count=10):
-    """Get trending Java projects from GitHub.
+def get_trending_projects(headers, language='java', count=10):
+    """Get trending projects for a given language from GitHub.
     
     Args:
         headers (dict): API request headers
+        language (str): Programming language to search for
         count (int): Number of trending projects to retrieve
     
     Returns:
-        list: List of trending Java repositories in the format [owner/repo, ...]
+        list: List of trending repositories in the format [owner/repo, ...]
     """
-    # GitHub search API to find popular Java repositories
-    # Sorted by stars and limited to Java language
+    # GitHub search API to find popular repositories for the given language
     url = 'https://api.github.com/search/repositories'
     params = {
-        'q': 'language:java',
+        'q': f'language:{language}',
         'sort': 'stars',
         'order': 'desc',
         'per_page': count
     }
     
-    print(f"Fetching top {count} trending Java projects from GitHub...")
+    print(f"Fetching top {count} trending {language.capitalize()} projects from GitHub...")
     response = requests.get(url, headers=headers, params=params)
     
     if response.status_code != 200:
@@ -150,10 +151,10 @@ def main():
     # Set up API headers
     headers = get_github_api_headers(args.token)
     
-    # Get trending Java projects
-    trending_repos = get_trending_java_projects(headers)
+    # Get trending projects for the specified language
+    trending_repos = get_trending_projects(headers, args.language)
     
-    print(f"\nFound {len(trending_repos)} trending Java projects:")
+    print(f"\nFound {len(trending_repos)} trending {args.language.capitalize()} projects:")
     for i, repo in enumerate(trending_repos, 1):
         print(f"{i}. {repo}")
     
