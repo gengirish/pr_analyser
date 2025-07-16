@@ -1,0 +1,146 @@
+
+Results:
+Found 20 PRs with 2-4 file changes that include test classes, merged after November 2024:
+
+--------------------------------------------------------------------------------
+Note: Analysis stopped after finding 20 matching PRs.
+PR #61801: [backport 2.3.x] TST: update expected dtype for sum of decimals with pyarrow 21+ (#61799)
+  Author: jorisvandenbossche
+  Merged: 2025-07-07 14:56:23
+  Files changed: 3
+  Test files: pandas/tests/extension/test_arrow.py
+  URL: https://github.com/pandas-dev/pandas/pull/61801
+--------------------------------------------------------------------------------
+PR #61799: TST: update expected dtype for sum of decimals with pyarrow 21+
+  Author: jorisvandenbossche
+  Merged: 2025-07-07 13:41:24
+  Files changed: 3
+  Test files: pandas/tests/extension/test_arrow.py
+  URL: https://github.com/pandas-dev/pandas/pull/61799
+--------------------------------------------------------------------------------
+PR #61771: BUG[string]: incorrect index downcast in DataFrame.join
+  Author: jbrockmendel
+  Merged: 2025-07-07 13:15:03
+  Files changed: 3
+  Test files: pandas/tests/copy_view/test_functions.py
+  URL: https://github.com/pandas-dev/pandas/pull/61771
+--------------------------------------------------------------------------------
+PR #61768: BUG: NA.__and__, __or__, __xor__ with np.bool_ objects
+  Author: jbrockmendel
+  Merged: 2025-07-03 22:49:57
+  Files changed: 3
+  Test files: pandas/tests/scalar/test_na_scalar.py
+  URL: https://github.com/pandas-dev/pandas/pull/61768
+--------------------------------------------------------------------------------
+PR #61755: Revert "[2.3.x] DEPS: Drop Python 3.9 (#60792)"
+  Author: mroeschke
+  Merged: 2025-07-03 07:21:26
+  Files changed: 4
+  Test files: .github/workflows/unit-tests.yml
+  URL: https://github.com/pandas-dev/pandas/pull/61755
+--------------------------------------------------------------------------------
+PR #61743: BUG: Assigning boolean series with boolean indexer
+  Author: yuanx749
+  Merged: 2025-07-01 17:47:12
+  Files changed: 4
+  Test files: pandas/tests/dtypes/cast/test_can_hold_element.py, pandas/tests/series/indexing/test_setitem.py
+  URL: https://github.com/pandas-dev/pandas/pull/61743
+--------------------------------------------------------------------------------
+PR #61629: BUG: to_stata erroring when encoded text and normal text have mismatched length
+  Author: eicchen
+  Merged: 2025-06-30 18:14:29
+  Files changed: 3
+  Test files: pandas/tests/io/test_stata.py
+  URL: https://github.com/pandas-dev/pandas/pull/61629
+--------------------------------------------------------------------------------
+PR #61697: TST: Increase test coverage for pandas.io.formats.excel.py
+  Author: lsgordon
+  Merged: 2025-06-25 15:57:57
+  Files changed: 2
+  Test files: pandas/tests/io/formats/test_to_excel.py
+  URL: https://github.com/pandas-dev/pandas/pull/61697
+--------------------------------------------------------------------------------
+PR #61699: [backport 2.3.x] BUG: DataFrame.explode fails with str dtype (#61623)
+  Author: jorisvandenbossche
+  Merged: 2025-06-24 13:46:47
+  Files changed: 4
+  Test files: pandas/tests/frame/methods/test_explode.py, pandas/tests/series/methods/test_explode.py
+  URL: https://github.com/pandas-dev/pandas/pull/61699
+--------------------------------------------------------------------------------
+PR #61623: BUG: DataFrame.explode fails with str dtype
+  Author: rhshadrach
+  Merged: 2025-06-24 07:35:49
+  Files changed: 4
+  Test files: pandas/tests/frame/methods/test_explode.py, pandas/tests/series/methods/test_explode.py
+  URL: https://github.com/pandas-dev/pandas/pull/61623
+--------------------------------------------------------------------------------
+PR #61658: DOC/ENH: Holiday days_of_week value error
+  Author: sharkipelago
+  Merged: 2025-06-17 16:53:08
+  Files changed: 3
+  Test files: pandas/tests/tseries/holiday/test_holiday.py
+  URL: https://github.com/pandas-dev/pandas/pull/61658
+--------------------------------------------------------------------------------
+PR #61615: BUG: Fix RecursionError when apply native container types as a func
+  Author: heoh
+  Merged: 2025-06-16 23:13:25
+  Files changed: 3
+  Test files: pandas/tests/dtypes/test_inference.py
+  URL: https://github.com/pandas-dev/pandas/pull/61615
+--------------------------------------------------------------------------------
+PR #61646: fix std/var with complex array
+  Author: randolf-scholz
+  Merged: 2025-06-16 17:13:26
+  Files changed: 3
+  Test files: pandas/tests/reductions/test_reductions.py
+  URL: https://github.com/pandas-dev/pandas/pull/61646
+--------------------------------------------------------------------------------
+PR #61600: DOC/ENH: Holiday exclusion argument
+  Author: sharkipelago
+  Merged: 2025-06-13 16:11:42
+  Files changed: 3
+  Test files: pandas/tests/tseries/holiday/test_holiday.py
+  URL: https://github.com/pandas-dev/pandas/pull/61600
+--------------------------------------------------------------------------------
+PR #61639: [backport 2.3.x] ENH(string dtype): fallback for HDF5 with UTF-8 surrogates (#60993)
+  Author: jorisvandenbossche
+  Merged: 2025-06-13 12:25:01
+  Files changed: 2
+  Test files: pandas/tests/io/pytables/test_store.py
+  URL: https://github.com/pandas-dev/pandas/pull/61639
+--------------------------------------------------------------------------------
+PR #61633: [backport 2.3.x] BUG(string dtype): groupby/resampler.min/max returns float on all NA strings (#60985)
+  Author: jorisvandenbossche
+  Merged: 2025-06-12 19:11:01
+  Files changed: 2
+  Test files: pandas/tests/groupby/test_reductions.py
+  URL: https://github.com/pandas-dev/pandas/pull/61633
+--------------------------------------------------------------------------------
+PR #61517: BUG: Fix sorting by column named None in DataFrame.sort_values (GH#61512)
+  Author: iabhi4
+  Merged: 2025-06-02 16:45:44
+  Files changed: 3
+  Test files: pandas/tests/frame/methods/test_sort_values.py
+  URL: https://github.com/pandas-dev/pandas/pull/61517
+--------------------------------------------------------------------------------
+PR #61508: BUG: Fix inconsistent returned objects when applying groupby aggregations
+  Author: arthurlw
+  Merged: 2025-05-30 16:40:42
+  Files changed: 3
+  Test files: pandas/tests/groupby/aggregate/test_aggregate.py
+  URL: https://github.com/pandas-dev/pandas/pull/61508
+--------------------------------------------------------------------------------
+PR #61514: BUGFIX: escape `quotechar` when `escapechar` is not None (even if quoting=csv.QUOTE_NONE)
+  Author: KevsterAmp
+  Merged: 2025-05-30 16:36:42
+  Files changed: 3
+  Test files: pandas/tests/frame/methods/test_to_csv.py
+  URL: https://github.com/pandas-dev/pandas/pull/61514
+--------------------------------------------------------------------------------
+PR #61488: Backport PR #60739 on branch 2.3.x (ENH: pandas.api.interchange.from_dataframe now uses the Arrow PyCapsule Interface if available, only falling back to the Dataframe Interchange Protocol if that fails)
+  Author: MarcoGorelli
+  Merged: 2025-05-27 16:10:36
+  Files changed: 3
+  Test files: pandas/tests/interchange/test_impl.py
+  URL: https://github.com/pandas-dev/pandas/pull/61488
+--------------------------------------------------------------------------------

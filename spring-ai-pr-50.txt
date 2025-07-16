@@ -1,0 +1,317 @@
+
+Results:
+Found 39 PRs with 2-4 file changes that include both source code files and test classes, merged after November 2024:
+
+--------------------------------------------------------------------------------
+PR #3755: Fix NPE in AnthropicApi StreamHelper
+  Author: ilayaperumalg
+  Merged: 2025-07-07 15:05:29
+  Files changed: 2
+  Source files: models/spring-ai-anthropic/src/main/java/org/springframework/ai/anthropic/api/StreamHelper.java
+  Test files: models/spring-ai-anthropic/src/test/java/org/springframework/ai/anthropic/api/StreamHelperTests.java
+  URL: https://github.com/spring-projects/spring-ai/pull/3755
+--------------------------------------------------------------------------------
+PR #3733: Fix the judge bug
+  Author: TheEterna
+  Merged: 2025-07-03 16:30:01
+  Files changed: 2
+  Source files: spring-ai-model/src/main/java/org/springframework/ai/util/json/schema/JsonSchemaGenerator.java
+  Test files: spring-ai-model/src/test/java/org/springframework/ai/util/json/JsonSchemaGeneratorTests.java
+  URL: https://github.com/spring-projects/spring-ai/pull/3733
+--------------------------------------------------------------------------------
+PR #3705: improve schema initialization logic and update deprecated code for Milvus vectorstore
+  Author: dev-jonghoonpark
+  Merged: 2025-07-02 17:46:46
+  Files changed: 2
+  Source files: vector-stores/spring-ai-milvus-store/src/main/java/org/springframework/ai/vectorstore/milvus/MilvusVectorStore.java
+  Test files: vector-stores/spring-ai-milvus-store/src/test/java/org/springframework/ai/vectorstore/milvus/MilvusVectorStoreIT.java
+  URL: https://github.com/spring-projects/spring-ai/pull/3705
+--------------------------------------------------------------------------------
+PR #3687: Validate documents for text/media check when adding to vector store
+  Author: ilayaperumalg
+  Merged: 2025-06-27 17:40:52
+  Files changed: 3
+  Source files: spring-ai-vector-store/src/main/java/org/springframework/ai/vectorstore/observation/AbstractObservationVectorStore.java
+  Test files: spring-ai-vector-store/src/test/java/org/springframework/ai/vectorstore/SimpleVectorStoreTests.java, vector-stores/spring-ai-qdrant-store/src/test/java/org/springframework/ai/vectorstore/qdrant/QdrantVectorStoreIT.java
+  URL: https://github.com/spring-projects/spring-ai/pull/3687
+--------------------------------------------------------------------------------
+PR #3668: fix: ZhiPuAiEmbedding supports custom dimensions
+  Author: YunKuiLu
+  Merged: 2025-06-26 06:58:12
+  Files changed: 2
+  Source files: models/spring-ai-zhipuai/src/main/java/org/springframework/ai/zhipuai/ZhiPuAiEmbeddingOptions.java
+  Test files: models/spring-ai-zhipuai/src/test/java/org/springframework/ai/zhipuai/embedding/EmbeddingIT.java
+  URL: https://github.com/spring-projects/spring-ai/pull/3668
+--------------------------------------------------------------------------------
+PR #3652: fix: Correct naming inconsistencies in Mistral package
+  Author: apappascs
+  Merged: 2025-06-25 08:18:14
+  Files changed: 4
+  Source files: models/spring-ai-mistral-ai/src/main/java/org/springframework/ai/mistralai/MistralAiChatModel.java, models/spring-ai-mistral-ai/src/main/java/org/springframework/ai/mistralai/moderation/MistralAiModerationModel.java
+  Test files: models/spring-ai-mistral-ai/src/test/java/org/springframework/ai/mistralai/MistralAiChatModelObservationIT.java, models/spring-ai-mistral-ai/src/test/java/org/springframework/ai/mistralai/MistralAiEmbeddingModelObservationIT.java
+  URL: https://github.com/spring-projects/spring-ai/pull/3652
+--------------------------------------------------------------------------------
+PR #3224: feat(mcp): Add request timeout configuration for MCP server
+  Author: tzolov
+  Merged: 2025-05-17 11:16:46
+  Files changed: 4
+  Source files: auto-configurations/mcp/spring-ai-autoconfigure-mcp-server/src/main/java/org/springframework/ai/mcp/server/autoconfigure/McpServerAutoConfiguration.java, auto-configurations/mcp/spring-ai-autoconfigure-mcp-server/src/main/java/org/springframework/ai/mcp/server/autoconfigure/McpServerProperties.java
+  Test files: auto-configurations/mcp/spring-ai-autoconfigure-mcp-server/src/test/java/org/springframework/ai/mcp/server/autoconfigure/McpServerAutoConfigurationIT.java
+  URL: https://github.com/spring-projects/spring-ai/pull/3224
+--------------------------------------------------------------------------------
+PR #3208: feat(mcp): Add granular control over MCP server capabilities
+  Author: tzolov
+  Merged: 2025-05-16 14:08:23
+  Files changed: 4
+  Source files: auto-configurations/mcp/spring-ai-autoconfigure-mcp-server/src/main/java/org/springframework/ai/mcp/server/autoconfigure/McpServerAutoConfiguration.java, auto-configurations/mcp/spring-ai-autoconfigure-mcp-server/src/main/java/org/springframework/ai/mcp/server/autoconfigure/McpServerProperties.java
+  Test files: auto-configurations/mcp/spring-ai-autoconfigure-mcp-server/src/test/java/org/springframework/ai/mcp/server/autoconfigure/McpServerAutoConfigurationIT.java
+  URL: https://github.com/spring-projects/spring-ai/pull/3208
+--------------------------------------------------------------------------------
+PR #3173: Fix qdrant vector store value factory
+  Author: ilayaperumalg
+  Merged: 2025-05-15 15:26:24
+  Files changed: 2
+  Source files: vector-stores/spring-ai-qdrant-store/src/main/java/org/springframework/ai/vectorstore/qdrant/QdrantValueFactory.java
+  Test files: vector-stores/spring-ai-qdrant-store/src/test/java/org/springframework/ai/vectorstore/qdrant/QdrantVectorStoreIT.java
+  URL: https://github.com/spring-projects/spring-ai/pull/3173
+--------------------------------------------------------------------------------
+PR #3138: Fix MessageChatMemoryAdvisor in streaming case.
+  Author: markpollack
+  Merged: 2025-05-13 15:31:34
+  Files changed: 2
+  Source files: spring-ai-client-chat/src/main/java/org/springframework/ai/chat/client/advisor/MessageChatMemoryAdvisor.java
+  Test files: models/spring-ai-openai/src/test/java/org/springframework/ai/openai/chat/client/advisor/MessageChatMemoryAdvisorIT.java
+  URL: https://github.com/spring-projects/spring-ai/pull/3138
+--------------------------------------------------------------------------------
+PR #3088: GH-2168: Fix task type property name in Vertex AI embedding requests
+  Author: sobychacko
+  Merged: 2025-05-10 20:53:17
+  Files changed: 3
+  Source files: models/spring-ai-vertex-ai-embedding/src/main/java/org/springframework/ai/vertexai/embedding/VertexAiEmbeddingUtils.java, models/spring-ai-vertex-ai-embedding/src/main/java/org/springframework/ai/vertexai/embedding/text/VertexAiTextEmbeddingOptions.java
+  Test files: models/spring-ai-vertex-ai-embedding/src/test/java/org/springframework/ai/vertexai/embedding/text/VertexAiTextEmbeddingModelIT.java
+  URL: https://github.com/spring-projects/spring-ai/pull/3088
+--------------------------------------------------------------------------------
+PR #2939: Add a missing getter to the CategoryScores class
+  Author: dev-jonghoonpark
+  Merged: 2025-04-29 13:32:06
+  Files changed: 2
+  Source files: spring-ai-model/src/main/java/org/springframework/ai/moderation/CategoryScores.java
+  Test files: models/spring-ai-mistral-ai/src/test/java/org/springframework/ai/mistralai/MistralAiModerationModelIT.java
+  URL: https://github.com/spring-projects/spring-ai/pull/2939
+--------------------------------------------------------------------------------
+PR #2791: fix: typo
+  Author: kimsunghyun1995
+  Merged: 2025-04-29 11:06:22
+  Files changed: 3
+  Source files: mcp/common/src/main/java/org/springframework/ai/mcp/McpToolUtils.java
+  Test files: mcp/common/src/test/java/org/springframework/ai/mcp/ToolUtilsTests.java
+  URL: https://github.com/spring-projects/spring-ai/pull/2791
+--------------------------------------------------------------------------------
+PR #2859: Rename ToolRegistration to ToolSpecification
+  Author: jitokim
+  Merged: 2025-04-28 17:41:28
+  Files changed: 3
+  Source files: mcp/common/src/main/java/org/springframework/ai/mcp/McpToolUtils.java
+  Test files: auto-configurations/mcp/spring-ai-autoconfigure-mcp-server/src/test/java/org/springframework/ai/mcp/server/autoconfigure/McpServerAutoConfigurationIT.java
+  URL: https://github.com/spring-projects/spring-ai/pull/2859
+--------------------------------------------------------------------------------
+PR #2361: feat: Add equals, hashCode, deep copy, and tests to OCICohereChatOptions
+  Author: apappascs
+  Merged: 2025-04-28 16:03:53
+  Files changed: 2
+  Source files: models/spring-ai-oci-genai/src/main/java/org/springframework/ai/oci/cohere/OCICohereChatOptions.java
+  Test files: models/spring-ai-oci-genai/src/test/java/org/springframework/ai/oci/cohere/OCICohereChatOptionsTests.java
+  URL: https://github.com/spring-projects/spring-ai/pull/2361
+--------------------------------------------------------------------------------
+PR #2897: Fix mutable observation context
+  Author: ThomasVitale
+  Merged: 2025-04-27 02:29:21
+  Files changed: 2
+  Source files: spring-ai-client-chat/src/main/java/org/springframework/ai/chat/client/observation/DefaultChatClientObservationConvention.java
+  Test files: spring-ai-client-chat/src/test/java/org/springframework/ai/chat/client/observation/DefaultChatClientObservationConventionTests.java
+  URL: https://github.com/spring-projects/spring-ai/pull/2897
+--------------------------------------------------------------------------------
+PR #2719: Fix typo
+  Author: ngocnhan-tran1996
+  Merged: 2025-04-14 15:35:06
+  Files changed: 4
+  Source files: spring-ai-commons/src/main/java/org/springframework/ai/document/id/IdGenerator.java
+  Test files: models/spring-ai-mistral-ai/src/test/resources/prompts/acme/system-qa.st, models/spring-ai-openai/src/test/resources/prompts/acme/system-qa.st
+  URL: https://github.com/spring-projects/spring-ai/pull/2719
+--------------------------------------------------------------------------------
+PR #2680: Model update in VertexAiGeminiChatModelIT from GEMINI_2_5_PRO to GEMI…
+  Author: sobychacko
+  Merged: 2025-04-09 20:33:45
+  Files changed: 2
+  Source files: models/spring-ai-vertex-ai-gemini/src/main/java/org/springframework/ai/vertexai/gemini/VertexAiGeminiChatModel.java
+  Test files: models/spring-ai-vertex-ai-gemini/src/test/java/org/springframework/ai/vertexai/gemini/VertexAiGeminiChatModelIT.java
+  URL: https://github.com/spring-projects/spring-ai/pull/2680
+--------------------------------------------------------------------------------
+PR #2517: Refactor Redis vector store property: index to indexName
+  Author: dev-jonghoonpark
+  Merged: 2025-03-31 10:36:42
+  Files changed: 3
+  Source files: auto-configurations/vector-stores/spring-ai-autoconfigure-vector-store-redis/src/main/java/org/springframework/ai/vectorstore/redis/autoconfigure/RedisVectorStoreAutoConfiguration.java, auto-configurations/vector-stores/spring-ai-autoconfigure-vector-store-redis/src/main/java/org/springframework/ai/vectorstore/redis/autoconfigure/RedisVectorStoreProperties.java
+  Test files: auto-configurations/vector-stores/spring-ai-autoconfigure-vector-store-redis/src/test/java/org/springframework/ai/vectorstore/redis/autoconfigure/RedisVectorStorePropertiesTests.java
+  URL: https://github.com/spring-projects/spring-ai/pull/2517
+--------------------------------------------------------------------------------
+PR #2580: ToolContext is now excluded from JSON Schema Generation
+  Author: ThomasVitale
+  Merged: 2025-03-27 19:31:42
+  Files changed: 4
+  Source files: spring-ai-core/src/main/java/org/springframework/ai/chat/model/ToolContext.java, spring-ai-core/src/main/java/org/springframework/ai/util/json/schema/JsonSchemaGenerator.java
+  Test files: spring-ai-core/src/test/java/org/springframework/ai/util/json/JsonSchemaGeneratorTests.java
+  URL: https://github.com/spring-projects/spring-ai/pull/2580
+--------------------------------------------------------------------------------
+PR #2472: feat: Add AOP proxy support to MethodToolCallbackProvider
+  Author: tzolov
+  Merged: 2025-03-14 10:34:15
+  Files changed: 4
+  Source files: spring-ai-core/src/main/java/org/springframework/ai/tool/method/MethodToolCallbackProvider.java
+  Test files: spring-ai-core/src/test/java/org/springframework/ai/tool/method/MethodToolCallbackProviderAopTests.java, spring-ai-core/src/test/java/org/springframework/ai/tool/method/MethodToolCallbackProviderTests.java, spring-ai-core/src/test/java/org/springframework/ai/tool/method/MethodToolCallbackTests.java
+  URL: https://github.com/spring-projects/spring-ai/pull/2472
+--------------------------------------------------------------------------------
+PR #2443: fix(mcp): standardize MCP tool name formatting and improve error handle
+  Author: tzolov
+  Merged: 2025-03-11 16:28:47
+  Files changed: 4
+  Source files: mcp/common/src/main/java/org/springframework/ai/mcp/AsyncMcpToolCallback.java, mcp/common/src/main/java/org/springframework/ai/mcp/McpToolUtils.java, mcp/common/src/main/java/org/springframework/ai/mcp/SyncMcpToolCallback.java
+  Test files: mcp/common/src/test/java/org/springframework/ai/mcp/SyncMcpToolCallbackTests.java
+  URL: https://github.com/spring-projects/spring-ai/pull/2443
+--------------------------------------------------------------------------------
+PR #2432: feat(mcp): handle ToolContext in MCP tool callbacks
+  Author: tzolov
+  Merged: 2025-03-11 11:47:33
+  Files changed: 3
+  Source files: mcp/common/src/main/java/org/springframework/ai/mcp/AsyncMcpToolCallback.java, mcp/common/src/main/java/org/springframework/ai/mcp/SyncMcpToolCallback.java
+  Test files: mcp/common/src/test/java/org/springframework/ai/mcp/SyncMcpToolCallbackTests.java
+  URL: https://github.com/spring-projects/spring-ai/pull/2432
+--------------------------------------------------------------------------------
+PR #2353: feat: Add equals, hashCode, deep copy, and tests to AnthropicChatOptions
+  Author: apappascs
+  Merged: 2025-03-02 11:43:09
+  Files changed: 2
+  Source files: models/spring-ai-anthropic/src/main/java/org/springframework/ai/anthropic/AnthropicChatOptions.java
+  Test files: models/spring-ai-anthropic/src/test/java/org/springframework/ai/anthropic/AnthropicChatOptionsTests.java
+  URL: https://github.com/spring-projects/spring-ai/pull/2353
+--------------------------------------------------------------------------------
+PR #2338: fix: reverse ToolContext validation logic in MethodToolCallback
+  Author: tzolov
+  Merged: 2025-02-27 10:40:35
+  Files changed: 4
+  Source files: spring-ai-core/src/main/java/org/springframework/ai/tool/method/MethodToolCallback.java
+  Test files: models/spring-ai-anthropic/src/test/java/org/springframework/ai/anthropic/client/AnthropicChatClientMethodInvokingFunctionCallbackIT.java, models/spring-ai-openai/src/test/java/org/springframework/ai/openai/chat/client/OpenAiChatClientMethodInvokingFunctionCallbackIT.java, spring-ai-core/src/test/java/org/springframework/ai/tool/method/MethodToolCallbackTests.java
+  URL: https://github.com/spring-projects/spring-ai/pull/2338
+--------------------------------------------------------------------------------
+PR #2174: Fix handling of nullable fields in OllamaChatModel deprecated constructor
+  Author: ThomasVitale
+  Merged: 2025-02-06 04:29:01
+  Files changed: 3
+  Source files: models/spring-ai-ollama/src/main/java/org/springframework/ai/ollama/OllamaChatModel.java, spring-ai-core/src/main/java/org/springframework/ai/model/tool/LegacyToolCallingManager.java
+  Test files: models/spring-ai-ollama/src/test/java/org/springframework/ai/ollama/OllamaChatModelTests.java
+  URL: https://github.com/spring-projects/spring-ai/pull/2174
+--------------------------------------------------------------------------------
+PR #2150: Add filter-based deletion to Weaviate vector store
+  Author: sobychacko
+  Merged: 2025-01-31 20:46:54
+  Files changed: 2
+  Source files: vector-stores/spring-ai-weaviate-store/src/main/java/org/springframework/ai/vectorstore/weaviate/WeaviateVectorStore.java
+  Test files: vector-stores/spring-ai-weaviate-store/src/test/java/org/springframework/ai/vectorstore/weaviate/WeaviateVectorStoreIT.java
+  URL: https://github.com/spring-projects/spring-ai/pull/2150
+--------------------------------------------------------------------------------
+PR #2143: Add filter-based deletion to Cassandra Vector Store
+  Author: sobychacko
+  Merged: 2025-01-29 20:42:56
+  Files changed: 2
+  Source files: vector-stores/spring-ai-cassandra-store/src/main/java/org/springframework/ai/vectorstore/cassandra/CassandraVectorStore.java
+  Test files: vector-stores/spring-ai-cassandra-store/src/test/java/org/springframework/ai/vectorstore/cassandra/CassandraVectorStoreIT.java
+  URL: https://github.com/spring-projects/spring-ai/pull/2143
+--------------------------------------------------------------------------------
+PR #2142: Add filter-based deletion and refactor tests for Pinecone vector store
+  Author: sobychacko
+  Merged: 2025-01-29 20:34:17
+  Files changed: 2
+  Source files: vector-stores/spring-ai-pinecone-store/src/main/java/org/springframework/ai/vectorstore/pinecone/PineconeVectorStore.java
+  Test files: vector-stores/spring-ai-pinecone-store/src/test/java/org/springframework/ai/vectorstore/pinecone/PineconeVectorStoreIT.java
+  URL: https://github.com/spring-projects/spring-ai/pull/2142
+--------------------------------------------------------------------------------
+PR #2140: Add filter-based deletion to Typesense vector store
+  Author: sobychacko
+  Merged: 2025-01-29 20:29:51
+  Files changed: 2
+  Source files: vector-stores/spring-ai-typesense-store/src/main/java/org/springframework/ai/vectorstore/typesense/TypesenseVectorStore.java
+  Test files: vector-stores/spring-ai-typesense-store/src/test/java/org/springframework/ai/vectorstore/typesense/TypesenseVectorStoreIT.java
+  URL: https://github.com/spring-projects/spring-ai/pull/2140
+--------------------------------------------------------------------------------
+PR #2127: Add filter-based deletion to Milvus vector store
+  Author: sobychacko
+  Merged: 2025-01-28 14:32:32
+  Files changed: 2
+  Source files: vector-stores/spring-ai-milvus-store/src/main/java/org/springframework/ai/vectorstore/milvus/MilvusVectorStore.java
+  Test files: vector-stores/spring-ai-milvus-store/src/test/java/org/springframework/ai/vectorstore/milvus/MilvusVectorStoreIT.java
+  URL: https://github.com/spring-projects/spring-ai/pull/2127
+--------------------------------------------------------------------------------
+PR #2125: Add filter-based deletion to MariaDB vector store
+  Author: sobychacko
+  Merged: 2025-01-28 14:22:40
+  Files changed: 2
+  Source files: vector-stores/spring-ai-mariadb-store/src/main/java/org/springframework/ai/vectorstore/mariadb/MariaDBVectorStore.java
+  Test files: vector-stores/spring-ai-mariadb-store/src/test/java/org/springframework/ai/vectorstore/mariadb/MariaDBStoreIT.java
+  URL: https://github.com/spring-projects/spring-ai/pull/2125
+--------------------------------------------------------------------------------
+PR #2109: Revert "Remove UUID Enforcement for ID Column in PGVectorStore"
+  Author: ilayaperumalg
+  Merged: 2025-01-24 12:40:36
+  Files changed: 3
+  Source files: spring-ai-core/src/main/java/org/springframework/ai/document/Document.java, vector-stores/spring-ai-pgvector-store/src/main/java/org/springframework/ai/vectorstore/pgvector/PgVectorStore.java
+  Test files: vector-stores/spring-ai-pgvector-store/src/test/java/org/springframework/ai/vectorstore/pgvector/PgVectorStoreIT.java
+  URL: https://github.com/spring-projects/spring-ai/pull/2109
+--------------------------------------------------------------------------------
+PR #2014: Remove UUID Enforcement for ID Column in PGVectorStore
+  Author: jitokim
+  Merged: 2025-01-24 11:48:09
+  Files changed: 3
+  Source files: spring-ai-core/src/main/java/org/springframework/ai/document/Document.java, vector-stores/spring-ai-pgvector-store/src/main/java/org/springframework/ai/vectorstore/pgvector/PgVectorStore.java
+  Test files: vector-stores/spring-ai-pgvector-store/src/test/java/org/springframework/ai/vectorstore/pgvector/PgVectorStoreIT.java
+  URL: https://github.com/spring-projects/spring-ai/pull/2014
+--------------------------------------------------------------------------------
+PR #1835: Portable ChatOptions ignored by OpenAiChatModel
+  Author: ThomasVitale
+  Merged: 2024-11-28 15:44:08
+  Files changed: 2
+  Source files: models/spring-ai-openai/src/main/java/org/springframework/ai/openai/OpenAiChatModel.java
+  Test files: models/spring-ai-openai/src/test/java/org/springframework/ai/openai/chat/OpenAiChatModelIT.java
+  URL: https://github.com/spring-projects/spring-ai/pull/1835
+--------------------------------------------------------------------------------
+PR #1783: feat: Add Pixtral and Llama 3.2 Vision models to MistralAi and Ollama
+  Author: tzolov
+  Merged: 2024-11-20 17:10:14
+  Files changed: 3
+  Source files: models/spring-ai-mistral-ai/src/main/java/org/springframework/ai/mistralai/api/MistralAiApi.java, models/spring-ai-ollama/src/main/java/org/springframework/ai/ollama/api/OllamaModel.java
+  Test files: models/spring-ai-mistral-ai/src/test/java/org/springframework/ai/mistralai/MistralAiChatClientIT.java
+  URL: https://github.com/spring-projects/spring-ai/pull/1783
+--------------------------------------------------------------------------------
+PR #1692: Fix duplicate keys in ChatResponseMetadata for OllamaApi.ChatResponse
+  Author: jitokim
+  Merged: 2024-11-19 16:13:47
+  Files changed: 2
+  Source files: models/spring-ai-ollama/src/main/java/org/springframework/ai/ollama/OllamaChatModel.java
+  Test files: models/spring-ai-ollama/src/test/java/org/springframework/ai/ollama/OllamaChatModelTests.java
+  URL: https://github.com/spring-projects/spring-ai/pull/1692
+--------------------------------------------------------------------------------
+PR #1742: Add support for `@Component` to TypeResolverHelper
+  Author: sdeleuze
+  Merged: 2024-11-15 16:38:59
+  Files changed: 3
+  Source files: spring-ai-core/src/main/java/org/springframework/ai/model/function/TypeResolverHelper.java
+  Test files: spring-ai-core/src/test/java/org/springframework/ai/model/function/TypeResolverHelperIT.java, spring-ai-core/src/test/java/org/springframework/ai/model/function/component/ComponentWeatherFunction.java
+  URL: https://github.com/spring-projects/spring-ai/pull/1742
+--------------------------------------------------------------------------------
+PR #1654: Support case with missing system text in VectorStoreChatMemoryAdvisor
+  Author: ThomasVitale
+  Merged: 2024-11-03 10:54:45
+  Files changed: 2
+  Source files: spring-ai-core/src/main/java/org/springframework/ai/chat/client/advisor/VectorStoreChatMemoryAdvisor.java
+  Test files: vector-stores/spring-ai-pgvector-store/src/test/java/org/springframework/ai/vectorstore/PgVectorStoreWithChatMemoryAdvisorIT.java
+  URL: https://github.com/spring-projects/spring-ai/pull/1654
+--------------------------------------------------------------------------------

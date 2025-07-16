@@ -1,0 +1,206 @@
+
+Results:
+Found 25 PRs with 2-4 file changes that include both source code files and test classes, merged after November 2024:
+
+--------------------------------------------------------------------------------
+Note: Analysis stopped after finding 25 matching PRs.
+PR #41025: Do not add steps if feature disabled in default flows Allow login if a step is disabled even the authenticator is not enabled by profile Closes #40954
+  Author: mposolda
+  Merged: 2025-07-09 11:05:41
+  Files changed: 3
+  Source files: server-spi-private/src/main/java/org/keycloak/models/utils/DefaultAuthenticationFlows.java, services/src/main/java/org/keycloak/authentication/DefaultAuthenticationFlow.java
+  Test files: testsuite/integration-arquillian/tests/base/src/test/java/org/keycloak/testsuite/forms/LoginTest.java
+  URL: https://github.com/keycloak/keycloak/pull/41025
+--------------------------------------------------------------------------------
+PR #41021: Fix NPE when accessing group concurrently
+  Author: vramik
+  Merged: 2025-07-09 11:05:04
+  Files changed: 4
+  Source files: model/infinispan/src/main/java/org/keycloak/models/cache/infinispan/GroupAdapter.java, model/infinispan/src/main/java/org/keycloak/models/cache/infinispan/entities/CachedGroup.java, services/src/main/java/org/keycloak/utils/GroupUtils.java
+  Test files: tests/base/src/test/java/org/keycloak/tests/admin/group/GroupTest.java
+  URL: https://github.com/keycloak/keycloak/pull/41021
+--------------------------------------------------------------------------------
+PR #40749: [OID4VCI] : Update Credential Issuer Metadata Model for OID4VCI Draft-15
+  Author: forkimenjeckayang
+  Merged: 2025-07-09 09:41:17
+  Files changed: 3
+  Source files: services/src/main/java/org/keycloak/protocol/oid4vc/issuance/OID4VCIssuerWellKnownProvider.java, services/src/main/java/org/keycloak/protocol/oid4vc/model/CredentialIssuer.java
+  Test files: testsuite/integration-arquillian/tests/base/src/test/java/org/keycloak/testsuite/oid4vc/issuance/signing/OID4VCIssuerWellKnownProviderTest.java
+  URL: https://github.com/keycloak/keycloak/pull/40749
+--------------------------------------------------------------------------------
+PR #41004: Set client in the session context for logout token encode
+  Author: rmartinc
+  Merged: 2025-07-09 08:50:05
+  Files changed: 2
+  Source files: services/src/main/java/org/keycloak/services/managers/ResourceAdminManager.java
+  Test files: testsuite/integration-arquillian/tests/base/src/test/java/org/keycloak/testsuite/oauth/LogoutTest.java
+  URL: https://github.com/keycloak/keycloak/pull/41004
+--------------------------------------------------------------------------------
+PR #40964: Do not add steps if feature disabled in default flows
+  Author: rmartinc
+  Merged: 2025-07-09 08:44:36
+  Files changed: 3
+  Source files: server-spi-private/src/main/java/org/keycloak/models/utils/DefaultAuthenticationFlows.java, services/src/main/java/org/keycloak/authentication/DefaultAuthenticationFlow.java
+  Test files: testsuite/integration-arquillian/tests/base/src/test/java/org/keycloak/testsuite/forms/LoginTest.java
+  URL: https://github.com/keycloak/keycloak/pull/40964
+--------------------------------------------------------------------------------
+PR #40940: Fix NPE when accessing group concurrently
+  Author: vramik
+  Merged: 2025-07-08 19:13:54
+  Files changed: 4
+  Source files: model/infinispan/src/main/java/org/keycloak/models/cache/infinispan/GroupAdapter.java, model/infinispan/src/main/java/org/keycloak/models/cache/infinispan/entities/CachedGroup.java, services/src/main/java/org/keycloak/utils/GroupUtils.java
+  Test files: tests/base/src/test/java/org/keycloak/tests/admin/group/GroupTest.java
+  URL: https://github.com/keycloak/keycloak/pull/40940
+--------------------------------------------------------------------------------
+PR #40982: LDAP group mapper skips configured filter and imports all groups with…
+  Author: sguilhen
+  Merged: 2025-07-07 20:39:35
+  Files changed: 2
+  Source files: federation/ldap/src/main/java/org/keycloak/storage/ldap/mappers/membership/UserRolesRetrieveStrategy.java
+  Test files: testsuite/integration-arquillian/tests/base/src/test/java/org/keycloak/testsuite/federation/ldap/LDAPGroupMapperCustomMemberOfTest.java
+  URL: https://github.com/keycloak/keycloak/pull/40982
+--------------------------------------------------------------------------------
+PR #40943: fix: detecting when we can set the serviceName (#40894)
+  Author: shawkins
+  Merged: 2025-07-06 18:53:40
+  Files changed: 3
+  Source files: operator/src/main/java/org/keycloak/operator/controllers/KeycloakDeploymentDependentResource.java
+  Test files: operator/src/test/java/org/keycloak/operator/testsuite/integration/KeycloakDeploymentTest.java, operator/src/test/java/org/keycloak/operator/testsuite/integration/PodTemplateTest.java
+  URL: https://github.com/keycloak/keycloak/pull/40943
+--------------------------------------------------------------------------------
+PR #40894: fix: detecting when we can set the serviceName
+  Author: shawkins
+  Merged: 2025-07-04 07:03:42
+  Files changed: 3
+  Source files: operator/src/main/java/org/keycloak/operator/controllers/KeycloakDeploymentDependentResource.java
+  Test files: operator/src/test/java/org/keycloak/operator/testsuite/integration/KeycloakDeploymentTest.java, operator/src/test/java/org/keycloak/operator/testsuite/integration/PodTemplateTest.java
+  URL: https://github.com/keycloak/keycloak/pull/40894
+--------------------------------------------------------------------------------
+PR #40834: fix: map just logging env wildcards to .
+  Author: shawkins
+  Merged: 2025-07-02 08:06:29
+  Files changed: 4
+  Source files: quarkus/runtime/src/main/java/org/keycloak/quarkus/runtime/configuration/mappers/WildcardPropertyMapper.java
+  Test files: quarkus/runtime/src/test/java/org/keycloak/quarkus/runtime/configuration/DatasourcesConfigurationTest.java, quarkus/tests/integration/src/test/java/org/keycloak/it/storage/database/dist/DatasourcesDistTest.java
+  URL: https://github.com/keycloak/keycloak/pull/40834
+--------------------------------------------------------------------------------
+PR #40824: Use POST binding for logout when REDIRECT url is not set and forced POST  (26.2)
+  Author: rmartinc
+  Merged: 2025-07-01 12:54:57
+  Files changed: 3
+  Source files: services/src/main/java/org/keycloak/protocol/saml/SamlProtocol.java
+  Test files: services/src/test/java/org/keycloak/protocol/saml/SamlProtocolTest.java, testsuite/integration-arquillian/tests/base/src/test/java/org/keycloak/testsuite/saml/LogoutTest.java
+  URL: https://github.com/keycloak/keycloak/pull/40824
+--------------------------------------------------------------------------------
+PR #40757: Use POST binding for logout when REDIRECT url is not set and forced POST
+  Author: rmartinc
+  Merged: 2025-06-30 08:30:12
+  Files changed: 3
+  Source files: services/src/main/java/org/keycloak/protocol/saml/SamlProtocol.java
+  Test files: services/src/test/java/org/keycloak/protocol/saml/SamlProtocolTest.java, testsuite/integration-arquillian/tests/base/src/test/java/org/keycloak/testsuite/saml/LogoutTest.java
+  URL: https://github.com/keycloak/keycloak/pull/40757
+--------------------------------------------------------------------------------
+PR #40732: Make rolling-updates-v2 preview feature
+  Author: mhajas
+  Merged: 2025-06-26 17:28:36
+  Files changed: 4
+  Source files: common/src/main/java/org/keycloak/common/Profile.java
+  Test files: quarkus/tests/integration/src/test/java/org/keycloak/it/cli/dist/FeaturesDistTest.java
+  URL: https://github.com/keycloak/keycloak/pull/40732
+--------------------------------------------------------------------------------
+PR #40698: Resolve resources with same URI if the permission request is based on URI matching
+  Author: pedroigor
+  Merged: 2025-06-26 06:24:44
+  Files changed: 2
+  Source files: services/src/main/java/org/keycloak/authorization/authorization/AuthorizationTokenService.java
+  Test files: testsuite/integration-arquillian/tests/base/src/test/java/org/keycloak/testsuite/authz/EntitlementAPITest.java
+  URL: https://github.com/keycloak/keycloak/pull/40698
+--------------------------------------------------------------------------------
+PR #40719: Allow passkeys login when user has no password credential
+  Author: rmartinc
+  Merged: 2025-06-26 06:09:09
+  Files changed: 3
+  Source files: services/src/main/java/org/keycloak/authentication/authenticators/browser/PasswordForm.java, services/src/main/java/org/keycloak/authentication/authenticators/browser/UsernamePasswordForm.java
+  Test files: testsuite/integration-arquillian/tests/base/src/test/java/org/keycloak/testsuite/webauthn/passwordless/PasskeysUsernameFormTest.java
+  URL: https://github.com/keycloak/keycloak/pull/40719
+--------------------------------------------------------------------------------
+PR #40538: Issue with Handling Negative Values in Certain Fields of Brute Force Detection
+  Author: douglaspalmer
+  Merged: 2025-06-24 12:13:00
+  Files changed: 4
+  Source files: model/storage-private/src/main/java/org/keycloak/storage/datastore/DefaultExportImportManager.java
+  Test files: testsuite/integration-arquillian/tests/base/src/test/java/org/keycloak/testsuite/forms/BruteForceTest.java
+  URL: https://github.com/keycloak/keycloak/pull/40538
+--------------------------------------------------------------------------------
+PR #40624: Use offline time calculations when transient created from offline
+  Author: rmartinc
+  Merged: 2025-06-20 08:12:04
+  Files changed: 2
+  Source files: services/src/main/java/org/keycloak/protocol/oidc/TokenManager.java
+  Test files: testsuite/integration-arquillian/tests/base/src/test/java/org/keycloak/testsuite/oauth/tokenexchange/StandardTokenExchangeV2Test.java
+  URL: https://github.com/keycloak/keycloak/pull/40624
+--------------------------------------------------------------------------------
+PR #40615: Use offline time calculations when transient created from offline
+  Author: rmartinc
+  Merged: 2025-06-19 14:38:51
+  Files changed: 2
+  Source files: services/src/main/java/org/keycloak/protocol/oidc/TokenManager.java
+  Test files: testsuite/integration-arquillian/tests/base/src/test/java/org/keycloak/testsuite/oauth/tokenexchange/StandardTokenExchangeV2Test.java
+  URL: https://github.com/keycloak/keycloak/pull/40615
+--------------------------------------------------------------------------------
+PR #40590: [26.2.x] Make UPDATE_TIME unique for MIGRATION_MODEL table
+  Author: mabartos
+  Merged: 2025-06-18 13:56:08
+  Files changed: 3
+  Source files: model/jpa/src/main/java/org/keycloak/connections/jpa/updater/liquibase/custom/JpaUpdate26_2_6_RemoveDuplicateMigrationModelTime.java
+  Test files: testsuite/model/src/test/java/org/keycloak/testsuite/model/MigrationModelTest.java
+  URL: https://github.com/keycloak/keycloak/pull/40590
+--------------------------------------------------------------------------------
+PR #40490: Preserve query parameters when redirecting requests
+  Author: ahus1
+  Merged: 2025-06-18 08:47:20
+  Files changed: 2
+  Source files: services/src/main/java/org/keycloak/services/resources/ThemeResource.java
+  Test files: testsuite/integration-arquillian/tests/base/src/test/java/org/keycloak/testsuite/theme/ThemeResourceProviderTest.java
+  URL: https://github.com/keycloak/keycloak/pull/40490
+--------------------------------------------------------------------------------
+PR #40550: fix: prevent multiple init when dependsOn is used
+  Author: shawkins
+  Merged: 2025-06-18 07:00:27
+  Files changed: 2
+  Source files: services/src/main/java/org/keycloak/services/DefaultKeycloakSessionFactory.java
+  Test files: services/src/test/java/org/keycloak/services/DefaultKeycloakSessionFactoryTest.java
+  URL: https://github.com/keycloak/keycloak/pull/40550
+--------------------------------------------------------------------------------
+PR #40492: Fix message format parsing when linking accounts
+  Author: ahus1
+  Merged: 2025-06-17 13:32:55
+  Files changed: 2
+  Source files: services/src/main/java/org/keycloak/services/resources/account/LinkedAccountsResource.java
+  Test files: js/apps/account-ui/test/account-security/linked-accounts.spec.ts
+  URL: https://github.com/keycloak/keycloak/pull/40492
+--------------------------------------------------------------------------------
+PR #40537: fix: prevent multiple init when dependsOn is used
+  Author: shawkins
+  Merged: 2025-06-17 09:22:24
+  Files changed: 2
+  Source files: services/src/main/java/org/keycloak/services/DefaultKeycloakSessionFactory.java
+  Test files: services/src/test/java/org/keycloak/services/DefaultKeycloakSessionFactoryTest.java
+  URL: https://github.com/keycloak/keycloak/pull/40537
+--------------------------------------------------------------------------------
+PR #40455: fix: removing lifecylce in initContainers
+  Author: shawkins
+  Merged: 2025-06-16 07:48:50
+  Files changed: 2
+  Source files: operator/src/main/java/org/keycloak/operator/controllers/KeycloakUpdateJobDependentResource.java
+  Test files: operator/src/test/java/org/keycloak/operator/testsuite/unit/PodTemplateTest.java
+  URL: https://github.com/keycloak/keycloak/pull/40455
+--------------------------------------------------------------------------------
+PR #40414: Create a transient client session if the RPT is originating from a client session that does not exist in the user session
+  Author: pedroigor
+  Merged: 2025-06-11 16:50:40
+  Files changed: 2
+  Source files: services/src/main/java/org/keycloak/authorization/authorization/AuthorizationTokenService.java
+  Test files: testsuite/integration-arquillian/tests/base/src/test/java/org/keycloak/testsuite/authz/EntitlementAPITest.java
+  URL: https://github.com/keycloak/keycloak/pull/40414
+--------------------------------------------------------------------------------

@@ -1,0 +1,146 @@
+
+Results:
+Found 20 PRs with 2-4 file changes that include test classes, merged after November 2024:
+
+--------------------------------------------------------------------------------
+Note: Analysis stopped after finding 20 matching PRs.
+PR #9048: Raise FileNotFoundError when opening an empty path
+  Author: radarhere
+  Merged: 2025-06-30 14:48:44
+  Files changed: 2
+  Test files: Tests/test_image.py
+  URL: https://github.com/python-pillow/Pillow/pull/9048
+--------------------------------------------------------------------------------
+PR #9046: Read 16-bit McIdas images into I;16B mode to allow for memory mapping
+  Author: radarhere
+  Merged: 2025-06-29 12:38:27
+  Files changed: 3
+  Test files: Tests/images/cmx3g8_wv_1998.260_0745_mcidas.tiff, Tests/test_file_mcidas.py
+  URL: https://github.com/python-pillow/Pillow/pull/9046
+--------------------------------------------------------------------------------
+PR #8979: Fix saving MPO with more than one appended image
+  Author: radarhere
+  Merged: 2025-06-28 11:32:33
+  Files changed: 2
+  Test files: Tests/test_file_mpo.py
+  URL: https://github.com/python-pillow/Pillow/pull/8979
+--------------------------------------------------------------------------------
+PR #8942: Restore original encoderinfo after saving
+  Author: radarhere
+  Merged: 2025-06-27 15:04:43
+  Files changed: 2
+  Test files: Tests/test_file_mpo.py
+  URL: https://github.com/python-pillow/Pillow/pull/8942
+--------------------------------------------------------------------------------
+PR #9041: Fix buffer overflow when saving compressed DDS images
+  Author: radarhere
+  Merged: 2025-06-27 14:29:59
+  Files changed: 2
+  Test files: Tests/test_file_dds.py
+  URL: https://github.com/python-pillow/Pillow/pull/9041
+--------------------------------------------------------------------------------
+PR #9015: Support saving I;16L TIFF images
+  Author: radarhere
+  Merged: 2025-06-25 10:11:47
+  Files changed: 2
+  Test files: Tests/test_file_tiff.py
+  URL: https://github.com/python-pillow/Pillow/pull/9015
+--------------------------------------------------------------------------------
+PR #9018: Deprecate fromarray mode argument
+  Author: radarhere
+  Merged: 2025-06-25 09:44:39
+  Files changed: 4
+  Test files: Tests/test_image_array.py
+  URL: https://github.com/python-pillow/Pillow/pull/9018
+--------------------------------------------------------------------------------
+PR #9007: Support writing QOI images
+  Author: thisismypassport
+  Merged: 2025-06-19 08:16:26
+  Files changed: 4
+  Test files: Tests/test_file_qoi.py
+  URL: https://github.com/python-pillow/Pillow/pull/9007
+--------------------------------------------------------------------------------
+PR #9010: Update dependency cibuildwheel to v3
+  Author: renovate[bot]
+  Merged: 2025-06-12 16:13:45
+  Files changed: 2
+  Test files: .github/workflows/wheels-test.ps1
+  URL: https://github.com/python-pillow/Pillow/pull/9010
+--------------------------------------------------------------------------------
+PR #9005: Remove padding between interleaved PCX palette data
+  Author: radarhere
+  Merged: 2025-06-11 13:19:09
+  Files changed: 3
+  Test files: Tests/images/p_4_planes.pcx, Tests/test_file_pcx.py
+  URL: https://github.com/python-pillow/Pillow/pull/9005
+--------------------------------------------------------------------------------
+PR #9008: Start QOI decoding with a zero-initialized array of previously seen pixels
+  Author: radarhere
+  Merged: 2025-06-11 12:56:57
+  Files changed: 3
+  Test files: Tests/images/op_index.qoi, Tests/test_file_qoi.py
+  URL: https://github.com/python-pillow/Pillow/pull/9008
+--------------------------------------------------------------------------------
+PR #8985: Correct drawing I;16 horizontal lines
+  Author: radarhere
+  Merged: 2025-06-10 12:12:40
+  Files changed: 3
+  Test files: Tests/images/imagedraw_rectangle_I.tiff, Tests/test_imagedraw.py
+  URL: https://github.com/python-pillow/Pillow/pull/8985
+--------------------------------------------------------------------------------
+PR #8997: Handle XMP data from an UNDEFINED TIFF tag
+  Author: radarhere
+  Merged: 2025-06-10 11:57:15
+  Files changed: 4
+  Test files: Tests/test_file_tiff.py, Tests/test_image.py
+  URL: https://github.com/python-pillow/Pillow/pull/8997
+--------------------------------------------------------------------------------
+PR #8958: Do not decode bytes in PPM error message
+  Author: radarhere
+  Merged: 2025-06-10 11:08:30
+  Files changed: 2
+  Test files: Tests/test_file_ppm.py
+  URL: https://github.com/python-pillow/Pillow/pull/8958
+--------------------------------------------------------------------------------
+PR #8960: Parse XMP tag bytes without decoding to string
+  Author: radarhere
+  Merged: 2025-06-10 11:06:28
+  Files changed: 2
+  Test files: Tests/test_image.py
+  URL: https://github.com/python-pillow/Pillow/pull/8960
+--------------------------------------------------------------------------------
+PR #8962: Clear TIFF core image if memory mapping was used for last load
+  Author: radarhere
+  Merged: 2025-06-10 07:03:31
+  Files changed: 3
+  Test files: Tests/test_tiff_crashes.py
+  URL: https://github.com/python-pillow/Pillow/pull/8962
+--------------------------------------------------------------------------------
+PR #8991: Update dependency mypy to v1.16.0
+  Author: renovate[bot]
+  Merged: 2025-06-07 01:07:21
+  Files changed: 4
+  Test files: Tests/test_file_jpeg.py, Tests/test_image.py
+  URL: https://github.com/python-pillow/Pillow/pull/8991
+--------------------------------------------------------------------------------
+PR #8989: Stop testing deprecated Windows Server 2019 runner image
+  Author: radarhere
+  Merged: 2025-05-31 05:12:50
+  Files changed: 3
+  Test files: .github/workflows/test-windows.yml
+  URL: https://github.com/python-pillow/Pillow/pull/8989
+--------------------------------------------------------------------------------
+PR #8949: Updated libavif to 1.3.0
+  Author: radarhere
+  Merged: 2025-05-23 16:17:07
+  Files changed: 3
+  Test files: Tests/test_file_avif.py
+  URL: https://github.com/python-pillow/Pillow/pull/8949
+--------------------------------------------------------------------------------
+PR #8948: Improved support for Python 3.14
+  Author: radarhere
+  Merged: 2025-05-08 16:43:29
+  Files changed: 3
+  Test files: .github/workflows/test-windows.yml, Tests/test_image_resample.py
+  URL: https://github.com/python-pillow/Pillow/pull/8948
+--------------------------------------------------------------------------------

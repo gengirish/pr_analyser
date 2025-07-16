@@ -1,0 +1,406 @@
+
+Results:
+Found 50 PRs with 2-4 file changes that include both source code files and test classes, merged after November 2024:
+
+--------------------------------------------------------------------------------
+Note: Analysis stopped after finding 50 matching PRs.
+PR #13523: Spark 4.0: Add procedure to compute partition stats
+  Author: ajantha-bhat
+  Merged: 2025-07-11 07:02:44
+  Files changed: 3
+  Source files: spark/v4.0/spark/src/main/java/org/apache/iceberg/spark/procedures/ComputePartitionStatsProcedure.java, spark/v4.0/spark/src/main/java/org/apache/iceberg/spark/procedures/SparkProcedures.java
+  Test files: spark/v4.0/spark-extensions/src/test/java/org/apache/iceberg/spark/extensions/TestComputePartitionStatsProcedure.java
+  URL: https://github.com/apache/iceberg/pull/13523
+--------------------------------------------------------------------------------
+PR #13480: Spark-3.5: Add procedure to compute partition stats
+  Author: ajantha-bhat
+  Merged: 2025-07-11 06:06:57
+  Files changed: 3
+  Source files: spark/v3.5/spark/src/main/java/org/apache/iceberg/spark/procedures/ComputePartitionStatsProcedure.java, spark/v3.5/spark/src/main/java/org/apache/iceberg/spark/procedures/SparkProcedures.java
+  Test files: spark/v3.5/spark-extensions/src/test/java/org/apache/iceberg/spark/extensions/TestComputePartitionStatsProcedure.java
+  URL: https://github.com/apache/iceberg/pull/13480
+--------------------------------------------------------------------------------
+PR #13324: Spark: Support Parquet dictionary encoded UUIDs
+  Author: Fokko
+  Merged: 2025-07-09 22:29:16
+  Files changed: 3
+  Source files: arrow/src/main/java/org/apache/iceberg/arrow/vectorized/GenericArrowVectorAccessorFactory.java, spark/v3.5/spark/src/main/java/org/apache/iceberg/spark/data/vectorized/ArrowVectorAccessorFactory.java
+  Test files: spark/v3.5/spark/src/test/java/org/apache/iceberg/spark/data/vectorized/parquet/TestParquetVectorizedReads.java
+  URL: https://github.com/apache/iceberg/pull/13324
+--------------------------------------------------------------------------------
+PR #13425: Core: Support DV for partition stats
+  Author: ajantha-bhat
+  Merged: 2025-07-07 21:40:21
+  Files changed: 4
+  Source files: core/src/main/java/org/apache/iceberg/PartitionStats.java, core/src/main/java/org/apache/iceberg/PartitionStatsHandler.java
+  Test files: core/src/test/java/org/apache/iceberg/PartitionStatsHandlerTestBase.java, orc/src/test/java/org/apache/iceberg/TestOrcPartitionStatsHandler.java
+  URL: https://github.com/apache/iceberg/pull/13425
+--------------------------------------------------------------------------------
+PR #13478: Spark-4.0: Add spark action to compute partition stats
+  Author: ajantha-bhat
+  Merged: 2025-07-07 07:52:14
+  Files changed: 3
+  Source files: spark/v4.0/spark/src/main/java/org/apache/iceberg/spark/actions/ComputePartitionStatsSparkAction.java, spark/v4.0/spark/src/main/java/org/apache/iceberg/spark/actions/SparkActions.java
+  Test files: spark/v4.0/spark/src/test/java/org/apache/iceberg/spark/actions/TestComputePartitionStatsAction.java
+  URL: https://github.com/apache/iceberg/pull/13478
+--------------------------------------------------------------------------------
+PR #13461: [1.9.x] Cherry pick Stop retrying on 502 / 504 
+  Author: singhpk234
+  Merged: 2025-07-03 22:57:11
+  Files changed: 2
+  Source files: core/src/main/java/org/apache/iceberg/rest/ExponentialHttpRequestRetryStrategy.java
+  Test files: core/src/test/java/org/apache/iceberg/rest/TestExponentialHttpRequestRetryStrategy.java
+  URL: https://github.com/apache/iceberg/pull/13461
+--------------------------------------------------------------------------------
+PR #13448: Spark 3.4: Prevent unnecessary failure when executing DML queries with identifier fields
+  Author: szehon-ho
+  Merged: 2025-07-02 23:49:33
+  Files changed: 2
+  Source files: spark/v3.4/spark/src/main/java/org/apache/iceberg/spark/source/SparkScanBuilder.java
+  Test files: spark/v3.4/spark/src/test/java/org/apache/iceberg/spark/source/TestSparkMetadataColumns.java
+  URL: https://github.com/apache/iceberg/pull/13448
+--------------------------------------------------------------------------------
+PR #13435: Spark 3.5, 4.0: Prevent unnecessary failure when executing DML queries with identifier fields
+  Author: szehon-ho
+  Merged: 2025-07-02 01:21:19
+  Files changed: 4
+  Source files: spark/v3.5/spark/src/main/java/org/apache/iceberg/spark/source/SparkScanBuilder.java, spark/v4.0/spark/src/main/java/org/apache/iceberg/spark/source/SparkScanBuilder.java
+  Test files: spark/v3.5/spark/src/test/java/org/apache/iceberg/spark/source/TestSparkMetadataColumns.java, spark/v4.0/spark/src/test/java/org/apache/iceberg/spark/source/TestSparkMetadataColumns.java
+  URL: https://github.com/apache/iceberg/pull/13435
+--------------------------------------------------------------------------------
+PR #13412: CheeryPick 12988 to all Spark version
+  Author: singhpk234
+  Merged: 2025-07-01 23:55:14
+  Files changed: 4
+  Source files: spark/v3.4/spark/src/main/java/org/apache/iceberg/spark/source/SparkMicroBatchStream.java, spark/v4.0/spark/src/main/java/org/apache/iceberg/spark/source/SparkMicroBatchStream.java
+  Test files: spark/v3.4/spark/src/test/java/org/apache/iceberg/spark/source/TestStructuredStreamingRead3.java, spark/v4.0/spark/src/test/java/org/apache/iceberg/spark/source/TestStructuredStreamingRead3.java
+  URL: https://github.com/apache/iceberg/pull/13412
+--------------------------------------------------------------------------------
+PR #13070: Spark, Avro: Add support for row lineage in Avro reader
+  Author: amogh-jahagirdar
+  Merged: 2025-07-01 17:42:16
+  Files changed: 3
+  Source files: core/src/main/java/org/apache/iceberg/avro/ValueReaders.java
+  Test files: spark/v3.5/spark-extensions/src/test/java/org/apache/iceberg/spark/extensions/TestRowLevelOperationsWithLineage.java, spark/v3.5/spark/src/test/java/org/apache/iceberg/spark/data/TestSparkAvroReader.java
+  URL: https://github.com/apache/iceberg/pull/13070
+--------------------------------------------------------------------------------
+PR #13428: GCS: Add Iceberg version to UserAgent in GCS requests
+  Author: shubham-diwakar
+  Merged: 2025-07-01 06:55:43
+  Files changed: 2
+  Source files: gcp/src/main/java/org/apache/iceberg/gcp/gcs/PrefixedStorage.java
+  Test files: gcp/src/test/java/org/apache/iceberg/gcp/gcs/TestPrefixedStorage.java
+  URL: https://github.com/apache/iceberg/pull/13428
+--------------------------------------------------------------------------------
+PR #13436: Spark 3.4: Backport #13061 fix for row lineage inheritance in distributed planning
+  Author: amogh-jahagirdar
+  Merged: 2025-07-01 04:20:58
+  Files changed: 2
+  Source files: spark/v3.4/spark/src/main/java/org/apache/iceberg/spark/actions/ManifestFileBean.java
+  Test files: spark/v3.4/spark-extensions/src/test/java/org/apache/iceberg/spark/extensions/TestRowLevelOperationsWithLineage.java
+  URL: https://github.com/apache/iceberg/pull/13436
+--------------------------------------------------------------------------------
+PR #13345: ICEBERG-13343: fix race condition in JdbcCatalog
+  Author: Claudenw
+  Merged: 2025-06-27 21:14:23
+  Files changed: 4
+  Source files: core/src/main/java/org/apache/iceberg/jdbc/JdbcCatalog.java
+  Test files: core/src/test/java/org/apache/iceberg/jdbc/TestJdbcTableConcurrency.java
+  URL: https://github.com/apache/iceberg/pull/13345
+--------------------------------------------------------------------------------
+PR #12988: Spark: Make maxRecordPerMicrobatch a soft limit
+  Author: singhpk234
+  Merged: 2025-06-27 16:44:38
+  Files changed: 3
+  Source files: spark/v3.5/spark/src/main/java/org/apache/iceberg/spark/source/SparkMicroBatchStream.java
+  Test files: spark/v3.5/spark/src/test/java/org/apache/iceberg/spark/source/TestStructuredStreamingRead3.java
+  URL: https://github.com/apache/iceberg/pull/12988
+--------------------------------------------------------------------------------
+PR #13061: Spark: Fix row lineage inheritance for distributed planning
+  Author: amogh-jahagirdar
+  Merged: 2025-06-27 15:09:53
+  Files changed: 2
+  Source files: spark/v3.5/spark/src/main/java/org/apache/iceberg/spark/actions/ManifestFileBean.java
+  Test files: spark/v3.5/spark-extensions/src/test/java/org/apache/iceberg/spark/extensions/TestRowLevelOperationsWithLineage.java
+  URL: https://github.com/apache/iceberg/pull/13061
+--------------------------------------------------------------------------------
+PR #13329: Core: Fix filed ids of partition stats file
+  Author: ajantha-bhat
+  Merged: 2025-06-25 06:47:26
+  Files changed: 3
+  Source files: core/src/main/java/org/apache/iceberg/PartitionStatsHandler.java
+  Test files: core/src/test/java/org/apache/iceberg/PartitionStatsHandlerTestBase.java, orc/src/test/java/org/apache/iceberg/TestOrcPartitionStatsHandler.java
+  URL: https://github.com/apache/iceberg/pull/13329
+--------------------------------------------------------------------------------
+PR #13167: spark 4.0: SPJ: add bucket reducer using gcd
+  Author: himadripal
+  Merged: 2025-06-19 23:10:57
+  Files changed: 2
+  Source files: spark/v4.0/spark/src/main/java/org/apache/iceberg/spark/functions/BucketFunction.java
+  Test files: spark/v4.0/spark/src/test/java/org/apache/iceberg/spark/sql/TestStoragePartitionedJoins.java
+  URL: https://github.com/apache/iceberg/pull/13167
+--------------------------------------------------------------------------------
+PR #13322: Core: Clean expired metadata even if there is no snapshot to expire
+  Author: lirui-apache
+  Merged: 2025-06-18 20:20:58
+  Files changed: 2
+  Source files: core/src/main/java/org/apache/iceberg/RemoveSnapshots.java
+  Test files: core/src/test/java/org/apache/iceberg/TestRemoveSnapshots.java
+  URL: https://github.com/apache/iceberg/pull/13322
+--------------------------------------------------------------------------------
+PR #13342: Flink: Dynamic Iceberg Sink: Rename method in DynamicRecordGenerator
+  Author: mxm
+  Merged: 2025-06-18 14:10:23
+  Files changed: 4
+  Source files: flink/v2.0/flink/src/main/java/org/apache/iceberg/flink/sink/dynamic/DynamicRecordGenerator.java, flink/v2.0/flink/src/main/java/org/apache/iceberg/flink/sink/dynamic/DynamicRecordProcessor.java
+  Test files: flink/v2.0/flink/src/test/java/org/apache/iceberg/flink/sink/dynamic/TestDynamicIcebergSink.java, flink/v2.0/flink/src/test/java/org/apache/iceberg/flink/sink/dynamic/TestDynamicIcebergSinkPerf.java
+  URL: https://github.com/apache/iceberg/pull/13342
+--------------------------------------------------------------------------------
+PR #13326: Flink: Backports #13260 to Flink 1.19 and 1.20
+  Author: rodmeneses
+  Merged: 2025-06-16 21:53:47
+  Files changed: 4
+  Source files: flink/v1.19/flink/src/main/java/org/apache/iceberg/flink/sink/IcebergSink.java, flink/v1.20/flink/src/main/java/org/apache/iceberg/flink/sink/IcebergSink.java
+  Test files: flink/v1.19/flink/src/test/java/org/apache/iceberg/flink/sink/TestIcebergSink.java, flink/v1.20/flink/src/test/java/org/apache/iceberg/flink/sink/TestIcebergSink.java
+  URL: https://github.com/apache/iceberg/pull/13326
+--------------------------------------------------------------------------------
+PR #13260: Flink: If IcebergSink writeParallelism is not specified, defaults to the input source parallelism
+  Author: rodmeneses
+  Merged: 2025-06-16 20:41:04
+  Files changed: 2
+  Source files: flink/v2.0/flink/src/main/java/org/apache/iceberg/flink/sink/IcebergSink.java
+  Test files: flink/v2.0/flink/src/test/java/org/apache/iceberg/flink/sink/TestIcebergSink.java
+  URL: https://github.com/apache/iceberg/pull/13260
+--------------------------------------------------------------------------------
+PR #13234: REST: Add property for configuring user agent in http client
+  Author: singhpk234
+  Merged: 2025-06-13 19:08:33
+  Files changed: 2
+  Source files: core/src/main/java/org/apache/iceberg/rest/HTTPClient.java
+  Test files: core/src/test/java/org/apache/iceberg/rest/TestHTTPClient.java
+  URL: https://github.com/apache/iceberg/pull/13234
+--------------------------------------------------------------------------------
+PR #13190: [REST] Add option to configure TLS settings in REST client
+  Author: bryanck
+  Merged: 2025-06-04 18:17:07
+  Files changed: 3
+  Source files: core/src/main/java/org/apache/iceberg/rest/HTTPClient.java, core/src/main/java/org/apache/iceberg/rest/auth/TLSConfigurer.java
+  Test files: core/src/test/java/org/apache/iceberg/rest/TestHTTPClient.java
+  URL: https://github.com/apache/iceberg/pull/13190
+--------------------------------------------------------------------------------
+PR #13130: Hive: Throw exception for when listing a non-existing namespace
+  Author: jmelinav
+  Merged: 2025-06-03 05:49:18
+  Files changed: 2
+  Source files: hive-metastore/src/main/java/org/apache/iceberg/hive/HiveCatalog.java
+  Test files: hive-metastore/src/test/java/org/apache/iceberg/hive/TestHiveCatalog.java
+  URL: https://github.com/apache/iceberg/pull/13130
+--------------------------------------------------------------------------------
+PR #13192: Core: Catch IAE when decoding JWT
+  Author: nika-qubit
+  Merged: 2025-06-03 05:47:34
+  Files changed: 2
+  Source files: core/src/main/java/org/apache/iceberg/rest/auth/OAuth2Util.java
+  Test files: core/src/test/java/org/apache/iceberg/rest/auth/TestOAuth2Util.java
+  URL: https://github.com/apache/iceberg/pull/13192
+--------------------------------------------------------------------------------
+PR #13184: API, Core: Rename RowDelta deleteFile to removeRows
+  Author: RussellSpitzer
+  Merged: 2025-06-02 12:55:29
+  Files changed: 3
+  Source files: api/src/main/java/org/apache/iceberg/RowDelta.java, core/src/main/java/org/apache/iceberg/BaseRowDelta.java
+  Test files: core/src/test/java/org/apache/iceberg/TestRowDelta.java
+  URL: https://github.com/apache/iceberg/pull/13184
+--------------------------------------------------------------------------------
+PR #13163: Core: Fix incremental compute of partition stats for various edge cases
+  Author: ajantha-bhat
+  Merged: 2025-05-29 11:20:49
+  Files changed: 3
+  Source files: core/src/main/java/org/apache/iceberg/PartitionStatsHandler.java
+  Test files: core/src/test/java/org/apache/iceberg/PartitionStatsHandlerTestBase.java, orc/src/test/java/org/apache/iceberg/TestOrcPartitionStatsHandler.java
+  URL: https://github.com/apache/iceberg/pull/13163
+--------------------------------------------------------------------------------
+PR #13168: Spark 3.4: streaming-skip-overwrite-snapshots fix
+  Author: wypoon
+  Merged: 2025-05-28 16:35:14
+  Files changed: 2
+  Source files: spark/v3.4/spark/src/main/java/org/apache/iceberg/spark/source/SparkMicroBatchStream.java
+  Test files: spark/v3.4/spark/src/test/java/org/apache/iceberg/spark/source/TestStructuredStreamingRead3.java
+  URL: https://github.com/apache/iceberg/pull/13168
+--------------------------------------------------------------------------------
+PR #13086: Flink: Fix npe in TaskResultAggregator when job recovery
+  Author: Guosmilesmile
+  Merged: 2025-05-23 13:43:35
+  Files changed: 3
+  Source files: flink/v2.0/flink/src/main/java/org/apache/iceberg/flink/maintenance/operator/TaskResultAggregator.java
+  Test files: flink/v2.0/flink/src/test/java/org/apache/iceberg/flink/maintenance/operator/OperatorTestBase.java, flink/v2.0/flink/src/test/java/org/apache/iceberg/flink/maintenance/operator/TestTaskResultAggregator.java
+  URL: https://github.com/apache/iceberg/pull/13086
+--------------------------------------------------------------------------------
+PR #13095: Spark 4.0: Structured Streaming read limit support follow-up
+  Author: wypoon
+  Merged: 2025-05-21 16:39:49
+  Files changed: 2
+  Source files: spark/v4.0/spark/src/main/java/org/apache/iceberg/spark/source/SparkMicroBatchStream.java
+  Test files: spark/v4.0/spark/src/test/java/org/apache/iceberg/spark/source/TestStructuredStreamingRead3.java
+  URL: https://github.com/apache/iceberg/pull/13095
+--------------------------------------------------------------------------------
+PR #13099: Spark 3.4: Structured Streaming read limit support follow-up
+  Author: wypoon
+  Merged: 2025-05-21 15:27:38
+  Files changed: 2
+  Source files: spark/v3.4/spark/src/main/java/org/apache/iceberg/spark/source/SparkMicroBatchStream.java
+  Test files: spark/v3.4/spark/src/test/java/org/apache/iceberg/spark/source/TestStructuredStreamingRead3.java
+  URL: https://github.com/apache/iceberg/pull/13099
+--------------------------------------------------------------------------------
+PR #12855: Core: Deep copy Record values for equality deletes
+  Author: hsingh574
+  Merged: 2025-05-19 17:01:40
+  Files changed: 4
+  Source files: core/src/main/java/org/apache/iceberg/data/GenericRecord.java
+  Test files: data/src/test/java/org/apache/iceberg/data/DeleteReadTests.java, data/src/test/java/org/apache/iceberg/data/TestGenericReaderDeletes.java, data/src/test/java/org/apache/iceberg/data/TestGenericRecord.java
+  URL: https://github.com/apache/iceberg/pull/12855
+--------------------------------------------------------------------------------
+PR #13085: Flink:Backport fix watermark no pass in TaskResultAggregator to Flink 1.19 and 1.20
+  Author: Guosmilesmile
+  Merged: 2025-05-19 11:25:32
+  Files changed: 4
+  Source files: flink/v1.19/flink/src/main/java/org/apache/iceberg/flink/maintenance/operator/TaskResultAggregator.java, flink/v1.20/flink/src/main/java/org/apache/iceberg/flink/maintenance/operator/TaskResultAggregator.java
+  Test files: flink/v1.19/flink/src/test/java/org/apache/iceberg/flink/maintenance/operator/TestTaskResultAggregator.java, flink/v1.20/flink/src/test/java/org/apache/iceberg/flink/maintenance/operator/TestTaskResultAggregator.java
+  URL: https://github.com/apache/iceberg/pull/13085
+--------------------------------------------------------------------------------
+PR #13069: Flink: Fix watermark not passing in TaskResultAggregator
+  Author: Guosmilesmile
+  Merged: 2025-05-16 19:01:00
+  Files changed: 2
+  Source files: flink/v2.0/flink/src/main/java/org/apache/iceberg/flink/maintenance/operator/TaskResultAggregator.java
+  Test files: flink/v2.0/flink/src/test/java/org/apache/iceberg/flink/maintenance/operator/TestTaskResultAggregator.java
+  URL: https://github.com/apache/iceberg/pull/13069
+--------------------------------------------------------------------------------
+PR #13063: Flink: Backport support zookeeper lock in TableMaintenance to Flink 1.19 and 2.0
+  Author: Guosmilesmile
+  Merged: 2025-05-16 18:44:23
+  Files changed: 4
+  Source files: flink/v1.19/flink/src/main/java/org/apache/iceberg/flink/maintenance/api/ZkLockFactory.java, flink/v2.0/flink/src/main/java/org/apache/iceberg/flink/maintenance/api/ZkLockFactory.java
+  Test files: flink/v1.19/flink/src/test/java/org/apache/iceberg/flink/maintenance/api/TestZkLockFactory.java, flink/v2.0/flink/src/test/java/org/apache/iceberg/flink/maintenance/api/TestZkLockFactory.java
+  URL: https://github.com/apache/iceberg/pull/13063
+--------------------------------------------------------------------------------
+PR #12810: Flink: Support zookeeper lock in TableMaintenance
+  Author: Guosmilesmile
+  Merged: 2025-05-15 08:20:05
+  Files changed: 3
+  Source files: flink/v1.20/flink/src/main/java/org/apache/iceberg/flink/maintenance/api/ZkLockFactory.java
+  Test files: flink/v1.20/flink/src/test/java/org/apache/iceberg/flink/maintenance/api/TestZkLockFactory.java
+  URL: https://github.com/apache/iceberg/pull/12810
+--------------------------------------------------------------------------------
+PR #13051: Arrow: Avoid deprecated ArrowType.Decimal constructor
+  Author: ebyhr
+  Merged: 2025-05-14 14:00:44
+  Files changed: 2
+  Source files: arrow/src/main/java/org/apache/iceberg/arrow/ArrowSchemaUtil.java
+  Test files: arrow/src/test/java/org/apache/iceberg/arrow/vectorized/ArrowReaderTest.java
+  URL: https://github.com/apache/iceberg/pull/13051
+--------------------------------------------------------------------------------
+PR #13001: Parquet: Fix to ensure that last updated sequence numbers for V2 and earlier tables are null
+  Author: amogh-jahagirdar
+  Merged: 2025-05-12 19:49:46
+  Files changed: 2
+  Source files: parquet/src/main/java/org/apache/iceberg/parquet/ParquetValueReaders.java
+  Test files: spark/v3.5/spark/src/test/java/org/apache/iceberg/spark/source/TestSparkMetadataColumns.java
+  URL: https://github.com/apache/iceberg/pull/13001
+--------------------------------------------------------------------------------
+PR #12861: API, Core: Add deleteFile to RowDelta API
+  Author: RussellSpitzer
+  Merged: 2025-05-06 16:09:35
+  Files changed: 3
+  Source files: api/src/main/java/org/apache/iceberg/RowDelta.java, core/src/main/java/org/apache/iceberg/BaseRowDelta.java
+  Test files: core/src/test/java/org/apache/iceberg/TestRowDelta.java
+  URL: https://github.com/apache/iceberg/pull/12861
+--------------------------------------------------------------------------------
+PR #12933: Follow up to address comments in variant array writer
+  Author: aihuaxu
+  Merged: 2025-04-30 18:22:22
+  Files changed: 2
+  Source files: parquet/src/main/java/org/apache/iceberg/parquet/ParquetVariantUtil.java
+  Test files: parquet/src/test/java/org/apache/iceberg/parquet/TestVariantWriters.java
+  URL: https://github.com/apache/iceberg/pull/12933
+--------------------------------------------------------------------------------
+PR #12929: Flink: Backport Add lockFactory open in LockRemover for table maintenance to Flink 1.20 and 1.19
+  Author: Guosmilesmile
+  Merged: 2025-04-30 10:47:10
+  Files changed: 4
+  Source files: flink/v1.19/flink/src/main/java/org/apache/iceberg/flink/maintenance/operator/LockRemover.java, flink/v1.20/flink/src/main/java/org/apache/iceberg/flink/maintenance/operator/LockRemover.java
+  Test files: flink/v1.19/flink/src/test/java/org/apache/iceberg/flink/maintenance/operator/TestLockRemover.java, flink/v1.20/flink/src/test/java/org/apache/iceberg/flink/maintenance/operator/TestLockRemover.java
+  URL: https://github.com/apache/iceberg/pull/12929
+--------------------------------------------------------------------------------
+PR #12900: Flink: Add lockFactory open in LockRemover  for table maintenance
+  Author: Guosmilesmile
+  Merged: 2025-04-29 10:03:46
+  Files changed: 2
+  Source files: flink/v2.0/flink/src/main/java/org/apache/iceberg/flink/maintenance/operator/LockRemover.java
+  Test files: flink/v2.0/flink/src/test/java/org/apache/iceberg/flink/maintenance/operator/TestLockRemover.java
+  URL: https://github.com/apache/iceberg/pull/12900
+--------------------------------------------------------------------------------
+PR #12899: Flink: Backport add StreamingStartingStrategy.INCREMENTAL_FROM_LATEST_SNAPSHOT_EXCLUSIVE to Flink 1.19
+  Author: morhidi
+  Merged: 2025-04-28 15:54:56
+  Files changed: 4
+  Source files: flink/v1.19/flink/src/main/java/org/apache/iceberg/flink/source/StreamingStartingStrategy.java, flink/v1.19/flink/src/main/java/org/apache/iceberg/flink/source/enumerator/ContinuousSplitPlannerImpl.java
+  Test files: flink/v1.19/flink/src/test/java/org/apache/iceberg/flink/source/enumerator/TestContinuousSplitPlannerImpl.java, flink/v1.19/flink/src/test/java/org/apache/iceberg/flink/source/enumerator/TestContinuousSplitPlannerImplStartStrategy.java
+  URL: https://github.com/apache/iceberg/pull/12899
+--------------------------------------------------------------------------------
+PR #12821: Core: Ensure reactivated view version uses correct timestamp
+  Author: lliangyu-lin
+  Merged: 2025-04-25 07:39:42
+  Files changed: 3
+  Source files: core/src/main/java/org/apache/iceberg/view/ViewMetadata.java
+  Test files: core/src/test/java/org/apache/iceberg/view/TestViewMetadata.java, core/src/test/java/org/apache/iceberg/view/TestViewMetadataParser.java
+  URL: https://github.com/apache/iceberg/pull/12821
+--------------------------------------------------------------------------------
+PR #12882: Core: Fix Kryo ser/de with StorageCredential config
+  Author: nastra
+  Merged: 2025-04-24 07:50:43
+  Files changed: 4
+  Source files: core/src/main/java/org/apache/iceberg/io/StorageCredential.java
+  Test files: aws/src/integration/java/org/apache/iceberg/aws/s3/TestS3FileIO.java, core/src/test/java/org/apache/iceberg/io/TestStorageCredential.java, gcp/src/test/java/org/apache/iceberg/gcp/gcs/GCSFileIOTest.java
+  URL: https://github.com/apache/iceberg/pull/12882
+--------------------------------------------------------------------------------
+PR #12872: Spark3.4: BackPort Add Parallelism Parameter Validation to AddFilesProcedure.
+  Author: slfan1989
+  Merged: 2025-04-23 07:59:40
+  Files changed: 2
+  Source files: spark/v3.4/spark/src/main/java/org/apache/iceberg/spark/procedures/AddFilesProcedure.java
+  Test files: spark/v3.4/spark-extensions/src/test/java/org/apache/iceberg/spark/extensions/TestAddFilesProcedure.java
+  URL: https://github.com/apache/iceberg/pull/12872
+--------------------------------------------------------------------------------
+PR #12784: Spark 3.5: Add Parallelism Parameter Validation to AddFilesProcedure.
+  Author: slfan1989
+  Merged: 2025-04-22 06:57:19
+  Files changed: 2
+  Source files: spark/v3.5/spark/src/main/java/org/apache/iceberg/spark/procedures/AddFilesProcedure.java
+  Test files: spark/v3.5/spark-extensions/src/test/java/org/apache/iceberg/spark/extensions/TestAddFilesProcedure.java
+  URL: https://github.com/apache/iceberg/pull/12784
+--------------------------------------------------------------------------------
+PR #12811: [1.8.x] AWS: Don't fetch credential from endpoint if properties contain a valid credential (#12504)
+  Author: nastra
+  Merged: 2025-04-16 15:35:10
+  Files changed: 2
+  Source files: aws/src/main/java/org/apache/iceberg/aws/s3/VendedCredentialsProvider.java
+  Test files: aws/src/test/java/org/apache/iceberg/aws/s3/TestVendedCredentialsProvider.java
+  URL: https://github.com/apache/iceberg/pull/12811
+--------------------------------------------------------------------------------
+PR #12801: Flink: backport fix TriggerManager to unlock task execution when previous job left an orphaned lock for Flink 1.19
+  Author: Guosmilesmile
+  Merged: 2025-04-15 12:58:05
+  Files changed: 2
+  Source files: flink/v1.19/flink/src/main/java/org/apache/iceberg/flink/maintenance/operator/TriggerManager.java
+  Test files: flink/v1.19/flink/src/test/java/org/apache/iceberg/flink/maintenance/operator/TestTriggerManager.java
+  URL: https://github.com/apache/iceberg/pull/12801
+--------------------------------------------------------------------------------
+PR #12794: Flink: Fix TriggerManager to unlock task execution when previous job left an orphaned lock
+  Author: Guosmilesmile
+  Merged: 2025-04-15 12:01:54
+  Files changed: 2
+  Source files: flink/v1.20/flink/src/main/java/org/apache/iceberg/flink/maintenance/operator/TriggerManager.java
+  Test files: flink/v1.20/flink/src/test/java/org/apache/iceberg/flink/maintenance/operator/TestTriggerManager.java
+  URL: https://github.com/apache/iceberg/pull/12794
+--------------------------------------------------------------------------------

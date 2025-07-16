@@ -1,0 +1,68 @@
+
+Results:
+Found 9 PRs with 2-4 file changes that include test classes, merged after November 2024:
+
+--------------------------------------------------------------------------------
+PR #3626: Update mypy
+  Author: hramezani
+  Merged: 2025-06-19 07:39:00
+  Files changed: 3
+  Test files: test/contrib/test_socks.py
+  URL: https://github.com/urllib3/urllib3/pull/3626
+--------------------------------------------------------------------------------
+PR #3620: Fix IPv6 tunnel_host when using connection_from_host with python < 3.11.9
+  Author: xNinjaKittyx
+  Merged: 2025-06-18 13:22:30
+  Files changed: 4
+  Test files: test/with_dummyserver/test_socketlevel.py
+  URL: https://github.com/urllib3/urllib3/pull/3620
+--------------------------------------------------------------------------------
+PR #3601: Raise exception for shutdown on a connection already released to the pool
+  Author: alexprabhat99
+  Merged: 2025-06-15 06:45:25
+  Files changed: 3
+  Test files: test/with_dummyserver/test_connectionpool.py
+  URL: https://github.com/urllib3/urllib3/pull/3601
+--------------------------------------------------------------------------------
+PR #3599: Fix emscripten CI for Chrome 137+
+  Author: joemarshall
+  Merged: 2025-06-05 13:02:10
+  Files changed: 2
+  Test files: test/contrib/emscripten/conftest.py
+  URL: https://github.com/urllib3/urllib3/pull/3599
+--------------------------------------------------------------------------------
+PR #3596: Delete ci/0001-requests-test-cert-key-usage.patch
+  Author: illia-v
+  Merged: 2025-04-20 21:23:37
+  Files changed: 2
+  Test files: ci/0001-requests-test-cert-key-usage.patch
+  URL: https://github.com/urllib3/urllib3/pull/3596
+--------------------------------------------------------------------------------
+PR #3572: Add some context previously lost during the pickle process
+  Author: csm10495
+  Merged: 2025-03-06 22:25:27
+  Files changed: 3
+  Test files: test/test_exceptions.py
+  URL: https://github.com/urllib3/urllib3/pull/3572
+--------------------------------------------------------------------------------
+PR #3556: fixed bug in emscripten requests
+  Author: joemarshall
+  Merged: 2025-02-25 20:17:39
+  Files changed: 3
+  Test files: test/contrib/emscripten/test_emscripten.py
+  URL: https://github.com/urllib3/urllib3/pull/3556
+--------------------------------------------------------------------------------
+PR #3551: Fix nonexistent wheel and CORS errors in the Pyodide console
+  Author: illia-v
+  Merged: 2025-01-20 04:56:39
+  Files changed: 2
+  Test files: test/contrib/emscripten/templates/pyodide-console.html
+  URL: https://github.com/urllib3/urllib3/pull/3551
+--------------------------------------------------------------------------------
+PR #3517: Bump mypy version
+  Author: hramezani
+  Merged: 2024-11-12 20:08:54
+  Files changed: 4
+  Test files: test/test_response.py, test/test_ssltransport.py, test/with_dummyserver/test_proxy_poolmanager.py
+  URL: https://github.com/urllib3/urllib3/pull/3517
+--------------------------------------------------------------------------------

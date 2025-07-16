@@ -1,0 +1,146 @@
+
+Results:
+Found 20 PRs with 2-4 file changes that include test classes, merged after November 2024:
+
+--------------------------------------------------------------------------------
+Note: Analysis stopped after finding 20 matching PRs.
+PR #7577: [#7576] improvement(authz): Improve the authorization expression
+  Author: hdygxsj
+  Merged: 2025-07-07 06:16:44
+  Files changed: 4
+  Test files: server-common/src/test/java/org/apache/gravitino/server/authorization/expression/TestAuthorizationExpressionConverter.java
+  URL: https://github.com/apache/gravitino/pull/7577
+--------------------------------------------------------------------------------
+PR #7569: [#7516] fix: Ensure that converting a string to a namespace validates all input
+  Author: github-actions[bot]
+  Merged: 2025-07-04 04:38:11
+  Files changed: 2
+  Test files: api/src/test/java/org/apache/gravitino/TestNamespace.java
+  URL: https://github.com/apache/gravitino/pull/7569
+--------------------------------------------------------------------------------
+PR #7535: [#7516] fix: Ensure that converting a string to a namespace validates all input
+  Author: Jackeyzhe
+  Merged: 2025-07-04 03:26:31
+  Files changed: 2
+  Test files: api/src/test/java/org/apache/gravitino/TestNamespace.java
+  URL: https://github.com/apache/gravitino/pull/7535
+--------------------------------------------------------------------------------
+PR #7544: [#7515] feat(core): Improve fromComment in StringIdentifier
+  Author: senlizishi
+  Merged: 2025-07-04 03:24:32
+  Files changed: 2
+  Test files: core/src/test/java/org/apache/gravitino/TestStringIdentifier.java
+  URL: https://github.com/apache/gravitino/pull/7544
+--------------------------------------------------------------------------------
+PR #7537: [#7514] fix: Use model_version_response as the correct name
+  Author: mingdaoy
+  Merged: 2025-07-02 03:14:54
+  Files changed: 4
+  Test files: clients/client-python/tests/unittests/test_model_catalog_api.py, clients/client-python/tests/unittests/test_responses.py
+  URL: https://github.com/apache/gravitino/pull/7537
+--------------------------------------------------------------------------------
+PR #7434: [#7427] feat(iceberg): support oauth for dynamic config provider
+  Author: FANNG1
+  Merged: 2025-07-01 09:42:04
+  Files changed: 4
+  Test files: iceberg/iceberg-rest-server/src/test/java/org/apache/gravitino/iceberg/service/provider/TestDynamicIcebergConfigProvider.java
+  URL: https://github.com/apache/gravitino/pull/7434
+--------------------------------------------------------------------------------
+PR #7497: [#5202] refactor(client-python): fix builder method of ColumnDTO
+  Author: tsungchih
+  Merged: 2025-07-01 02:08:21
+  Files changed: 4
+  Test files: clients/client-python/tests/unittests/dto/rel/test_column_dto.py, clients/client-python/tests/unittests/dto/rel/test_function_arg.py, clients/client-python/tests/unittests/dto/rel/test_partition_utils.py
+  URL: https://github.com/apache/gravitino/pull/7497
+--------------------------------------------------------------------------------
+PR #7459: [#7179] improvement(core): Remove old cached System
+  Author: Abyss-lord
+  Merged: 2025-06-30 01:34:46
+  Files changed: 3
+  Test files: core/src/test/java/org/apache/gravitino/metalake/TestMetalakeManager.java
+  URL: https://github.com/apache/gravitino/pull/7459
+--------------------------------------------------------------------------------
+PR #7463: [MINOR] fix(core): Fix UT for cache
+  Author: Abyss-lord
+  Merged: 2025-06-25 06:29:38
+  Files changed: 3
+  Test files: core/src/test/java/org/apache/gravitino/cache/TestCaffeineEntityCache.java
+  URL: https://github.com/apache/gravitino/pull/7463
+--------------------------------------------------------------------------------
+PR #7447: [#7177] feat(core): Add more test case for CaffeineEntityCache
+  Author: Abyss-lord
+  Merged: 2025-06-23 03:51:16
+  Files changed: 3
+  Test files: core/src/test/java/org/apache/gravitino/cache/TestCacheConfig.java, core/src/test/java/org/apache/gravitino/cache/TestCaffeineEntityCache.java
+  URL: https://github.com/apache/gravitino/pull/7447
+--------------------------------------------------------------------------------
+PR #7376: [#6786] fix(authz): modify querying roles by user in ROLE_USER_REL relation for JcasbinAuthorizer
+  Author: KyleLin0927
+  Merged: 2025-06-19 02:09:47
+  Files changed: 4
+  Test files: server-common/src/test/java/org/apache/gravitino/server/authorization/jcasbin/TestJcasbinAuthorizer.java
+  URL: https://github.com/apache/gravitino/pull/7376
+--------------------------------------------------------------------------------
+PR #7433: [#7415] fix(core): Use doWithCommitAndFetchResult in deleteColumnsByLegacyTimeline
+  Author: github-actions[bot]
+  Merged: 2025-06-19 00:51:08
+  Files changed: 2
+  Test files: core/src/test/java/org/apache/gravitino/storage/relational/service/TestTableColumnMetaService.java
+  URL: https://github.com/apache/gravitino/pull/7433
+--------------------------------------------------------------------------------
+PR #7428: [#7415] fix(core): Use doWithCommitAndFetchResult in deleteColumnsByLegacyTimeline
+  Author: carl239
+  Merged: 2025-06-18 13:18:55
+  Files changed: 2
+  Test files: core/src/test/java/org/apache/gravitino/storage/relational/service/TestTableColumnMetaService.java
+  URL: https://github.com/apache/gravitino/pull/7428
+--------------------------------------------------------------------------------
+PR #7419: [#7416] fix(catalog-hive): Fix empty bypass key handling in HiveCatalogOperations
+  Author: github-actions[bot]
+  Merged: 2025-06-17 19:13:47
+  Files changed: 2
+  Test files: catalogs/catalog-hive/src/test/java/org/apache/gravitino/catalog/hive/TestHiveCatalogOperations.java
+  URL: https://github.com/apache/gravitino/pull/7419
+--------------------------------------------------------------------------------
+PR #7417: [#7416] fix(catalog-hive): Fix empty bypass key handling in HiveCatalogOperations
+  Author: carl239
+  Merged: 2025-06-17 16:13:10
+  Files changed: 2
+  Test files: catalogs/catalog-hive/src/test/java/org/apache/gravitino/catalog/hive/TestHiveCatalogOperations.java
+  URL: https://github.com/apache/gravitino/pull/7417
+--------------------------------------------------------------------------------
+PR #7349: [#6783] feat(core): Introduce the MetadataIdConverter for converting between names and id
+  Author: Abyss-lord
+  Merged: 2025-06-16 08:51:45
+  Files changed: 3
+  Test files: server-common/src/test/java/org/apache/gravitino/server/authorization/TestMetadataIdConverter.java
+  URL: https://github.com/apache/gravitino/pull/7349
+--------------------------------------------------------------------------------
+PR #7375: [#7371] fix(fileset): fix get file location with multiple locations
+  Author: github-actions[bot]
+  Merged: 2025-06-12 06:45:13
+  Files changed: 2
+  Test files: catalogs/catalog-hadoop/src/test/java/org/apache/gravitino/catalog/hadoop/TestHadoopCatalogOperations.java
+  URL: https://github.com/apache/gravitino/pull/7375
+--------------------------------------------------------------------------------
+PR #7372: [#7371] fix(fileset): fix get file location with multiple locations
+  Author: xiaozcy
+  Merged: 2025-06-11 15:00:46
+  Files changed: 2
+  Test files: catalogs/catalog-hadoop/src/test/java/org/apache/gravitino/catalog/hadoop/TestHadoopCatalogOperations.java
+  URL: https://github.com/apache/gravitino/pull/7372
+--------------------------------------------------------------------------------
+PR #7356: [#6860] docs: add OpenAPI docs for fileset/files
+  Author: github-actions[bot]
+  Merged: 2025-06-08 12:49:33
+  Files changed: 4
+  Test files: catalogs/catalog-hadoop/src/test/java/org/apache/gravitino/catalog/hadoop/integration/test/HadoopCatalogIT.java
+  URL: https://github.com/apache/gravitino/pull/7356
+--------------------------------------------------------------------------------
+PR #7343: [#7190] fix(catalogs): Validate and filter empty storageLocations in HadoopCatalogOperations
+  Author: github-actions[bot]
+  Merged: 2025-06-05 09:56:04
+  Files changed: 2
+  Test files: catalogs/catalog-hadoop/src/test/java/org/apache/gravitino/catalog/hadoop/TestHadoopCatalogOperations.java
+  URL: https://github.com/apache/gravitino/pull/7343
+--------------------------------------------------------------------------------

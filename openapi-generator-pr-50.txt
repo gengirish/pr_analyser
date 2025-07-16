@@ -1,0 +1,261 @@
+
+Results:
+Found 32 PRs with 2-4 file changes that include both source code files and test classes, merged after November 2024:
+
+--------------------------------------------------------------------------------
+PR #21536: [req] Allow models and apis list properties to span multi-lines and i…
+  Author: btpnlsl
+  Merged: 2025-07-10 08:41:05
+  Files changed: 2
+  Source files: modules/openapi-generator/src/main/java/org/openapitools/codegen/DefaultGenerator.java
+  Test files: modules/openapi-generator/src/test/java/org/openapitools/codegen/DefaultGeneratorTest.java
+  URL: https://github.com/OpenAPITools/openapi-generator/pull/21536
+--------------------------------------------------------------------------------
+PR #21532: DefaultCodegenTest use same test engine for all tests
+  Author: Mattias-Sehlstedt
+  Merged: 2025-07-10 08:40:47
+  Files changed: 2
+  Source files: samples/openapi3/server/petstore/spring-boot-oneof-sealed/src/main/java/org/openapitools/model/Fruit.java
+  Test files: modules/openapi-generator/src/test/java/org/openapitools/codegen/DefaultCodegenTest.java
+  URL: https://github.com/OpenAPITools/openapi-generator/pull/21532
+--------------------------------------------------------------------------------
+PR #21405: Restricted Java oneOf imports to Jackson only when needed (#21404)
+  Author: DavidGrath
+  Merged: 2025-06-26 09:12:37
+  Files changed: 3
+  Source files: modules/openapi-generator/src/main/java/org/openapitools/codegen/languages/JavaClientCodegen.java, modules/openapi-generator/src/main/java/org/openapitools/codegen/languages/JavaHelidonClientCodegen.java
+  Test files: modules/openapi-generator/src/test/java/org/openapitools/codegen/java/JavaClientCodegenTest.java
+  URL: https://github.com/OpenAPITools/openapi-generator/pull/21405
+--------------------------------------------------------------------------------
+PR #21459: [BUG][Kotlin] fix: kotlin code generator should sanitize enum values according to convention
+  Author: msnteixeira
+  Merged: 2025-06-25 15:43:31
+  Files changed: 2
+  Source files: modules/openapi-generator/src/main/java/org/openapitools/codegen/languages/AbstractKotlinCodegen.java
+  Test files: modules/openapi-generator/src/test/java/org/openapitools/codegen/kotlin/AbstractKotlinCodegenTest.java
+  URL: https://github.com/OpenAPITools/openapi-generator/pull/21459
+--------------------------------------------------------------------------------
+PR #21396: [rust-axum] Prevent multiple declarations of the same operation
+  Author: rgroothuijsen
+  Merged: 2025-06-16 02:35:04
+  Files changed: 3
+  Source files: modules/openapi-generator/src/main/java/org/openapitools/codegen/languages/RustAxumServerCodegen.java
+  Test files: modules/openapi-generator/src/test/java/org/openapitools/codegen/rust/RustAxumServerCodegenTest.java, modules/openapi-generator/src/test/resources/3_1/issue_21144.yaml
+  URL: https://github.com/OpenAPITools/openapi-generator/pull/21396
+--------------------------------------------------------------------------------
+PR #21372: Replace periods with '_DOT_' in Python enum member names
+  Author: pcaisse
+  Merged: 2025-06-04 07:18:58
+  Files changed: 2
+  Source files: modules/openapi-generator/src/main/java/org/openapitools/codegen/languages/AbstractPythonCodegen.java
+  Test files: modules/openapi-generator/src/test/resources/3_0/enum_float.yaml
+  URL: https://github.com/OpenAPITools/openapi-generator/pull/21372
+--------------------------------------------------------------------------------
+PR #21278: [JAVA] Correct generation of schema default values of type object
+  Author: DavidGrath
+  Merged: 2025-05-25 10:34:42
+  Files changed: 3
+  Source files: modules/openapi-generator/src/main/java/org/openapitools/codegen/languages/AbstractJavaCodegen.java
+  Test files: modules/openapi-generator/src/test/java/org/openapitools/codegen/java/JavaClientCodegenTest.java, modules/openapi-generator/src/test/resources/3_1/issue_21051.yaml
+  URL: https://github.com/OpenAPITools/openapi-generator/pull/21278
+--------------------------------------------------------------------------------
+PR #21305: Add tests for cpp-restsdk client
+  Author: wing328
+  Merged: 2025-05-20 08:45:49
+  Files changed: 3
+  Source files: samples/client/petstore/cpp-restsdk/client/include/CppRestPetstoreClient/model/Page.h, samples/client/petstore/cpp-restsdk/client/src/model/Page.cpp
+  Test files: modules/openapi-generator/src/test/resources/3_0/cpp-restsdk/petstore.yaml
+  URL: https://github.com/OpenAPITools/openapi-generator/pull/21305
+--------------------------------------------------------------------------------
+PR #20839: Enhancement: Allow MergedSpecBuilder title, version and description to be configured to fix [#20822]
+  Author: saulgillEST
+  Merged: 2025-04-25 08:44:41
+  Files changed: 2
+  Source files: modules/openapi-generator-maven-plugin/src/main/java/org/openapitools/codegen/plugin/CodeGenMojo.java
+  Test files: modules/openapi-generator/src/main/java/org/openapitools/codegen/config/MergedSpecBuilder.java
+  URL: https://github.com/OpenAPITools/openapi-generator/pull/20839
+--------------------------------------------------------------------------------
+PR #20970: fix(fastapi): use correct impl & package vars on custom user values
+  Author: hegerdes
+  Merged: 2025-04-23 07:57:21
+  Files changed: 2
+  Source files: modules/openapi-generator/src/main/java/org/openapitools/codegen/languages/PythonFastAPIServerCodegen.java
+  Test files: modules/openapi-generator/src/test/java/org/openapitools/codegen/python/PythonFastapiCodegenTest.java
+  URL: https://github.com/OpenAPITools/openapi-generator/pull/20970
+--------------------------------------------------------------------------------
+PR #21113: [fix][elixir] faulty free-form object type spec
+  Author: efcasado
+  Merged: 2025-04-23 06:17:10
+  Files changed: 4
+  Source files: modules/openapi-generator/src/main/java/org/openapitools/codegen/languages/ElixirClientCodegen.java
+  Test files: modules/openapi-generator/src/test/resources/3_0/elixir/petstore-with-fake-endpoints-models-for-testing.yaml
+  URL: https://github.com/OpenAPITools/openapi-generator/pull/21113
+--------------------------------------------------------------------------------
+PR #20995: Make the OpenAPINormalizer extensible
+  Author: jpfinne
+  Merged: 2025-04-11 11:19:57
+  Files changed: 4
+  Source files: modules/openapi-generator/src/main/java/org/openapitools/codegen/DefaultGenerator.java, modules/openapi-generator/src/main/java/org/openapitools/codegen/OpenAPINormalizer.java
+  Test files: modules/openapi-generator/src/test/java/org/openapitools/codegen/OpenAPINormalizerTest.java
+  URL: https://github.com/OpenAPITools/openapi-generator/pull/20995
+--------------------------------------------------------------------------------
+PR #21021: Fix single quote escaping for python code generator (and its test)
+  Author: curdbecker
+  Merged: 2025-04-07 17:10:10
+  Files changed: 2
+  Source files: modules/openapi-generator/src/main/java/org/openapitools/codegen/languages/AbstractPythonCodegen.java
+  Test files: modules/openapi-generator/src/test/java/org/openapitools/codegen/python/PythonClientCodegenTest.java
+  URL: https://github.com/OpenAPITools/openapi-generator/pull/21021
+--------------------------------------------------------------------------------
+PR #20860: Add support for normalizing bearerAuth
+  Author: cbascom
+  Merged: 2025-03-24 11:39:41
+  Files changed: 3
+  Source files: modules/openapi-generator/src/main/java/org/openapitools/codegen/OpenAPINormalizer.java
+  Test files: modules/openapi-generator/src/test/java/org/openapitools/codegen/OpenAPINormalizerTest.java
+  URL: https://github.com/OpenAPITools/openapi-generator/pull/20860
+--------------------------------------------------------------------------------
+PR #20744: fix(openapi-generator): fixes GlobalSettings
+  Author: cagliostro92
+  Merged: 2025-03-16 14:03:04
+  Files changed: 2
+  Source files: modules/openapi-generator/src/main/java/org/openapitools/codegen/config/GlobalSettings.java
+  Test files: modules/openapi-generator/src/test/java/org/openapitools/codegen/config/GlobalSettingsTest.java
+  URL: https://github.com/OpenAPITools/openapi-generator/pull/20744
+--------------------------------------------------------------------------------
+PR #20846: Fix operationId mapping
+  Author: wing328
+  Merged: 2025-03-12 12:28:18
+  Files changed: 3
+  Source files: modules/openapi-generator/src/main/java/org/openapitools/codegen/DefaultCodegen.java
+  Test files: modules/openapi-generator/src/test/java/org/openapitools/codegen/DefaultCodegenTest.java, modules/openapi-generator/src/test/resources/3_0/type-alias.yaml
+  URL: https://github.com/OpenAPITools/openapi-generator/pull/20846
+--------------------------------------------------------------------------------
+PR #20801: Add tag and method filters during generation
+  Author: tyler-mairose-sp
+  Merged: 2025-03-05 17:49:47
+  Files changed: 3
+  Source files: modules/openapi-generator/src/main/java/org/openapitools/codegen/OpenAPINormalizer.java
+  Test files: modules/openapi-generator/src/test/java/org/openapitools/codegen/OpenAPINormalizerTest.java
+  URL: https://github.com/OpenAPITools/openapi-generator/pull/20801
+--------------------------------------------------------------------------------
+PR #20689: [Rust] Fix enum variant name generation
+  Author: whirm
+  Merged: 2025-02-26 08:57:43
+  Files changed: 3
+  Source files: modules/openapi-generator/src/main/java/org/openapitools/codegen/languages/RustAxumServerCodegen.java
+  Test files: modules/openapi-generator/src/test/resources/3_0/rust-axum/rust-axum-oneof.yaml
+  URL: https://github.com/OpenAPITools/openapi-generator/pull/20689
+--------------------------------------------------------------------------------
+PR #20713: Add openapi-normalizer rule to set tags to vendor extension
+  Author: abrevet-dev
+  Merged: 2025-02-26 08:18:17
+  Files changed: 4
+  Source files: modules/openapi-generator/src/main/java/org/openapitools/codegen/OpenAPINormalizer.java
+  Test files: modules/openapi-generator/src/test/java/org/openapitools/codegen/OpenAPINormalizerTest.java, modules/openapi-generator/src/test/resources/3_0/enableSetTagsToVendorExtension_test.yaml
+  URL: https://github.com/OpenAPITools/openapi-generator/pull/20713
+--------------------------------------------------------------------------------
+PR #20699: [typescript] Prevent generating invalid enum code due to empty variable names
+  Author: moznion
+  Merged: 2025-02-25 11:58:28
+  Files changed: 3
+  Source files: modules/openapi-generator/src/main/java/org/openapitools/codegen/languages/TypeScriptClientCodegen.java
+  Test files: modules/openapi-generator/src/test/java/org/openapitools/codegen/typescript/TypeScriptClientCodegenTest.java, modules/openapi-generator/src/test/resources/bugs/typescript_enum_var_name_all_sanitized.yaml
+  URL: https://github.com/OpenAPITools/openapi-generator/pull/20699
+--------------------------------------------------------------------------------
+PR #20691: Java client codegen cleanup
+  Author: ronreynolds
+  Merged: 2025-02-20 10:16:41
+  Files changed: 2
+  Source files: modules/openapi-generator/src/main/java/org/openapitools/codegen/languages/JavaClientCodegen.java
+  Test files: modules/openapi-generator/src/test/java/org/openapitools/codegen/java/JavaClientCodegenTest.java
+  URL: https://github.com/OpenAPITools/openapi-generator/pull/20691
+--------------------------------------------------------------------------------
+PR #20693: Fix #20692 [typescript-angular] Support enumDescription / x-enum-descriptions
+  Author: cmunier
+  Merged: 2025-02-20 10:04:00
+  Files changed: 4
+  Source files: samples/client/others/typescript-angular/builds/composed-schemas-tagged-unions/model/dogBreed.ts, samples/client/others/typescript-angular/builds/composed-schemas/model/dogBreed.ts
+  Test files: modules/openapi-generator/src/test/resources/3_0/typescript-angular/composed-schemas.yaml
+  URL: https://github.com/OpenAPITools/openapi-generator/pull/20693
+--------------------------------------------------------------------------------
+PR #20516: fix: CodeGen correctly produces yyyy-mm-dd format for date with examples
+  Author: Zemke
+  Merged: 2025-02-09 16:11:01
+  Files changed: 2
+  Source files: modules/openapi-generator/src/main/java/org/openapitools/codegen/languages/AbstractJavaCodegen.java
+  Test files: modules/openapi-generator/src/test/java/org/openapitools/codegen/java/AbstractJavaCodegenTest.java
+  URL: https://github.com/OpenAPITools/openapi-generator/pull/20516
+--------------------------------------------------------------------------------
+PR #20568: [swift][bug] Fix generation of cases with associated values (#20560)
+  Author: janodev
+  Merged: 2025-02-01 22:35:50
+  Files changed: 4
+  Source files: modules/openapi-generator/src/main/java/org/openapitools/codegen/languages/Swift6ClientCodegen.java
+  Test files: modules/openapi-generator/src/test/java/org/openapitools/codegen/swift6/Swift6ClientCodegenTest.java, modules/openapi-generator/src/test/resources/bugs/issue_20560.yaml
+  URL: https://github.com/OpenAPITools/openapi-generator/pull/20568
+--------------------------------------------------------------------------------
+PR #20391: On enum name sanitize, convert colon to underscore
+  Author: AntoineDuComptoirDesPharmacies
+  Merged: 2025-01-06 11:43:05
+  Files changed: 4
+  Source files: modules/openapi-generator/src/main/java/org/openapitools/codegen/DefaultCodegen.java, modules/openapi-generator/src/main/java/org/openapitools/codegen/languages/CrystalClientCodegen.java
+  Test files: modules/openapi-generator/src/test/java/org/openapitools/codegen/java/JavaModelTest.java, modules/openapi-generator/src/test/java/org/openapitools/codegen/typescript/fetch/TypeScriptFetchClientCodegenTest.java
+  URL: https://github.com/OpenAPITools/openapi-generator/pull/20391
+--------------------------------------------------------------------------------
+PR #20292: [python,aiohttp] Don't create persistent aiohttp.ClientSession in __init__
+  Author: dcermak
+  Merged: 2024-12-15 09:11:35
+  Files changed: 3
+  Source files: samples/openapi3/client/petstore/python-aiohttp/petstore_api/rest.py
+  Test files: samples/openapi3/client/petstore/python-aiohttp/tests/test_api_client.py
+  URL: https://github.com/OpenAPITools/openapi-generator/pull/20292
+--------------------------------------------------------------------------------
+PR #20310: Fix bug in common path prefix calculation in Helidon generators
+  Author: tjquinno
+  Merged: 2024-12-14 06:12:27
+  Files changed: 2
+  Source files: modules/openapi-generator/src/main/java/org/openapitools/codegen/languages/JavaHelidonCommonCodegen.java
+  Test files: modules/openapi-generator/src/test/java/org/openapitools/codegen/languages/HelidonCommonCodegenTest.java
+  URL: https://github.com/OpenAPITools/openapi-generator/pull/20310
+--------------------------------------------------------------------------------
+PR #20109: [typescript-fetch] [BUG] Fix duplication of ModelNamePrefix in import statements
+  Author: ASterdyniak
+  Merged: 2024-12-06 10:02:18
+  Files changed: 2
+  Source files: modules/openapi-generator/src/main/java/org/openapitools/codegen/languages/TypeScriptFetchClientCodegen.java
+  Test files: modules/openapi-generator/src/test/java/org/openapitools/codegen/typescript/fetch/TypeScriptFetchClientCodegenTest.java
+  URL: https://github.com/OpenAPITools/openapi-generator/pull/20109
+--------------------------------------------------------------------------------
+PR #20189: Trim the input of operationId filter in OpenAPINormalizer (#20186)
+  Author: danielalmqvist
+  Merged: 2024-11-30 15:15:10
+  Files changed: 2
+  Source files: modules/openapi-generator/src/main/java/org/openapitools/codegen/OpenAPINormalizer.java
+  Test files: modules/openapi-generator/src/test/java/org/openapitools/codegen/OpenAPINormalizerTest.java
+  URL: https://github.com/OpenAPITools/openapi-generator/pull/20189
+--------------------------------------------------------------------------------
+PR #20176: [Rust-Axum] Support quotes in string literals
+  Author: Victoria-Casasampere-BeeTheData
+  Merged: 2024-11-26 13:36:12
+  Files changed: 3
+  Source files: modules/openapi-generator/src/main/java/org/openapitools/codegen/languages/RustAxumServerCodegen.java
+  Test files: samples/server/petstore/rust-axum/output/petstore-with-fake-endpoints-models-for-testing/src/models.rs
+  URL: https://github.com/OpenAPITools/openapi-generator/pull/20176
+--------------------------------------------------------------------------------
+PR #19401: [Java] Fix compilation error for a Map<String, Set<InnerEnum>> due to incompatible types
+  Author: Bragolgirith
+  Merged: 2024-11-24 16:40:44
+  Files changed: 3
+  Source files: modules/openapi-generator/src/main/java/org/openapitools/codegen/DefaultCodegen.java
+  Test files: modules/openapi-generator/src/test/java/org/openapitools/codegen/java/JavaClientCodegenTest.java, modules/openapi-generator/src/test/resources/3_0/issue_19393_map_of_inner_enum.yaml
+  URL: https://github.com/OpenAPITools/openapi-generator/pull/19401
+--------------------------------------------------------------------------------
+PR #20083: Fix allOf with properties for the REF_AS_PARENT_IN_ALLOF rule
+  Author: wing328
+  Merged: 2024-11-13 13:27:19
+  Files changed: 4
+  Source files: modules/openapi-generator/src/main/java/org/openapitools/codegen/OpenAPINormalizer.java
+  Test files: modules/openapi-generator/src/test/java/org/openapitools/codegen/OpenAPINormalizerTest.java, modules/openapi-generator/src/test/java/org/openapitools/codegen/java/JavaClientCodegenTest.java, modules/openapi-generator/src/test/resources/3_0/allOf_extension_parent.yaml
+  URL: https://github.com/OpenAPITools/openapi-generator/pull/20083
+--------------------------------------------------------------------------------

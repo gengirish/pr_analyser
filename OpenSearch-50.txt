@@ -1,0 +1,406 @@
+
+Results:
+Found 50 PRs with 2-4 file changes that include both source code files and test classes, merged after November 2024:
+
+--------------------------------------------------------------------------------
+Note: Analysis stopped after finding 50 matching PRs.
+PR #18661: Check CircuitBreaker before put/compute in FileCache to avoid entry removal
+  Author: rayshrey
+  Merged: 2025-07-15 21:36:59
+  Files changed: 2
+  Source files: server/src/main/java/org/opensearch/index/store/remote/filecache/FileCache.java
+  Test files: server/src/test/java/org/opensearch/index/store/remote/filecache/FileCacheTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18661
+--------------------------------------------------------------------------------
+PR #18660: Fix sync method to account for block files in Composite Directory
+  Author: rayshrey
+  Merged: 2025-07-15 07:00:21
+  Files changed: 2
+  Source files: server/src/main/java/org/opensearch/index/store/CompositeDirectory.java
+  Test files: server/src/test/java/org/opensearch/index/store/CompositeDirectoryTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18660
+--------------------------------------------------------------------------------
+PR #18715: Fix max_score is null when using _score as a primary sort
+  Author: gaobinlong
+  Merged: 2025-07-14 02:59:01
+  Files changed: 4
+  Source files: server/src/main/java/org/opensearch/search/query/TopDocsCollectorContext.java
+  Test files: rest-api-spec/src/main/resources/rest-api-spec/test/search/400_max_score.yml, server/src/test/java/org/opensearch/search/query/QueryPhaseTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18715
+--------------------------------------------------------------------------------
+PR #18680: An attempt to fix flaky SecureReactorNetty4HttpServerTransportTests
+  Author: reta
+  Merged: 2025-07-07 18:23:12
+  Files changed: 2
+  Source files: plugins/transport-reactor-netty4/src/main/java/org/opensearch/http/reactor/netty4/ReactorNetty4HttpServerTransport.java
+  Test files: plugins/transport-reactor-netty4/src/test/java/org/opensearch/http/reactor/netty4/ReactorHttpClient.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18680
+--------------------------------------------------------------------------------
+PR #18557: Added support for range version support in semver
+  Author: shrugarg-amzn
+  Merged: 2025-07-07 17:53:13
+  Files changed: 4
+  Source files: libs/core/src/main/java/org/opensearch/semver/SemverRange.java, libs/core/src/main/java/org/opensearch/semver/expr/Range.java
+  Test files: libs/core/src/test/java/org/opensearch/semver/SemverRangeTests.java, libs/core/src/test/java/org/opensearch/semver/expr/RangeTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18557
+--------------------------------------------------------------------------------
+PR #18677: [Backport 2.19] Fix checkpoint handling to prevent segment replication infinite loop
+  Author: ashking94
+  Merged: 2025-07-04 06:00:51
+  Files changed: 2
+  Source files: server/src/main/java/org/opensearch/indices/replication/SegmentReplicationTargetService.java
+  Test files: server/src/test/java/org/opensearch/indices/replication/SegmentReplicationTargetServiceTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18677
+--------------------------------------------------------------------------------
+PR #18662: Remove clone holder and add Cleaner logic to clean up clones in FullFileCachedIndexInput
+  Author: rayshrey
+  Merged: 2025-07-04 06:00:06
+  Files changed: 4
+  Source files: server/src/main/java/org/opensearch/index/store/remote/filecache/FullFileCachedIndexInput.java
+  Test files: server/src/test/java/org/opensearch/index/store/remote/filecache/FileCacheTests.java, server/src/test/java/org/opensearch/index/store/remote/filecache/FileCachedIndexInputTests.java, server/src/test/java/org/opensearch/index/store/remote/filecache/FullFileCachedIndexInputTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18662
+--------------------------------------------------------------------------------
+PR #18636: Fix checkpoint handling to prevent segment replication infinite loop
+  Author: ashking94
+  Merged: 2025-07-03 11:59:45
+  Files changed: 2
+  Source files: server/src/main/java/org/opensearch/indices/replication/SegmentReplicationTargetService.java
+  Test files: server/src/test/java/org/opensearch/indices/replication/SegmentReplicationTargetServiceTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18636
+--------------------------------------------------------------------------------
+PR #18602: Fix bugs in replication lag computation
+  Author: mch2
+  Merged: 2025-07-01 19:36:25
+  Files changed: 4
+  Source files: server/src/main/java/org/opensearch/indices/replication/SegmentReplicator.java, server/src/main/java/org/opensearch/indices/replication/checkpoint/ReplicationCheckpoint.java
+  Test files: server/src/test/java/org/opensearch/indices/replication/SegmentReplicatorTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18602
+--------------------------------------------------------------------------------
+PR #18640: [Bug Fix] Fix the backward compatibility regression with `COMPLEMENT` for Regexp queries introduced in OpenSearch 3.0
+  Author: prudhvigodithi
+  Merged: 2025-07-01 14:40:03
+  Files changed: 4
+  Source files: server/src/main/java/org/opensearch/index/query/RegexpQueryBuilder.java
+  Test files: server/src/internalClusterTest/java/org/opensearch/search/simple/SimpleSearchIT.java, server/src/test/java/org/opensearch/index/query/RegexpQueryBuilderTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18640
+--------------------------------------------------------------------------------
+PR #18616: Provide aux transport to SecureAuxTransportSettingsProvider
+  Author: finnegancarroll
+  Merged: 2025-06-30 20:15:54
+  Files changed: 4
+  Source files: plugins/transport-grpc/src/main/java/org/opensearch/plugin/transport/grpc/ssl/SecureNetty4GrpcServerTransport.java, server/src/main/java/org/opensearch/plugins/SecureAuxTransportSettingsProvider.java
+  Test files: plugins/transport-grpc/src/test/java/org/opensearch/plugin/transport/grpc/ssl/SecureSettingsHelpers.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18616
+--------------------------------------------------------------------------------
+PR #18215: Fix regex query to work with field alias
+  Author: bowenlan-amzn
+  Merged: 2025-06-30 15:53:50
+  Files changed: 4
+  Source files: server/src/main/java/org/opensearch/index/search/QueryStringQueryParser.java
+  Test files: rest-api-spec/src/main/resources/rest-api-spec/test/search/61_query_string_field_alias.yml, server/src/test/java/org/opensearch/index/query/QueryStringQueryBuilderTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18215
+--------------------------------------------------------------------------------
+PR #18628: fix delete rule event consumption for wildcard index based rules
+  Author: kaushalmahi12
+  Merged: 2025-06-27 18:08:19
+  Files changed: 3
+  Source files: modules/autotagging-commons/src/main/java/org/opensearch/rule/InMemoryRuleProcessingService.java
+  Test files: modules/autotagging-commons/src/test/java/org/opensearch/rule/InMemoryRuleProcessingServiceTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18628
+--------------------------------------------------------------------------------
+PR #18626: [Backport 2.19] Disabling _close API invocation during remote migration
+  Author: rakshit98
+  Merged: 2025-06-26 17:14:30
+  Files changed: 4
+  Source files: server/src/main/java/org/opensearch/action/admin/indices/close/TransportCloseIndexAction.java
+  Test files: server/src/internalClusterTest/java/org/opensearch/remotemigration/CloseIndexMigrationTestCase.java, server/src/test/java/org/opensearch/action/admin/indices/close/TransportCloseIndexActionTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18626
+--------------------------------------------------------------------------------
+PR #18596: [Backport 2.19] Add timeout handling for S3 blob container async operations
+  Author: opensearch-trigger-bot[bot]
+  Merged: 2025-06-24 11:28:09
+  Files changed: 3
+  Source files: plugins/repository-s3/src/main/java/org/opensearch/repositories/s3/S3BlobContainer.java, plugins/repository-s3/src/main/java/org/opensearch/repositories/s3/async/S3AsyncDeleteHelper.java
+  Test files: plugins/repository-s3/src/test/java/org/opensearch/repositories/s3/S3BlobStoreContainerTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18596
+--------------------------------------------------------------------------------
+PR #18583: Add timeout handling for S3 blob container async operations
+  Author: ashking94
+  Merged: 2025-06-24 07:27:36
+  Files changed: 3
+  Source files: plugins/repository-s3/src/main/java/org/opensearch/repositories/s3/S3BlobContainer.java, plugins/repository-s3/src/main/java/org/opensearch/repositories/s3/async/S3AsyncDeleteHelper.java
+  Test files: plugins/repository-s3/src/test/java/org/opensearch/repositories/s3/S3BlobStoreContainerTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18583
+--------------------------------------------------------------------------------
+PR #18488: [Bug fix] Rule based Auto tagging update rule api
+  Author: ruai0511
+  Merged: 2025-06-11 17:58:58
+  Files changed: 3
+  Source files: modules/autotagging-commons/common/src/main/java/org/opensearch/rule/RuleUtils.java
+  Test files: modules/autotagging-commons/common/src/test/java/org/opensearch/rule/RuleUtilsTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18488
+--------------------------------------------------------------------------------
+PR #18435: Add FS Health Check Failure Metric
+  Author: bhumikasharma29
+  Merged: 2025-06-11 13:51:22
+  Files changed: 4
+  Source files: server/src/main/java/org/opensearch/monitor/fs/FsHealthService.java, server/src/main/java/org/opensearch/node/Node.java
+  Test files: server/src/test/java/org/opensearch/monitor/fs/FsHealthServiceTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18435
+--------------------------------------------------------------------------------
+PR #18483: Bugfix arrow-flight-rpc plugin dependency injection collision
+  Author: finnegancarroll
+  Merged: 2025-06-11 04:32:14
+  Files changed: 4
+  Source files: plugins/arrow-flight-rpc/src/main/java/org/opensearch/arrow/flight/bootstrap/FlightStreamPlugin.java
+  Test files: plugins/arrow-flight-rpc/src/internalClusterTest/java/org/opensearch/arrow/flight/ArrowFlightServerIT.java, plugins/arrow-flight-rpc/src/test/java/org/opensearch/arrow/flight/FlightStreamPluginTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18483
+--------------------------------------------------------------------------------
+PR #18357: Allow searching 1K+ IP/masks in DV-only fields via terms_query
+  Author: mkhludnev
+  Merged: 2025-06-10 20:41:15
+  Files changed: 4
+  Source files: server/src/main/java/org/opensearch/index/mapper/IpFieldMapper.java
+  Test files: server/src/internalClusterTest/java/org/opensearch/search/fields/SearchIpFieldTermsIT.java, server/src/test/java/org/opensearch/index/mapper/IpFieldTypeTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18357
+--------------------------------------------------------------------------------
+PR #18439: Approximation Framework Enhancement: Update the BKD traversal logic to improve the performance on skewed data
+  Author: prudhvigodithi
+  Merged: 2025-06-10 17:56:29
+  Files changed: 3
+  Source files: server/src/main/java/org/opensearch/search/approximate/ApproximatePointRangeQuery.java
+  Test files: server/src/test/java/org/opensearch/search/approximate/ApproximatePointRangeQueryTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18439
+--------------------------------------------------------------------------------
+PR #18456: Minor fixes in WarmDiskThresholdDecider
+  Author: Gagan6164
+  Merged: 2025-06-10 04:55:19
+  Files changed: 2
+  Source files: server/src/main/java/org/opensearch/cluster/routing/allocation/decider/WarmDiskThresholdDecider.java
+  Test files: server/src/test/java/org/opensearch/cluster/routing/allocation/decider/WarmDiskThresholdDeciderTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18456
+--------------------------------------------------------------------------------
+PR #18354: Support/fix for star-tree keyword aggregation dfs mode
+  Author: sandeshkr419
+  Merged: 2025-06-05 10:33:24
+  Files changed: 4
+  Source files: server/src/main/java/org/opensearch/search/aggregations/bucket/terms/GlobalOrdinalsStringTermsAggregator.java, server/src/main/java/org/opensearch/search/aggregations/bucket/terms/TermsAggregator.java
+  Test files: server/src/test/java/org/opensearch/search/aggregations/startree/KeywordTermsAggregatorTests.java, server/src/test/java/org/opensearch/search/aggregations/startree/NumericTermsAggregatorTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18354
+--------------------------------------------------------------------------------
+PR #18358: Fix performance regression in `ApproximatePointRangeQuery` with Lucene 10.2.1 change
+  Author: prudhvigodithi
+  Merged: 2025-05-30 19:31:46
+  Files changed: 3
+  Source files: server/src/main/java/org/opensearch/search/approximate/ApproximatePointRangeQuery.java
+  Test files: server/src/test/java/org/opensearch/search/approximate/ApproximatePointRangeQueryTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18358
+--------------------------------------------------------------------------------
+PR #18400: Add Search Phase Result Processors to SearchPipelineInfo
+  Author: owaiskazi19
+  Merged: 2025-05-30 16:47:04
+  Files changed: 2
+  Source files: server/src/main/java/org/opensearch/search/pipeline/SearchPipelineService.java
+  Test files: server/src/test/java/org/opensearch/search/pipeline/SearchPipelineServiceTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18400
+--------------------------------------------------------------------------------
+PR #18363: Validate Search Phase Request Processors in Search Pipeline
+  Author: owaiskazi19
+  Merged: 2025-05-28 19:32:03
+  Files changed: 2
+  Source files: server/src/main/java/org/opensearch/search/pipeline/SearchPipelineService.java
+  Test files: server/src/test/java/org/opensearch/search/pipeline/SearchPipelineServiceTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18363
+--------------------------------------------------------------------------------
+PR #18327: Disabling _close API invocation during remote migration.
+  Author: rakshit98
+  Merged: 2025-05-26 06:27:18
+  Files changed: 4
+  Source files: server/src/main/java/org/opensearch/action/admin/indices/close/TransportCloseIndexAction.java
+  Test files: server/src/internalClusterTest/java/org/opensearch/remotemigration/CloseIndexMigrationTestCase.java, server/src/test/java/org/opensearch/action/admin/indices/close/TransportCloseIndexActionTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18327
+--------------------------------------------------------------------------------
+PR #18254: Fix MatrixStatsAggregator reuse when mode parameter changes
+  Author: jinlee1703
+  Merged: 2025-05-22 16:36:06
+  Files changed: 4
+  Source files: modules/aggs-matrix-stats/src/main/java/org/opensearch/search/aggregations/matrix/stats/MatrixStatsAggregationBuilder.java
+  Test files: modules/aggs-matrix-stats/src/test/java/org/opensearch/search/aggregations/matrix/MatrixStatsIT.java, modules/aggs-matrix-stats/src/test/java/org/opensearch/search/aggregations/matrix/stats/MatrixStatsAggregatorTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18254
+--------------------------------------------------------------------------------
+PR #18317: Attempt to fix ThreadLeakControl issues in S3BlobStoreRepositoryTests
+  Author: nomoa
+  Merged: 2025-05-19 19:53:55
+  Files changed: 3
+  Source files: plugins/repository-s3/src/main/java/org/opensearch/repositories/s3/S3AsyncService.java, plugins/repository-s3/src/main/java/org/opensearch/repositories/s3/S3Service.java
+  Test files: plugins/repository-s3/src/internalClusterTest/java/org/opensearch/repositories/s3/S3BlobStoreRepositoryTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18317
+--------------------------------------------------------------------------------
+PR #18304: [Pull-based Ingestion] Add warning when message is dropped
+  Author: varunbharadwaj
+  Merged: 2025-05-15 18:04:30
+  Files changed: 2
+  Source files: server/src/main/java/org/opensearch/indices/pollingingest/MessageProcessorRunnable.java
+  Test files: server/src/test/java/org/opensearch/indices/pollingingest/MessageProcessorTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18304
+--------------------------------------------------------------------------------
+PR #18299: Composite Directory - silently fail instead of throwing error for non-existent file in deleteFile() call
+  Author: rayshrey
+  Merged: 2025-05-15 06:09:25
+  Files changed: 2
+  Source files: server/src/main/java/org/opensearch/index/store/CompositeDirectory.java
+  Test files: server/src/test/java/org/opensearch/index/store/CompositeDirectoryTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18299
+--------------------------------------------------------------------------------
+PR #18256: Apply cluster state metadata and routing table diff when building clu…
+  Author: SwethaGuptha
+  Merged: 2025-05-14 10:16:12
+  Files changed: 4
+  Source files: server/src/main/java/org/opensearch/gateway/remote/RemoteClusterStateService.java
+  Test files: server/src/internalClusterTest/java/org/opensearch/gateway/remote/RemoteStatePublicationIT.java, server/src/test/java/org/opensearch/gateway/remote/RemoteClusterStateServiceTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18256
+--------------------------------------------------------------------------------
+PR #18235: Fix `SimpleSearchIT.testSimpleTerminateAfterTrackTotalHitsUpToSize ` flaky test 
+  Author: prudhvigodithi
+  Merged: 2025-05-09 18:01:01
+  Files changed: 2
+  Source files: server/src/main/java/org/opensearch/search/approximate/ApproximatePointRangeQuery.java
+  Test files: server/src/internalClusterTest/java/org/opensearch/search/simple/SimpleSearchIT.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18235
+--------------------------------------------------------------------------------
+PR #18247: Unregister rest and transport action handlers for HotToWarmTiering
+  Author: skumawat2025
+  Merged: 2025-05-09 16:30:07
+  Files changed: 2
+  Source files: server/src/main/java/org/opensearch/action/ActionModule.java
+  Test files: server/src/test/java/org/opensearch/action/admin/indices/tiering/TransportHotToWarmTieringActionTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18247
+--------------------------------------------------------------------------------
+PR #18233: [Backport 2.19] Null check field names in QueryStringQueryBuilder (#18194)
+  Author: dbwiddis
+  Merged: 2025-05-08 00:28:33
+  Files changed: 4
+  Source files: server/src/main/java/org/opensearch/index/query/QueryStringQueryBuilder.java
+  Test files: rest-api-spec/src/main/resources/rest-api-spec/test/search/50_multi_match.yml, server/src/test/java/org/opensearch/index/query/QueryStringQueryBuilderTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18233
+--------------------------------------------------------------------------------
+PR #18203: [Backport 2.19] Use Bad Request status for InputCoercionException (#18161)
+  Author: dbwiddis
+  Merged: 2025-05-06 18:43:39
+  Files changed: 4
+  Source files: libs/core/src/main/java/org/opensearch/ExceptionsHelper.java
+  Test files: rest-api-spec/src/main/resources/rest-api-spec/test/search/30_limits.yml, server/src/test/java/org/opensearch/ExceptionsHelperTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18203
+--------------------------------------------------------------------------------
+PR #18194: Null check field names in QueryStringQueryBuilder
+  Author: dbwiddis
+  Merged: 2025-05-05 21:09:43
+  Files changed: 4
+  Source files: server/src/main/java/org/opensearch/index/query/QueryStringQueryBuilder.java
+  Test files: rest-api-spec/src/main/resources/rest-api-spec/test/search/50_multi_match.yml, server/src/test/java/org/opensearch/index/query/QueryStringQueryBuilderTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18194
+--------------------------------------------------------------------------------
+PR #18161: Use Bad Request status for InputCoercionException
+  Author: dbwiddis
+  Merged: 2025-05-05 17:32:30
+  Files changed: 4
+  Source files: libs/core/src/main/java/org/opensearch/ExceptionsHelper.java
+  Test files: rest-api-spec/src/main/resources/rest-api-spec/test/search/30_limits.yml, server/src/test/java/org/opensearch/ExceptionsHelperTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18161
+--------------------------------------------------------------------------------
+PR #18163: Make HASHED_PREFIX as the default path type for remote store and snapshot
+  Author: ashking94
+  Merged: 2025-05-01 05:35:25
+  Files changed: 3
+  Source files: server/src/main/java/org/opensearch/repositories/blobstore/BlobStoreRepository.java
+  Test files: server/src/main/java/org/opensearch/indices/RemoteStoreSettings.java, server/src/test/java/org/opensearch/index/remote/RemoteStoreCustomMetadataResolverTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18163
+--------------------------------------------------------------------------------
+PR #18107: [Backport 3.0] Create thread id to SourceLookup map
+  Author: opensearch-trigger-bot[bot]
+  Merged: 2025-04-28 22:49:23
+  Files changed: 2
+  Source files: server/src/main/java/org/opensearch/search/lookup/SearchLookup.java
+  Test files: server/src/test/java/org/opensearch/script/ScriptServiceTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18107
+--------------------------------------------------------------------------------
+PR #17927: Create thread id to SourceLookup map
+  Author: jed326
+  Merged: 2025-04-28 17:45:42
+  Files changed: 2
+  Source files: server/src/main/java/org/opensearch/search/lookup/SearchLookup.java
+  Test files: server/src/test/java/org/opensearch/script/ScriptServiceTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/17927
+--------------------------------------------------------------------------------
+PR #18036: [Backport 3.0] [Pull-based Ingesiton] Pass the maxPoll, timeout from config to poller
+  Author: opensearch-trigger-bot[bot]
+  Merged: 2025-04-23 22:57:06
+  Files changed: 2
+  Source files: server/src/main/java/org/opensearch/indices/pollingingest/DefaultStreamPoller.java
+  Test files: server/src/test/java/org/opensearch/indices/pollingingest/DefaultStreamPollerTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18036
+--------------------------------------------------------------------------------
+PR #18029: [Backport 3.0] Limit stack walking to frames before AccessController.doPrivileged
+  Author: andrross
+  Merged: 2025-04-22 19:06:34
+  Files changed: 3
+  Source files: libs/agent-sm/agent/src/main/java/org/opensearch/javaagent/SocketChannelInterceptor.java, libs/agent-sm/agent/src/main/java/org/opensearch/javaagent/StackCallerProtectionDomainChainExtractor.java
+  Test files: libs/agent-sm/agent/src/test/java/org/opensearch/javaagent/StackCallerProtectionDomainExtractorTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/18029
+--------------------------------------------------------------------------------
+PR #17894: Limit stack walking in the java agent to frames before the call to AccessController.doPrivileged
+  Author: cwperks
+  Merged: 2025-04-22 19:04:53
+  Files changed: 3
+  Source files: libs/agent-sm/agent/src/main/java/org/opensearch/javaagent/SocketChannelInterceptor.java, libs/agent-sm/agent/src/main/java/org/opensearch/javaagent/StackCallerProtectionDomainChainExtractor.java
+  Test files: libs/agent-sm/agent/src/test/java/org/opensearch/javaagent/StackCallerProtectionDomainExtractorTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/17894
+--------------------------------------------------------------------------------
+PR #17995: [Pull-based Ingesiton] Pass the maxPoll, timeout from config to poller
+  Author: yupeng9
+  Merged: 2025-04-18 04:23:06
+  Files changed: 2
+  Source files: server/src/main/java/org/opensearch/indices/pollingingest/DefaultStreamPoller.java
+  Test files: server/src/test/java/org/opensearch/indices/pollingingest/DefaultStreamPollerTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/17995
+--------------------------------------------------------------------------------
+PR #17973: Additional settings for gRPC experimental transport.
+  Author: finnegancarroll
+  Merged: 2025-04-17 20:14:44
+  Files changed: 4
+  Source files: plugins/transport-grpc/src/main/java/org/opensearch/plugin/transport/grpc/GrpcPlugin.java, plugins/transport-grpc/src/main/java/org/opensearch/plugin/transport/grpc/Netty4GrpcServerTransport.java
+  Test files: plugins/transport-grpc/src/test/java/org/opensearch/plugin/transport/grpc/GrpcPluginTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/17973
+--------------------------------------------------------------------------------
+PR #17969: Fix flaky test SegmentReplicationTargetServiceTests.testStartReplicationListenerSuccess
+  Author: guojialiang92
+  Merged: 2025-04-17 17:37:37
+  Files changed: 2
+  Source files: server/src/main/java/org/opensearch/index/shard/IndexShard.java
+  Test files: server/src/test/java/org/opensearch/index/shard/SegmentReplicationIndexShardTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/17969
+--------------------------------------------------------------------------------
+PR #17900: [Build Tools] Custom Gradle plugin to leverage java agent 
+  Author: prudhvigodithi
+  Merged: 2025-04-11 22:12:41
+  Files changed: 3
+  Source files: buildSrc/src/main/java/org/opensearch/gradle/agent/JavaAgent.java
+  Test files: buildSrc/src/test/java/org/opensearch/gradle/agent/JavaAgentTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/17900
+--------------------------------------------------------------------------------
+PR #17865: Adjust the `getAutoExpandReplicaChanges` logic to honor `search_only` mode.
+  Author: prudhvigodithi
+  Merged: 2025-04-09 21:09:51
+  Files changed: 3
+  Source files: server/src/main/java/org/opensearch/cluster/metadata/AutoExpandReplicas.java
+  Test files: server/src/internalClusterTest/java/org/opensearch/indices/settings/UpdateNumberOfReplicasIT.java, server/src/test/java/org/opensearch/cluster/metadata/AutoExpandReplicasTests.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/17865
+--------------------------------------------------------------------------------
+PR #17852: Add the support of trusted file systems to AgentPolicy
+  Author: reta
+  Merged: 2025-04-09 00:16:07
+  Files changed: 3
+  Source files: libs/agent-sm/agent/src/main/java/org/opensearch/javaagent/FileInterceptor.java, libs/agent-sm/bootstrap/src/main/java/org/opensearch/javaagent/bootstrap/AgentPolicy.java
+  Test files: libs/agent-sm/agent/src/test/java/org/opensearch/javaagent/AgentTestCase.java
+  URL: https://github.com/opensearch-project/OpenSearch/pull/17852
+--------------------------------------------------------------------------------

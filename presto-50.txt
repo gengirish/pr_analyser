@@ -1,0 +1,406 @@
+
+Results:
+Found 50 PRs with 2-4 file changes that include both source code files and test classes, merged after November 2024:
+
+--------------------------------------------------------------------------------
+Note: Analysis stopped after finding 50 matching PRs.
+PR #25520: [native] Remove unused include.
+  Author: amitkdutta
+  Merged: 2025-07-11 15:16:26
+  Files changed: 2
+  Source files: presto-native-execution/presto_cpp/main/common/Utils.h
+  Test files: presto-native-execution/presto_cpp/main/tests/PrestoExchangeSourceTest.cpp
+  URL: https://github.com/prestodb/presto/pull/25520
+--------------------------------------------------------------------------------
+PR #25442: Enhance PruneUnreferencedOutputs for index join
+  Author: zacw7
+  Merged: 2025-07-09 17:11:24
+  Files changed: 4
+  Source files: presto-main-base/src/main/java/com/facebook/presto/sql/planner/optimizations/PruneUnreferencedOutputs.java
+  Test files: presto-main-base/src/test/java/com/facebook/presto/sql/planner/assertions/PlanMatchPattern.java, presto-main-base/src/test/java/com/facebook/presto/sql/planner/iterative/rule/test/PlanBuilder.java, presto-main-base/src/test/java/com/facebook/presto/sql/planner/optimizations/TestPruneUnreferencedOutputs.java
+  URL: https://github.com/prestodb/presto/pull/25442
+--------------------------------------------------------------------------------
+PR #25471: Fix subfield pushdown arg index for selecting entire struct column
+  Author: kevintang2022
+  Merged: 2025-07-02 17:47:27
+  Files changed: 2
+  Source files: presto-main-base/src/main/java/com/facebook/presto/sql/planner/optimizations/PushdownSubfields.java
+  Test files: presto-hive/src/test/java/com/facebook/presto/hive/TestHiveLogicalPlanner.java
+  URL: https://github.com/prestodb/presto/pull/25471
+--------------------------------------------------------------------------------
+PR #25225: Add support for handling multiple rows in function server
+  Author: Joe-Abraham
+  Merged: 2025-06-30 17:01:48
+  Files changed: 2
+  Source files: presto-function-server/src/main/java/com/facebook/presto/server/FunctionResource.java
+  Test files: presto-function-server/src/test/java/com/facebook/presto/tests/TestRestRemoteFunctions.java
+  URL: https://github.com/prestodb/presto/pull/25225
+--------------------------------------------------------------------------------
+PR #25445: Enable subfield pushdown for map when key is negative
+  Author: feilong-liu
+  Merged: 2025-06-26 21:56:54
+  Files changed: 3
+  Source files: presto-main-base/src/main/java/com/facebook/presto/sql/planner/optimizations/PushdownSubfields.java
+  Test files: presto-hive/src/test/java/com/facebook/presto/hive/TestHiveLogicalPlanner.java, presto-hive/src/test/java/com/facebook/presto/hive/TestHivePushdownFilterQueries.java
+  URL: https://github.com/prestodb/presto/pull/25445
+--------------------------------------------------------------------------------
+PR #25395: Extend remove map cast rule to cover map_subset function
+  Author: feilong-liu
+  Merged: 2025-06-26 20:22:40
+  Files changed: 3
+  Source files: presto-main-base/src/main/java/com/facebook/presto/sql/planner/iterative/rule/RemoveMapCastRule.java
+  Test files: presto-main-base/src/test/java/com/facebook/presto/sql/planner/iterative/rule/TestRemoveMapCastRule.java, presto-tests/src/main/java/com/facebook/presto/tests/AbstractTestQueries.java
+  URL: https://github.com/prestodb/presto/pull/25395
+--------------------------------------------------------------------------------
+PR #25409: Add squared Euclidean distance (l2_squared) in java implementation
+  Author: zhichenxu-meta
+  Merged: 2025-06-26 18:42:40
+  Files changed: 2
+  Source files: presto-main-base/src/main/java/com/facebook/presto/operator/scalar/MathFunctions.java
+  Test files: presto-main-base/src/test/java/com/facebook/presto/operator/scalar/TestMathFunctions.java
+  URL: https://github.com/prestodb/presto/pull/25409
+--------------------------------------------------------------------------------
+PR #25435: Extend max_by/min_by optimization to mix of array/map/scalar type
+  Author: feilong-liu
+  Merged: 2025-06-26 16:12:45
+  Files changed: 3
+  Source files: presto-main-base/src/main/java/com/facebook/presto/sql/planner/iterative/rule/MinMaxByToWindowFunction.java
+  Test files: presto-main-base/src/test/java/com/facebook/presto/sql/planner/iterative/rule/TestMinMaxByToWindowFunction.java, presto-tests/src/main/java/com/facebook/presto/tests/AbstractTestQueries.java
+  URL: https://github.com/prestodb/presto/pull/25435
+--------------------------------------------------------------------------------
+PR #25361: Add native_max_num_splits_listened_to session property (2/2)
+  Author: kagamiori
+  Merged: 2025-06-25 04:27:31
+  Files changed: 3
+  Source files: presto-native-execution/presto_cpp/main/SessionProperties.cpp, presto-native-execution/presto_cpp/main/SessionProperties.h
+  Test files: presto-native-execution/presto_cpp/main/tests/SessionPropertiesTest.cpp
+  URL: https://github.com/prestodb/presto/pull/25361
+--------------------------------------------------------------------------------
+PR #25420: Disable CopyOnFirstWriteConfiguration config property by default
+  Author: imjalpreet
+  Merged: 2025-06-24 21:42:25
+  Files changed: 2
+  Source files: presto-hive/src/main/java/com/facebook/presto/hive/HiveClientConfig.java
+  Test files: presto-hive/src/test/java/com/facebook/presto/hive/TestHiveClientConfig.java
+  URL: https://github.com/prestodb/presto/pull/25420
+--------------------------------------------------------------------------------
+PR #25393: PartitionAndSerialize Operator: Allocate keyOutputBuffer with pre-determined size
+  Author: emilysun201309
+  Merged: 2025-06-20 18:29:05
+  Files changed: 2
+  Source files: presto-native-execution/presto_cpp/main/operators/PartitionAndSerialize.cpp
+  Test files: presto-native-execution/presto_cpp/main/operators/tests/UnsafeRowShuffleTest.cpp
+  URL: https://github.com/prestodb/presto/pull/25393
+--------------------------------------------------------------------------------
+PR #25370: Route user errors from the EXPLAIN call to Java cluster for fallback
+  Author: pdabre12
+  Merged: 2025-06-19 15:05:21
+  Files changed: 3
+  Source files: presto-plan-checker-router-plugin/src/main/java/com/facebook/presto/router/scheduler/PlanCheckerRouterPluginPrestoClient.java, presto-router/src/main/java/com/facebook/presto/router/RouterResource.java
+  Test files: presto-plan-checker-router-plugin/src/test/java/com/facebook/presto/router/scheduler/TestPlanCheckerRouterPlugin.java
+  URL: https://github.com/prestodb/presto/pull/25370
+--------------------------------------------------------------------------------
+PR #25212: Refactor CursorProcessorCompiler
+  Author: aaneja
+  Merged: 2025-06-19 09:47:24
+  Files changed: 4
+  Source files: presto-main-base/src/main/java/com/facebook/presto/sql/gen/CursorProcessorCompiler.java, presto-main-base/src/main/java/com/facebook/presto/sql/planner/LocalExecutionPlanner.java
+  Test files: presto-main-base/src/test/java/com/facebook/presto/sql/gen/TestCursorProcessorCompiler.java, presto-verifier/src/test/java/com/facebook/presto/verifier/framework/TestDataVerification.java
+  URL: https://github.com/prestodb/presto/pull/25212
+--------------------------------------------------------------------------------
+PR #25359: Add output size calculation to BinarySortableSerializer
+  Author: emilysun201309
+  Merged: 2025-06-19 06:00:55
+  Files changed: 4
+  Source files: presto-native-execution/presto_cpp/main/operators/BinarySortableSerializer.cpp, presto-native-execution/presto_cpp/main/operators/BinarySortableSerializer.h, presto-native-execution/presto_cpp/main/operators/benchmarks/BinarySortableSerializerBenchmark.cpp
+  Test files: presto-native-execution/presto_cpp/main/operators/tests/BinarySortableSerializerTest.cpp
+  URL: https://github.com/prestodb/presto/pull/25359
+--------------------------------------------------------------------------------
+PR #25349: [native] Do not queue Tasks if the Query is already running
+  Author: spershin
+  Merged: 2025-06-18 23:17:23
+  Files changed: 3
+  Source files: presto-native-execution/presto_cpp/main/TaskManager.cpp, presto-native-execution/presto_cpp/main/TaskManager.h
+  Test files: presto-native-execution/presto_cpp/main/tests/PrestoTaskTest.cpp
+  URL: https://github.com/prestodb/presto/pull/25349
+--------------------------------------------------------------------------------
+PR #25338: [native] Fix Task status reporting for not started Tasks
+  Author: spershin
+  Merged: 2025-06-17 23:43:31
+  Files changed: 2
+  Source files: presto-native-execution/presto_cpp/main/PrestoTask.cpp
+  Test files: presto-native-execution/presto_cpp/main/tests/PrestoTaskTest.cpp
+  URL: https://github.com/prestodb/presto/pull/25338
+--------------------------------------------------------------------------------
+PR #25339: [native] Add 'hasStartedTasks' to QueryCtxCacheValue.
+  Author: spershin
+  Merged: 2025-06-17 19:42:13
+  Files changed: 3
+  Source files: presto-native-execution/presto_cpp/main/QueryContextManager.cpp, presto-native-execution/presto_cpp/main/QueryContextManager.h
+  Test files: presto-native-execution/presto_cpp/main/tests/QueryContextCacheTest.cpp
+  URL: https://github.com/prestodb/presto/pull/25339
+--------------------------------------------------------------------------------
+PR #25272: [native] Add header "Host" to PrestoExchangeSource
+  Author: majetideepak
+  Merged: 2025-06-15 16:16:11
+  Files changed: 2
+  Source files: presto-native-execution/presto_cpp/main/PrestoExchangeSource.cpp
+  Test files: presto-native-execution/presto_cpp/main/tests/PrestoExchangeSourceTest.cpp
+  URL: https://github.com/prestodb/presto/pull/25272
+--------------------------------------------------------------------------------
+PR #25293: [Iceberg] Fix querying data_sequence_number with equality deletes
+  Author: xieandrew
+  Merged: 2025-06-15 01:44:22
+  Files changed: 2
+  Source files: presto-iceberg/src/main/java/com/facebook/presto/iceberg/optimizer/IcebergEqualityDeleteAsJoin.java
+  Test files: presto-iceberg/src/test/java/com/facebook/presto/iceberg/IcebergDistributedTestBase.java
+  URL: https://github.com/prestodb/presto/pull/25293
+--------------------------------------------------------------------------------
+PR #25326: [native] Advance Velox
+  Author: czentgr
+  Merged: 2025-06-14 05:13:36
+  Files changed: 3
+  Source files: presto-native-execution/presto_cpp/presto_protocol/java-to-struct-json.py
+  Test files: presto-native-execution/presto_cpp/main/types/tests/CMakeLists.txt
+  URL: https://github.com/prestodb/presto/pull/25326
+--------------------------------------------------------------------------------
+PR #25291: Fix qDigest values_at_quantiles function to throw INVALID_FUNCTION_ARGUMENT on null input
+  Author: duxiao1212
+  Merged: 2025-06-12 15:39:30
+  Files changed: 2
+  Source files: presto-main-base/src/main/java/com/facebook/presto/operator/scalar/QuantileDigestFunctions.java
+  Test files: presto-main-base/src/test/java/com/facebook/presto/operator/scalar/TestQuantileDigestFunctions.java
+  URL: https://github.com/prestodb/presto/pull/25291
+--------------------------------------------------------------------------------
+PR #25142: Extend native type rewrite for cast, function call, and simple case expression
+  Author: HeidiHan0000
+  Merged: 2025-06-09 17:01:27
+  Files changed: 4
+  Source files: presto-main-base/src/main/java/com/facebook/presto/SystemSessionProperties.java, presto-main-base/src/main/java/com/facebook/presto/sql/rewrite/NativeExecutionTypeRewrite.java
+  Test files: presto-tests/src/test/java/com/facebook/presto/tests/TestEnums.java, presto-tests/src/test/java/com/facebook/presto/tests/TestEnumsWithNativeRewrite.java
+  URL: https://github.com/prestodb/presto/pull/25142
+--------------------------------------------------------------------------------
+PR #25261: Fix replaceColumn not retaining positionCount of Page
+  Author: xieandrew
+  Merged: 2025-06-07 09:28:50
+  Files changed: 2
+  Source files: presto-common/src/main/java/com/facebook/presto/common/Page.java
+  Test files: presto-common/src/test/java/com/facebook/presto/common/TestPage.java
+  URL: https://github.com/prestodb/presto/pull/25261
+--------------------------------------------------------------------------------
+PR #24973: Fix ANALYZE when Hive partition has non-canonical value
+  Author: denodo-research-labs
+  Merged: 2025-06-06 15:16:13
+  Files changed: 3
+  Source files: presto-hive-metastore/src/main/java/com/facebook/presto/hive/HiveStatisticsUtil.java, presto-hive/src/main/java/com/facebook/presto/hive/HiveMetadata.java
+  Test files: presto-hive/src/test/java/com/facebook/presto/hive/TestHiveAnalyze.java
+  URL: https://github.com/prestodb/presto/pull/24973
+--------------------------------------------------------------------------------
+PR #25256: Add a session property to disable ReplicateSemiJoinInDelete optimizer
+  Author: feilong-liu
+  Merged: 2025-06-06 04:00:13
+  Files changed: 4
+  Source files: presto-main-base/src/main/java/com/facebook/presto/SystemSessionProperties.java, presto-main-base/src/main/java/com/facebook/presto/sql/analyzer/FeaturesConfig.java, presto-main-base/src/main/java/com/facebook/presto/sql/planner/optimizations/ReplicateSemiJoinInDelete.java
+  Test files: presto-main-base/src/test/java/com/facebook/presto/sql/analyzer/TestFeaturesConfig.java
+  URL: https://github.com/prestodb/presto/pull/25256
+--------------------------------------------------------------------------------
+PR #25236: [native] Improve semi join parallelism
+  Author: arhimondr
+  Merged: 2025-06-03 06:20:22
+  Files changed: 2
+  Source files: presto-main-base/src/main/java/com/facebook/presto/sql/planner/optimizations/AddLocalExchanges.java
+  Test files: presto-native-execution/src/test/java/com/facebook/presto/nativeworker/AbstractTestNativeJoinQueries.java
+  URL: https://github.com/prestodb/presto/pull/25236
+--------------------------------------------------------------------------------
+PR #25171: Extend filtered aggregation optimizer to support only masked partial aggregation cases
+  Author: feilong-liu
+  Merged: 2025-06-03 04:22:35
+  Files changed: 3
+  Source files: presto-main-base/src/main/java/com/facebook/presto/sql/planner/optimizations/MergePartialAggregationsWithFilter.java
+  Test files: presto-main-base/src/test/java/com/facebook/presto/sql/planner/optimizations/TestMergePartialAggregationsWithFilter.java, presto-tests/src/main/java/com/facebook/presto/tests/AbstractTestQueries.java
+  URL: https://github.com/prestodb/presto/pull/25171
+--------------------------------------------------------------------------------
+PR #25202: [Iceberg]Support rename view on Rest catalog and Nessie catalog
+  Author: hantangwangd
+  Merged: 2025-05-31 00:11:01
+  Files changed: 3
+  Source files: presto-iceberg/src/main/java/com/facebook/presto/iceberg/IcebergNativeMetadata.java
+  Test files: presto-iceberg/src/test/java/com/facebook/presto/iceberg/TestIcebergDistributedQueries.java, presto-iceberg/src/test/java/com/facebook/presto/iceberg/TestIcebergMetadataListing.java
+  URL: https://github.com/prestodb/presto/pull/25202
+--------------------------------------------------------------------------------
+PR #25220: Fix procedure remove_orphan_files with DELETES
+  Author: denodo-research-labs
+  Merged: 2025-05-29 17:07:40
+  Files changed: 2
+  Source files: presto-iceberg/src/main/java/com/facebook/presto/iceberg/procedure/RemoveOrphanFiles.java
+  Test files: presto-iceberg/src/test/java/com/facebook/presto/iceberg/procedure/TestRemoveOrphanFilesProcedureBase.java
+  URL: https://github.com/prestodb/presto/pull/25220
+--------------------------------------------------------------------------------
+PR #25090: Fix second UDF not respecting sub-minute time zone offsets
+  Author: kevinwilfong
+  Merged: 2025-05-19 20:30:52
+  Files changed: 4
+  Source files: presto-main-base/src/main/java/com/facebook/presto/operator/scalar/DateTimeFunctions.java
+  Test files: presto-function-server/src/test/java/com/facebook/presto/tests/TestRestRemoteFunctions.java, presto-main-base/src/test/java/com/facebook/presto/operator/scalar/TestDateTimeFunctionsBase.java, presto-main-base/src/test/java/com/facebook/presto/sql/gen/TestExpressionCompiler.java
+  URL: https://github.com/prestodb/presto/pull/25090
+--------------------------------------------------------------------------------
+PR #25106: Fix vulnerability issues on presto-redshift, commons-compress and snappy-java
+  Author: ShahimSharafudeen
+  Merged: 2025-05-19 19:33:33
+  Files changed: 4
+  Source files: presto-redshift/src/main/java/com/facebook/presto/plugin/redshift/RedshiftClient.java
+  Test files: presto-product-tests/pom.xml
+  URL: https://github.com/prestodb/presto/pull/25106
+--------------------------------------------------------------------------------
+PR #25111: Fix filter source variable not found bug in left join to semi join optimizer
+  Author: feilong-liu
+  Merged: 2025-05-14 18:00:36
+  Files changed: 2
+  Source files: presto-main-base/src/main/java/com/facebook/presto/sql/planner/iterative/rule/LeftJoinNullFilterToSemiJoin.java
+  Test files: presto-tests/src/main/java/com/facebook/presto/tests/AbstractTestQueries.java
+  URL: https://github.com/prestodb/presto/pull/25111
+--------------------------------------------------------------------------------
+PR #25101: Revert "Change array_top_n to return null on bad n"
+  Author: aditi-pandit
+  Merged: 2025-05-13 19:51:24
+  Files changed: 2
+  Source files: presto-main-base/src/main/java/com/facebook/presto/operator/scalar/sql/ArraySqlFunctions.java
+  Test files: presto-main-base/src/test/java/com/facebook/presto/operator/scalar/sql/TestArraySqlFunctions.java
+  URL: https://github.com/prestodb/presto/pull/25101
+--------------------------------------------------------------------------------
+PR #25068: Add integer type to visitGenericLiteral in SqlToRowExpressionTranslator
+  Author: mohsaka
+  Merged: 2025-05-09 17:20:30
+  Files changed: 2
+  Source files: presto-main-base/src/main/java/com/facebook/presto/sql/relational/SqlToRowExpressionTranslator.java
+  Test files: presto-main-base/src/test/java/com/facebook/presto/type/TestIntegerOperators.java
+  URL: https://github.com/prestodb/presto/pull/25068
+--------------------------------------------------------------------------------
+PR #25057: Use feature toggle for event loop logging
+  Author: shangm2
+  Merged: 2025-05-08 05:51:20
+  Files changed: 4
+  Source files: presto-main-base/src/main/java/com/facebook/presto/execution/SafeEventLoopGroup.java, presto-main-base/src/main/java/com/facebook/presto/execution/TaskManagerConfig.java, presto-main/src/main/java/com/facebook/presto/server/remotetask/HttpRemoteTaskFactory.java
+  Test files: presto-main-base/src/test/java/com/facebook/presto/execution/TestTaskManagerConfig.java
+  URL: https://github.com/prestodb/presto/pull/25057
+--------------------------------------------------------------------------------
+PR #25056: Add cosine_similarity function for two arrays
+  Author: amitkdutta
+  Merged: 2025-05-07 16:41:35
+  Files changed: 2
+  Source files: presto-main-base/src/main/java/com/facebook/presto/operator/scalar/MathFunctions.java
+  Test files: presto-main-base/src/test/java/com/facebook/presto/operator/scalar/TestMathFunctions.java
+  URL: https://github.com/prestodb/presto/pull/25056
+--------------------------------------------------------------------------------
+PR #25061: [native] Separate Task start logic into a method.
+  Author: spershin
+  Merged: 2025-05-06 23:19:17
+  Files changed: 3
+  Source files: presto-native-execution/presto_cpp/main/TaskManager.cpp, presto-native-execution/presto_cpp/main/TaskManager.h
+  Test files: presto-native-execution/presto_cpp/main/tests/TaskManagerTest.cpp
+  URL: https://github.com/prestodb/presto/pull/25061
+--------------------------------------------------------------------------------
+PR #25015: Fix: Re-initialize sort key serializer for every new input added
+  Author: emilysun201309
+  Merged: 2025-05-02 03:55:48
+  Files changed: 2
+  Source files: presto-native-execution/presto_cpp/main/operators/PartitionAndSerialize.cpp
+  Test files: presto-native-execution/presto_cpp/main/operators/tests/UnsafeRowShuffleTest.cpp
+  URL: https://github.com/prestodb/presto/pull/25015
+--------------------------------------------------------------------------------
+PR #25022: Fix distributed sort parallelism for single node execution
+  Author: arhimondr
+  Merged: 2025-05-01 21:50:56
+  Files changed: 2
+  Source files: presto-main-base/src/main/java/com/facebook/presto/sql/planner/optimizations/AddLocalExchanges.java
+  Test files: presto-native-execution/src/test/java/com/facebook/presto/nativeworker/AbstractTestNativeGeneralQueries.java
+  URL: https://github.com/prestodb/presto/pull/25022
+--------------------------------------------------------------------------------
+PR #24989: [Iceberg]Prefer `AppendFiles` over `RowDelta` in insert-only statement
+  Author: hantangwangd
+  Merged: 2025-04-28 17:46:06
+  Files changed: 2
+  Source files: presto-iceberg/src/main/java/com/facebook/presto/iceberg/IcebergAbstractMetadata.java
+  Test files: presto-iceberg/src/test/java/com/facebook/presto/iceberg/TestIcebergSystemTables.java
+  URL: https://github.com/prestodb/presto/pull/24989
+--------------------------------------------------------------------------------
+PR #24977: Add system configs to query configs mapping for requestDataSizesMaxWaitSec
+  Author: HeidiHan0000
+  Merged: 2025-04-26 00:38:35
+  Files changed: 2
+  Source files: presto-native-execution/presto_cpp/main/QueryContextManager.cpp
+  Test files: presto-native-execution/presto_cpp/main/tests/QueryContextManagerTest.cpp
+  URL: https://github.com/prestodb/presto/pull/24977
+--------------------------------------------------------------------------------
+PR #24978: [sidecar] Fix sidecar-coordinator HTTPS communication and handle IPv6 in URL generation
+  Author: pdabre12
+  Merged: 2025-04-25 21:41:35
+  Files changed: 3
+  Source files: presto-native-sidecar-plugin/src/main/java/com/facebook/presto/sidecar/functionNamespace/NativeFunctionDefinitionProvider.java, presto-native-sidecar-plugin/src/main/java/com/facebook/presto/sidecar/sessionpropertyproviders/NativeSystemSessionPropertyProvider.java
+  Test files: presto-native-sidecar-plugin/src/test/java/com/facebook/presto/sidecar/TestURIGenerationForSidecarEndpoints.java
+  URL: https://github.com/prestodb/presto/pull/24978
+--------------------------------------------------------------------------------
+PR #24969: fix: TDigest Functions Null Input Behavior
+  Author: natashasehgal
+  Merged: 2025-04-24 20:42:22
+  Files changed: 2
+  Source files: presto-main-base/src/main/java/com/facebook/presto/operator/scalar/TDigestFunctions.java
+  Test files: presto-main-base/src/test/java/com/facebook/presto/operator/scalar/TestTDigestFunctions.java
+  URL: https://github.com/prestodb/presto/pull/24969
+--------------------------------------------------------------------------------
+PR #24968: Add filter to IndexJoinNode protocol
+  Author: zacw7
+  Merged: 2025-04-24 16:23:13
+  Files changed: 3
+  Source files: presto-native-execution/presto_cpp/presto_protocol/core/presto_protocol_core.cpp, presto-native-execution/presto_cpp/presto_protocol/core/presto_protocol_core.h
+  Test files: presto-native-execution/presto_cpp/presto_protocol/core/special/ConnectorIndexHandle.cpp.inc
+  URL: https://github.com/prestodb/presto/pull/24968
+--------------------------------------------------------------------------------
+PR #24941: [native] Save 1 memcpy in parsing message body
+  Author: yuandagits
+  Merged: 2025-04-20 20:21:03
+  Files changed: 2
+  Source files: presto-native-execution/presto_cpp/main/common/Utils.cpp
+  Test files: presto-native-execution/presto_cpp/main/common/tests/CommonTest.cpp
+  URL: https://github.com/prestodb/presto/pull/24941
+--------------------------------------------------------------------------------
+PR #24928: Fix TDigest::scale() to update sum member.
+  Author: spershin
+  Merged: 2025-04-17 17:14:20
+  Files changed: 2
+  Source files: presto-main-base/src/main/java/com/facebook/presto/tdigest/TDigest.java
+  Test files: presto-main-base/src/test/java/com/facebook/presto/tdigest/TestTDigest.java
+  URL: https://github.com/prestodb/presto/pull/24928
+--------------------------------------------------------------------------------
+PR #24892: Add factorial implementation, documentation and tests
+  Author: Leziak
+  Merged: 2025-04-16 23:05:58
+  Files changed: 3
+  Source files: presto-main-base/src/main/java/com/facebook/presto/operator/scalar/MathFunctions.java
+  Test files: presto-main-base/src/test/java/com/facebook/presto/operator/scalar/TestMathFunctions.java
+  URL: https://github.com/prestodb/presto/pull/24892
+--------------------------------------------------------------------------------
+PR #24896: Add jaro-winkler implementation, documentation and tests
+  Author: Leziak
+  Merged: 2025-04-14 18:07:28
+  Files changed: 3
+  Source files: presto-main-base/src/main/java/com/facebook/presto/operator/scalar/StringFunctions.java
+  Test files: presto-main-base/src/test/java/com/facebook/presto/operator/scalar/TestStringFunctions.java
+  URL: https://github.com/prestodb/presto/pull/24896
+--------------------------------------------------------------------------------
+PR #24897: Fix confusing OrcCorruptionException thrown by ORC metadata reader
+  Author: sdruzkin
+  Merged: 2025-04-13 08:18:41
+  Files changed: 2
+  Source files: presto-orc/src/main/java/com/facebook/presto/orc/metadata/ExceptionWrappingMetadataReader.java
+  Test files: presto-orc/src/test/java/com/facebook/presto/orc/metadata/TestExceptionWrappingMetadataReader.java
+  URL: https://github.com/prestodb/presto/pull/24897
+--------------------------------------------------------------------------------
+PR #24891: Add longest_common_prefix implementation, documentation and tests
+  Author: Leziak
+  Merged: 2025-04-09 13:42:09
+  Files changed: 3
+  Source files: presto-main-base/src/main/java/com/facebook/presto/operator/scalar/StringFunctions.java
+  Test files: presto-main-base/src/test/java/com/facebook/presto/operator/scalar/TestStringFunctions.java
+  URL: https://github.com/prestodb/presto/pull/24891
+--------------------------------------------------------------------------------

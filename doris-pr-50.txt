@@ -1,0 +1,406 @@
+
+Results:
+Found 50 PRs with 2-4 file changes that include both source code files and test classes, merged after November 2024:
+
+--------------------------------------------------------------------------------
+Note: Analysis stopped after finding 50 matching PRs.
+PR #53098: branch-3.0: [fix](job) fix show routine load job result incorrect after alter job property #53038
+  Author: github-actions[bot]
+  Merged: 2025-07-12 03:02:28
+  Files changed: 2
+  Source files: fe/fe-core/src/main/java/org/apache/doris/load/routineload/RoutineLoadJob.java
+  Test files: regression-test/suites/load_p0/routine_load/test_routine_load.groovy
+  URL: https://github.com/apache/doris/pull/53098
+--------------------------------------------------------------------------------
+PR #53108: [fix](hive) fix insert into hive orc table bug
+  Author: suxiaogang223
+  Merged: 2025-07-12 00:55:55
+  Files changed: 2
+  Source files: be/src/vec/runtime/vorc_transformer.cpp
+  Test files: regression-test/suites/external_table_p0/hive/ddl/test_hive_ctas.groovy
+  URL: https://github.com/apache/doris/pull/53108
+--------------------------------------------------------------------------------
+PR #52896: [Fix](function) fix wrong time to datetime cast in FE constant folding
+  Author: zclllyybb
+  Merged: 2025-07-11 15:35:32
+  Files changed: 2
+  Source files: fe/fe-core/src/main/java/org/apache/doris/nereids/trees/expressions/literal/TimeV2Literal.java
+  Test files: regression-test/suites/correctness/test_cast_time_to_datetime.groovy
+  URL: https://github.com/apache/doris/pull/52896
+--------------------------------------------------------------------------------
+PR #53101: branch-3.1: [enhance](meta-service)add bvar for fdb process status #52882
+  Author: github-actions[bot]
+  Merged: 2025-07-11 11:19:06
+  Files changed: 4
+  Source files: cloud/src/common/bvars.cpp, cloud/src/common/bvars.h, cloud/src/common/metric.cpp
+  Test files: cloud/test/metric_test.cpp
+  URL: https://github.com/apache/doris/pull/53101
+--------------------------------------------------------------------------------
+PR #53091: branch-3.1: [fix](nereids)should distinguish hash and other conjuncts for outer join in MultiJoin #53051
+  Author: github-actions[bot]
+  Merged: 2025-07-11 11:11:57
+  Files changed: 3
+  Source files: fe/fe-core/src/main/java/org/apache/doris/nereids/rules/rewrite/MultiJoin.java, fe/fe-core/src/main/java/org/apache/doris/nereids/rules/rewrite/ReorderJoin.java
+  Test files: regression-test/suites/nereids_p0/join/test_many_multi_join.groovy
+  URL: https://github.com/apache/doris/pull/53091
+--------------------------------------------------------------------------------
+PR #53100: branch-3.0: [enhance](meta-service)add bvar for fdb process status #52882
+  Author: github-actions[bot]
+  Merged: 2025-07-11 07:07:17
+  Files changed: 4
+  Source files: cloud/src/common/bvars.cpp, cloud/src/common/bvars.h, cloud/src/common/metric.cpp
+  Test files: cloud/test/metric_test.cpp
+  URL: https://github.com/apache/doris/pull/53100
+--------------------------------------------------------------------------------
+PR #53033: branch-3.0: [fix](TabletSched)Prioritize non-drop replicas as src replicas #53006
+  Author: github-actions[bot]
+  Merged: 2025-07-11 05:58:47
+  Files changed: 2
+  Source files: fe/fe-core/src/main/java/org/apache/doris/clone/TabletSchedCtx.java
+  Test files: fe/fe-core/src/test/java/org/apache/doris/clone/TabletSchedCtxTest.java
+  URL: https://github.com/apache/doris/pull/53033
+--------------------------------------------------------------------------------
+PR #53026: branch-3.0: [Enhancement](sql-dialect) Support multiple sql-converter service urls #52636
+  Author: github-actions[bot]
+  Merged: 2025-07-11 05:58:15
+  Files changed: 2
+  Source files: fe/fe-core/src/main/java/org/apache/doris/plugin/dialect/HttpDialectUtils.java
+  Test files: fe/fe-core/src/test/java/org/apache/doris/plugin/HttpDialectUtilsTest.java
+  URL: https://github.com/apache/doris/pull/53026
+--------------------------------------------------------------------------------
+PR #53095: branch-3.1: [fix](job) fix show routine load job result incorrect after alter job property #53038
+  Author: github-actions[bot]
+  Merged: 2025-07-11 05:54:41
+  Files changed: 2
+  Source files: fe/fe-core/src/main/java/org/apache/doris/load/routineload/RoutineLoadJob.java
+  Test files: regression-test/suites/load_p0/routine_load/test_routine_load.groovy
+  URL: https://github.com/apache/doris/pull/53095
+--------------------------------------------------------------------------------
+PR #53082: branch-3.1: [fix](mow) remove checker code for enable_delete_bitmap_merge_on_compaction #51676
+  Author: github-actions[bot]
+  Merged: 2025-07-11 05:54:04
+  Files changed: 4
+  Source files: cloud/src/common/config.h, cloud/src/recycler/checker.cpp, cloud/src/recycler/checker.h
+  Test files: cloud/test/recycler_test.cpp
+  URL: https://github.com/apache/doris/pull/53082
+--------------------------------------------------------------------------------
+PR #52882: [enhance](meta-service)add bvar for fdb process status
+  Author: koarz
+  Merged: 2025-07-11 05:20:05
+  Files changed: 4
+  Source files: cloud/src/common/bvars.cpp, cloud/src/common/bvars.h, cloud/src/common/metric.cpp
+  Test files: cloud/test/metric_test.cpp
+  URL: https://github.com/apache/doris/pull/52882
+--------------------------------------------------------------------------------
+PR #53038: [fix](job) fix show routine load job result incorrect after alter job property
+  Author: sollhui
+  Merged: 2025-07-11 03:44:26
+  Files changed: 2
+  Source files: fe/fe-core/src/main/java/org/apache/doris/load/routineload/RoutineLoadJob.java
+  Test files: regression-test/suites/load_p0/routine_load/test_routine_load.groovy
+  URL: https://github.com/apache/doris/pull/53038
+--------------------------------------------------------------------------------
+PR #53048: [Chore](function) Improve the code coverage of function_json.cpp
+  Author: BiteTheDDDDt
+  Merged: 2025-07-11 03:41:03
+  Files changed: 3
+  Source files: be/src/vec/functions/function_json.cpp
+  Test files: regression-test/data/query_p0/sql_functions/json_functions/test_json_function.out, regression-test/suites/query_p0/sql_functions/json_functions/test_json_function.groovy
+  URL: https://github.com/apache/doris/pull/53048
+--------------------------------------------------------------------------------
+PR #53051: [fix](nereids)should distinguish hash and other conjuncts for outer join in MultiJoin
+  Author: starocean999
+  Merged: 2025-07-11 03:12:30
+  Files changed: 3
+  Source files: fe/fe-core/src/main/java/org/apache/doris/nereids/rules/rewrite/MultiJoin.java, fe/fe-core/src/main/java/org/apache/doris/nereids/rules/rewrite/ReorderJoin.java
+  Test files: regression-test/suites/nereids_p0/join/test_many_multi_join.groovy
+  URL: https://github.com/apache/doris/pull/53051
+--------------------------------------------------------------------------------
+PR #53045: branch-3.1: [Bug](function) fix bitmap_from_base64 function cause heap-buffer-overflow error #53018
+  Author: github-actions[bot]
+  Merged: 2025-07-11 02:13:03
+  Files changed: 2
+  Source files: be/src/vec/functions/function_bitmap.cpp
+  Test files: regression-test/suites/query_p0/sql_functions/bitmap_functions/test_bitmap_function.groovy
+  URL: https://github.com/apache/doris/pull/53045
+--------------------------------------------------------------------------------
+PR #53064: [improvment](show) support baseindexname and rollupindexname in show alter table mv
+  Author: lsy3993
+  Merged: 2025-07-11 02:00:23
+  Files changed: 3
+  Source files: fe/fe-core/src/main/java/org/apache/doris/nereids/trees/plans/commands/ShowAlterTableCommand.java
+  Test files: fe/fe-core/src/test/java/org/apache/doris/nereids/trees/plans/commands/ShowAlterTableCommandTest.java, regression-test/suites/nereids_p0/show/test_nereids_show_alter_table.groovy
+  URL: https://github.com/apache/doris/pull/53064
+--------------------------------------------------------------------------------
+PR #53043: branch-3.0: [Bug](function) fix bitmap_from_base64 function cause heap-buffer-overflow error #53018
+  Author: github-actions[bot]
+  Merged: 2025-07-11 01:38:08
+  Files changed: 2
+  Source files: be/src/vec/functions/function_bitmap.cpp
+  Test files: regression-test/suites/query_p0/sql_functions/bitmap_functions/test_bitmap_function.groovy
+  URL: https://github.com/apache/doris/pull/53043
+--------------------------------------------------------------------------------
+PR #53041: [chore](function) function catch std:: exception
+  Author: Mryange
+  Merged: 2025-07-10 23:11:57
+  Files changed: 2
+  Source files: be/src/vec/functions/function.h
+  Test files: be/test/vec/function/function_throw_exception_test.cpp
+  URL: https://github.com/apache/doris/pull/53041
+--------------------------------------------------------------------------------
+PR #53063: branch-2.1: [fix](tvf) support compressed json file for tvf and refactor code (#51983)
+  Author: suxiaogang223
+  Merged: 2025-07-10 22:36:47
+  Files changed: 4
+  Source files: be/src/vec/exec/format/json/new_json_reader.cpp
+  Test files: docker/thirdparties/docker-compose/hive/scripts/preinstalled_data/json_format_test/simple_object_json.json.gz, regression-test/data/external_table_p0/tvf/test_hdfs_tvf.out, regression-test/suites/external_table_p0/tvf/test_hdfs_tvf.groovy
+  URL: https://github.com/apache/doris/pull/53063
+--------------------------------------------------------------------------------
+PR #53044: branch-2.1: [Bug](function) fix bitmap_from_base64 function cause heap-buffer-overflow error #53018
+  Author: github-actions[bot]
+  Merged: 2025-07-10 22:35:40
+  Files changed: 2
+  Source files: be/src/vec/functions/function_bitmap.cpp
+  Test files: regression-test/suites/query_p0/sql_functions/bitmap_functions/test_bitmap_function.groovy
+  URL: https://github.com/apache/doris/pull/53044
+--------------------------------------------------------------------------------
+PR #53035: branch-3.1: [fix](TabletSched)Prioritize non-drop replicas as src replicas #53006
+  Author: github-actions[bot]
+  Merged: 2025-07-10 15:39:46
+  Files changed: 2
+  Source files: fe/fe-core/src/main/java/org/apache/doris/clone/TabletSchedCtx.java
+  Test files: fe/fe-core/src/test/java/org/apache/doris/clone/TabletSchedCtxTest.java
+  URL: https://github.com/apache/doris/pull/53035
+--------------------------------------------------------------------------------
+PR #53052: [chore](cloud) remove versionstamp from the key creation functions
+  Author: w41ter
+  Merged: 2025-07-10 11:54:35
+  Files changed: 3
+  Source files: cloud/src/meta-store/keys.cpp, cloud/src/meta-store/keys.h
+  Test files: cloud/test/keys_test.cpp
+  URL: https://github.com/apache/doris/pull/53052
+--------------------------------------------------------------------------------
+PR #53032: Branch 3.1: [fix](nereids) fix insert into values throw 'Invalid call to sql on unbound object' and 'Insert has filtered data in strict mode' exception #52802
+  Author: 924060929
+  Merged: 2025-07-10 09:29:13
+  Files changed: 4
+  Source files: fe/fe-core/src/main/java/org/apache/doris/nereids/rules/analysis/BindSink.java, fe/fe-core/src/main/java/org/apache/doris/nereids/trees/plans/commands/insert/InsertUtils.java
+  Test files: regression-test/data/nereids_p0/insert_into_table/insert_values.out, regression-test/suites/nereids_p0/insert_into_table/insert_values.groovy
+  URL: https://github.com/apache/doris/pull/53032
+--------------------------------------------------------------------------------
+PR #52997: [Bug](window) fix window function can't return NULL value
+  Author: zhangstar333
+  Merged: 2025-07-10 08:45:37
+  Files changed: 3
+  Source files: be/src/vec/aggregate_functions/aggregate_function_null.h
+  Test files: regression-test/data/query_p0/sql_functions/window_functions/test_sum.out, regression-test/suites/query_p0/sql_functions/window_functions/test_sum.groovy
+  URL: https://github.com/apache/doris/pull/52997
+--------------------------------------------------------------------------------
+PR #53027: branch-3.1: [Enhancement](sql-dialect) Support multiple sql-converter service urls #52636
+  Author: github-actions[bot]
+  Merged: 2025-07-10 08:03:10
+  Files changed: 2
+  Source files: fe/fe-core/src/main/java/org/apache/doris/plugin/dialect/HttpDialectUtils.java
+  Test files: fe/fe-core/src/test/java/org/apache/doris/plugin/HttpDialectUtilsTest.java
+  URL: https://github.com/apache/doris/pull/53027
+--------------------------------------------------------------------------------
+PR #53018: [Bug](function) fix bitmap_from_base64 function cause heap-buffer-overflow error
+  Author: zhangstar333
+  Merged: 2025-07-10 07:05:22
+  Files changed: 2
+  Source files: be/src/vec/functions/function_bitmap.cpp
+  Test files: regression-test/suites/query_p0/sql_functions/bitmap_functions/test_bitmap_function.groovy
+  URL: https://github.com/apache/doris/pull/53018
+--------------------------------------------------------------------------------
+PR #53023: [chore](nereids) delete redundant code
+  Author: lsy3993
+  Merged: 2025-07-10 03:37:39
+  Files changed: 3
+  Source files: fe/fe-core/src/main/java/org/apache/doris/nereids/trees/plans/commands/ShowCreateUserCommand.java
+  Test files: fe/fe-core/src/test/java/org/apache/doris/nereids/trees/plans/commands/ShowCreateUserCommandTest.java, regression-test/suites/nereids_p0/show/test_nereids_show_create_user.groovy
+  URL: https://github.com/apache/doris/pull/53023
+--------------------------------------------------------------------------------
+PR #53006: [fix](TabletSched)Prioritize non-drop replicas as src replicas
+  Author: deardeng
+  Merged: 2025-07-10 03:33:59
+  Files changed: 2
+  Source files: fe/fe-core/src/main/java/org/apache/doris/clone/TabletSchedCtx.java
+  Test files: fe/fe-core/src/test/java/org/apache/doris/clone/TabletSchedCtxTest.java
+  URL: https://github.com/apache/doris/pull/53006
+--------------------------------------------------------------------------------
+PR #53012: branch-3.1: [opt](group_concat) allow args be types other than string #52805
+  Author: github-actions[bot]
+  Merged: 2025-07-10 02:06:22
+  Files changed: 4
+  Source files: fe/fe-core/src/main/java/org/apache/doris/nereids/trees/expressions/functions/agg/GroupConcat.java, fe/fe-core/src/main/java/org/apache/doris/nereids/trees/expressions/functions/agg/MultiDistinctGroupConcat.java
+  Test files: regression-test/data/query_p0/group_concat/test_group_concat.out, regression-test/suites/query_p0/group_concat/test_group_concat.groovy
+  URL: https://github.com/apache/doris/pull/53012
+--------------------------------------------------------------------------------
+PR #52985: [opt](auditlog) Use varchar(1024) for column frontend_ip of audit log table #52762
+  Author: gavinchou
+  Merged: 2025-07-10 00:47:31
+  Files changed: 3
+  Source files: fe/fe-core/src/main/java/org/apache/doris/catalog/InternalSchema.java
+  Test files: regression-test/data/audit/test_audit_log_behavior.out, regression-test/suites/manager/test_manager_interface_1.groovy
+  URL: https://github.com/apache/doris/pull/52985
+--------------------------------------------------------------------------------
+PR #52948: branch-3.0:[fix](auth)fix when authentication, the permissions of multiple roles…
+  Author: zddr
+  Merged: 2025-07-09 11:04:53
+  Files changed: 4
+  Source files: fe/fe-core/src/main/java/org/apache/doris/mysql/privilege/Auth.java, fe/fe-core/src/main/java/org/apache/doris/mysql/privilege/Role.java, fe/fe-core/src/main/java/org/apache/doris/mysql/privilege/RoleManager.java
+  Test files: regression-test/suites/account_p0/test_grant_priv.groovy
+  URL: https://github.com/apache/doris/pull/52948
+--------------------------------------------------------------------------------
+PR #52949: branch-3.1: [fix](auth)fix when authentication, the permissions of multiple roles should be merged #52349
+  Author: zddr
+  Merged: 2025-07-09 09:32:53
+  Files changed: 4
+  Source files: fe/fe-core/src/main/java/org/apache/doris/mysql/privilege/Auth.java, fe/fe-core/src/main/java/org/apache/doris/mysql/privilege/Role.java, fe/fe-core/src/main/java/org/apache/doris/mysql/privilege/RoleManager.java
+  Test files: regression-test/suites/account_p0/test_grant_priv.groovy
+  URL: https://github.com/apache/doris/pull/52949
+--------------------------------------------------------------------------------
+PR #52950: branch-3.0: [fix](nereids) fix sum0 cannot pass multi distinct check #51234
+  Author: feiniaofeiafei
+  Merged: 2025-07-09 08:07:11
+  Files changed: 3
+  Source files: fe/fe-core/src/main/java/org/apache/doris/nereids/rules/rewrite/CheckMultiDistinct.java
+  Test files: regression-test/data/nereids_syntax_p0/analyze_agg.out, regression-test/suites/nereids_syntax_p0/analyze_agg.groovy
+  URL: https://github.com/apache/doris/pull/52950
+--------------------------------------------------------------------------------
+PR #52955: branch-3.1: [fix](Nereids) not process must shuffle when regulate cannot be banned agg #52827
+  Author: morrySnow
+  Merged: 2025-07-09 08:04:29
+  Files changed: 3
+  Source files: fe/fe-core/src/main/java/org/apache/doris/nereids/properties/ChildrenPropertiesRegulator.java
+  Test files: regression-test/data/query_p0/group_concat/test_group_concat.out, regression-test/suites/query_p0/group_concat/test_group_concat.groovy
+  URL: https://github.com/apache/doris/pull/52955
+--------------------------------------------------------------------------------
+PR #52974: branch-3.0: [Fix](mow) Fix `DeleteBitmap`'s assignment operator and constructor #52582
+  Author: github-actions[bot]
+  Merged: 2025-07-09 07:43:16
+  Files changed: 4
+  Source files: be/src/olap/tablet_meta.cpp, be/src/olap/tablet_meta.h
+  Test files: regression-test/data/fault_injection_p0/cloud/test_cloud_mow_sc_inc_rowsets_dup.out, regression-test/suites/fault_injection_p0/cloud/test_cloud_mow_sc_inc_rowsets_dup.groovy
+  URL: https://github.com/apache/doris/pull/52974
+--------------------------------------------------------------------------------
+PR #52984: [opt](auditlog) Use varchar(1024) for column frontend_ip of audit log table #52762
+  Author: gavinchou
+  Merged: 2025-07-09 06:54:14
+  Files changed: 3
+  Source files: fe/fe-core/src/main/java/org/apache/doris/catalog/InternalSchema.java
+  Test files: regression-test/data/audit/test_audit_log_behavior.out, regression-test/suites/manager/test_manager_interface_1.groovy
+  URL: https://github.com/apache/doris/pull/52984
+--------------------------------------------------------------------------------
+PR #52975: branch-3.1: [Fix](mow) Fix `DeleteBitmap`'s assignment operator and constructor #52582
+  Author: github-actions[bot]
+  Merged: 2025-07-09 06:49:31
+  Files changed: 4
+  Source files: be/src/olap/tablet_meta.cpp, be/src/olap/tablet_meta.h
+  Test files: regression-test/data/fault_injection_p0/cloud/test_cloud_mow_sc_inc_rowsets_dup.out, regression-test/suites/fault_injection_p0/cloud/test_cloud_mow_sc_inc_rowsets_dup.groovy
+  URL: https://github.com/apache/doris/pull/52975
+--------------------------------------------------------------------------------
+PR #52871: branch-2.1: [fix](coordinator) fix cte with local shuffle throw exception #52870
+  Author: 924060929
+  Merged: 2025-07-09 02:52:00
+  Files changed: 2
+  Source files: fe/fe-core/src/main/java/org/apache/doris/qe/Coordinator.java
+  Test files: fe/fe-core/src/test/java/org/apache/doris/qe/LocalShuffleTest.java
+  URL: https://github.com/apache/doris/pull/52871
+--------------------------------------------------------------------------------
+PR #52905: [Test](nereids)  Add ut for MysqlLoadCommand in nereids
+  Author: yx-keith
+  Merged: 2025-07-09 02:27:07
+  Files changed: 2
+  Source files: fe/fe-core/src/main/java/org/apache/doris/nereids/trees/plans/commands/load/MysqlLoadCommand.java
+  Test files: fe/fe-core/src/test/java/org/apache/doris/nereids/trees/plans/commands/MysqlLoadCommandTest.java
+  URL: https://github.com/apache/doris/pull/52905
+--------------------------------------------------------------------------------
+PR #52875: branch-3.0: [fix](coordinator) fix cte with local shuffle throw exception #52870
+  Author: 924060929
+  Merged: 2025-07-09 01:49:58
+  Files changed: 2
+  Source files: fe/fe-core/src/main/java/org/apache/doris/qe/Coordinator.java
+  Test files: fe/fe-core/src/test/java/org/apache/doris/qe/LocalShuffleTest.java
+  URL: https://github.com/apache/doris/pull/52875
+--------------------------------------------------------------------------------
+PR #52870: [fix](coordinator) fix cte with local shuffle throw exception
+  Author: 924060929
+  Merged: 2025-07-08 15:00:59
+  Files changed: 2
+  Source files: fe/fe-core/src/main/java/org/apache/doris/qe/Coordinator.java
+  Test files: fe/fe-core/src/test/java/org/apache/doris/qe/LocalShuffleTest.java
+  URL: https://github.com/apache/doris/pull/52870
+--------------------------------------------------------------------------------
+PR #52846: branch-3.1: [opt](auditlog) Use varchar(1024) for column frontend_ip of audit log table #52762
+  Author: github-actions[bot]
+  Merged: 2025-07-08 11:10:58
+  Files changed: 2
+  Source files: fe/fe-core/src/main/java/org/apache/doris/catalog/InternalSchema.java
+  Test files: regression-test/suites/manager/test_manager_interface_1.groovy
+  URL: https://github.com/apache/doris/pull/52846
+--------------------------------------------------------------------------------
+PR #52842: branch-3.1: [fix](session variables) Limit query_timeout to within LoadTimeout #51222
+  Author: github-actions[bot]
+  Merged: 2025-07-08 09:41:36
+  Files changed: 4
+  Source files: fe/fe-core/src/main/java/org/apache/doris/cloud/transaction/CloudGlobalTransactionMgr.java, fe/fe-core/src/main/java/org/apache/doris/transaction/GlobalTransactionMgr.java, fe/fe-core/src/main/java/org/apache/doris/transaction/GlobalTransactionMgrIface.java
+  Test files: regression-test/suites/insert_p0/test_insert_timeout.groovy
+  URL: https://github.com/apache/doris/pull/52842
+--------------------------------------------------------------------------------
+PR #52876: branch-3.1: [fix](coordinator) fix cte with local shuffle throw exception #52870
+  Author: 924060929
+  Merged: 2025-07-08 09:07:40
+  Files changed: 2
+  Source files: fe/fe-core/src/main/java/org/apache/doris/qe/Coordinator.java
+  Test files: fe/fe-core/src/test/java/org/apache/doris/qe/LocalShuffleTest.java
+  URL: https://github.com/apache/doris/pull/52876
+--------------------------------------------------------------------------------
+PR #52867: branch-3.1: [fix](inverted index) catch IO exception to avoid coredump in inverted index string reader #51844
+  Author: airborne12
+  Merged: 2025-07-08 03:30:45
+  Files changed: 2
+  Source files: be/src/olap/rowset/segment_v2/inverted_index_reader.cpp
+  Test files: be/test/olap/rowset/segment_v2/inverted_index_reader_test.cpp
+  URL: https://github.com/apache/doris/pull/52867
+--------------------------------------------------------------------------------
+PR #52844: branch-3.0: [chore](cloud) Add async wrap for `bthread_fork_join` with promise-future #52816
+  Author: github-actions[bot]
+  Merged: 2025-07-08 01:38:25
+  Files changed: 3
+  Source files: be/src/cloud/cloud_meta_mgr.cpp, be/src/cloud/cloud_meta_mgr.h
+  Test files: be/test/cloud/cloud_meta_mgr_test.cpp
+  URL: https://github.com/apache/doris/pull/52844
+--------------------------------------------------------------------------------
+PR #52864: branch-3.0: [fix](inverted index) catch IO exception to avoid coredump in inverted index string reader #51844
+  Author: airborne12
+  Merged: 2025-07-08 01:37:36
+  Files changed: 2
+  Source files: be/src/olap/rowset/segment_v2/inverted_index_reader.cpp
+  Test files: be/test/olap/rowset/segment_v2/inverted_index_reader_test.cpp
+  URL: https://github.com/apache/doris/pull/52864
+--------------------------------------------------------------------------------
+PR #52827: [fix](Nereids) not process must shuffle when regulate can not be banned agg
+  Author: morrySnow
+  Merged: 2025-07-07 09:39:43
+  Files changed: 3
+  Source files: fe/fe-core/src/main/java/org/apache/doris/nereids/properties/ChildrenPropertiesRegulator.java
+  Test files: regression-test/data/query_p0/group_concat/test_group_concat.out, regression-test/suites/query_p0/group_concat/test_group_concat.groovy
+  URL: https://github.com/apache/doris/pull/52827
+--------------------------------------------------------------------------------
+PR #52841: branch-3.0: [fix](session variables) Limit query_timeout to within LoadTimeout #51222
+  Author: github-actions[bot]
+  Merged: 2025-07-07 06:31:49
+  Files changed: 4
+  Source files: fe/fe-core/src/main/java/org/apache/doris/cloud/transaction/CloudGlobalTransactionMgr.java, fe/fe-core/src/main/java/org/apache/doris/transaction/GlobalTransactionMgr.java, fe/fe-core/src/main/java/org/apache/doris/transaction/GlobalTransactionMgrIface.java
+  Test files: regression-test/suites/insert_p0/test_insert_timeout.groovy
+  URL: https://github.com/apache/doris/pull/52841
+--------------------------------------------------------------------------------
+PR #52845: branch-3.1: [chore](cloud) Add async wrap for `bthread_fork_join` with promise-future #52816
+  Author: github-actions[bot]
+  Merged: 2025-07-07 05:52:38
+  Files changed: 3
+  Source files: be/src/cloud/cloud_meta_mgr.cpp, be/src/cloud/cloud_meta_mgr.h
+  Test files: be/test/cloud/cloud_meta_mgr_test.cpp
+  URL: https://github.com/apache/doris/pull/52845
+--------------------------------------------------------------------------------

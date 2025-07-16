@@ -1,0 +1,101 @@
+
+Results:
+Found 12 PRs with 2-4 file changes that include both source code files and test classes, merged after November 2024:
+
+--------------------------------------------------------------------------------
+PR #712: feat: enhance GeminiClient with max tokens management
+  Author: danielchalef
+  Merged: 2025-07-13 21:37:55
+  Files changed: 2
+  Source files: graphiti_core/llm_client/gemini_client.py
+  Test files: tests/llm_client/test_gemini_client.py
+  URL: https://github.com/getzep/graphiti/pull/712
+--------------------------------------------------------------------------------
+PR #458: load embedding update
+  Author: prasmussen15
+  Merged: 2025-05-08 04:07:54
+  Files changed: 2
+  Source files: graphiti_core/edges.py
+  Test files: tests/test_graphiti_int.py
+  URL: https://github.com/getzep/graphiti/pull/458
+--------------------------------------------------------------------------------
+PR #431: Anthropic cleanup
+  Author: evanmschultz
+  Merged: 2025-05-03 13:15:03
+  Files changed: 4
+  Source files: graphiti_core/llm_client/anthropic_client.py
+  Test files: tests/llm_client/test_anthropic_client_int.py, tests/llm_client/test_client.py
+  URL: https://github.com/getzep/graphiti/pull/431
+--------------------------------------------------------------------------------
+PR #404: Eval updates
+  Author: prasmussen15
+  Merged: 2025-04-27 18:27:47
+  Files changed: 3
+  Source files: graphiti_core/utils/maintenance/graph_data_operations.py
+  Test files: tests/evals/eval_cli.py, tests/evals/eval_e2e_graph_building.py
+  URL: https://github.com/getzep/graphiti/pull/404
+--------------------------------------------------------------------------------
+PR #381: Node episodes list
+  Author: prasmussen15
+  Merged: 2025-04-21 03:20:19
+  Files changed: 4
+  Source files: graphiti_core/nodes.py, graphiti_core/search/search_utils.py
+  Test files: tests/test_graphiti_int.py, tests/test_node_int.py
+  URL: https://github.com/getzep/graphiti/pull/381
+--------------------------------------------------------------------------------
+PR #346: update context string
+  Author: prasmussen15
+  Merged: 2025-04-10 10:57:59
+  Files changed: 4
+  Source files: graphiti_core/search/search_config.py, graphiti_core/search/search_helpers.py
+  Test files: tests/test_graphiti_int.py
+  URL: https://github.com/getzep/graphiti/pull/346
+--------------------------------------------------------------------------------
+PR #280: Search optimizations
+  Author: prasmussen15
+  Merged: 2025-02-27 16:51:11
+  Files changed: 4
+  Source files: graphiti_core/search/search_utils.py, graphiti_core/utils/maintenance/node_operations.py
+  Test files: tests/test_graphiti_int.py
+  URL: https://github.com/getzep/graphiti/pull/280
+--------------------------------------------------------------------------------
+PR #274: entity typo
+  Author: prasmussen15
+  Merged: 2025-02-24 17:44:17
+  Files changed: 2
+  Source files: graphiti_core/search/search_utils.py
+  Test files: tests/utils/search/search_utils_test.py
+  URL: https://github.com/getzep/graphiti/pull/274
+--------------------------------------------------------------------------------
+PR #238: fix: Clean input before passing it to the llm
+  Author: paul-paliychuk
+  Merged: 2024-12-11 02:27:06
+  Files changed: 4
+  Source files: graphiti_core/llm_client/client.py, graphiti_core/llm_client/openai_client.py
+  Test files: tests/llm_client/test_client.py
+  URL: https://github.com/getzep/graphiti/pull/238
+--------------------------------------------------------------------------------
+PR #233: update lucene escaping
+  Author: prasmussen15
+  Merged: 2024-12-09 15:36:46
+  Files changed: 2
+  Source files: graphiti_core/helpers.py
+  Test files: tests/helpers_test.py
+  URL: https://github.com/getzep/graphiti/pull/233
+--------------------------------------------------------------------------------
+PR #231: fix node distance reranker
+  Author: prasmussen15
+  Merged: 2024-12-06 17:08:54
+  Files changed: 2
+  Source files: graphiti_core/search/search_utils.py
+  Test files: tests/test_graphiti_int.py
+  URL: https://github.com/getzep/graphiti/pull/231
+--------------------------------------------------------------------------------
+PR #217: add delete nodes by group_id
+  Author: prasmussen15
+  Merged: 2024-11-18 18:55:19
+  Files changed: 4
+  Source files: graphiti_core/edges.py, graphiti_core/nodes.py
+  Test files: tests/test_graphiti_int.py
+  URL: https://github.com/getzep/graphiti/pull/217
+--------------------------------------------------------------------------------

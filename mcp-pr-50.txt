@@ -1,0 +1,53 @@
+
+Results:
+Found 6 PRs with 2-4 file changes that include both source code files and test classes, merged after November 2024:
+
+--------------------------------------------------------------------------------
+PR #391: fix: improve error handling in HttpClientSseClientTransport and add test
+  Author: tzolov
+  Merged: 2025-07-13 09:22:58
+  Files changed: 2
+  Source files: mcp/src/main/java/io/modelcontextprotocol/client/transport/HttpClientSseClientTransport.java
+  Test files: mcp/src/test/java/io/modelcontextprotocol/client/transport/HttpClientSseClientTransportTests.java
+  URL: https://github.com/modelcontextprotocol/java-sdk/pull/391
+--------------------------------------------------------------------------------
+PR #345: refactor: return immutable lists from list methods
+  Author: tzolov
+  Merged: 2025-06-27 19:03:46
+  Files changed: 4
+  Source files: mcp/src/main/java/io/modelcontextprotocol/client/McpAsyncClient.java
+  Test files: mcp-spring/mcp-spring-webflux/src/test/java/io/modelcontextprotocol/WebFluxSseIntegrationTests.java, mcp-test/src/main/java/io/modelcontextprotocol/client/AbstractMcpAsyncClientTests.java, mcp/src/test/java/io/modelcontextprotocol/client/AbstractMcpAsyncClientTests.java
+  URL: https://github.com/modelcontextprotocol/java-sdk/pull/345
+--------------------------------------------------------------------------------
+PR #339: feat: Propagate Context to eager connect via McpClientSession
+  Author: chemicL
+  Merged: 2025-06-26 11:10:17
+  Files changed: 3
+  Source files: mcp/src/main/java/io/modelcontextprotocol/client/McpAsyncClient.java
+  Test files: mcp/src/main/java/io/modelcontextprotocol/spec/McpClientSession.java, mcp/src/test/java/io/modelcontextprotocol/client/McpAsyncClientTests.java
+  URL: https://github.com/modelcontextprotocol/java-sdk/pull/339
+--------------------------------------------------------------------------------
+PR #318: Fix Streamable HTTP WebClient GET SSE handling
+  Author: chemicL
+  Merged: 2025-06-16 13:48:49
+  Files changed: 4
+  Source files: mcp-spring/mcp-spring-webflux/src/main/java/io/modelcontextprotocol/client/transport/WebClientStreamableHttpTransport.java
+  Test files: mcp-test/src/main/java/io/modelcontextprotocol/client/AbstractMcpAsyncClientTests.java, mcp/src/main/java/io/modelcontextprotocol/spec/DefaultMcpTransportSession.java, mcp/src/test/java/io/modelcontextprotocol/client/AbstractMcpAsyncClientTests.java
+  URL: https://github.com/modelcontextprotocol/java-sdk/pull/318
+--------------------------------------------------------------------------------
+PR #149: Fix javadoc errors
+  Author: xiaowangzhixiao
+  Merged: 2025-04-23 15:03:10
+  Files changed: 4
+  Source files: mcp/src/main/java/io/modelcontextprotocol/client/McpAsyncClient.java
+  Test files: mcp-test/src/main/java/io/modelcontextprotocol/server/AbstractMcpAsyncServerTests.java, mcp-test/src/main/java/io/modelcontextprotocol/server/AbstractMcpSyncServerTests.java, mcp/src/main/java/io/modelcontextprotocol/spec/McpServerSession.java
+  URL: https://github.com/modelcontextprotocol/java-sdk/pull/149
+--------------------------------------------------------------------------------
+PR #112: feat(mcp): Custom context paths in HTTP Servlet SSE server transport
+  Author: tzolov
+  Merged: 2025-04-06 17:01:33
+  Files changed: 4
+  Source files: mcp/src/main/java/io/modelcontextprotocol/server/transport/HttpServletSseServerTransportProvider.java
+  Test files: mcp/src/test/java/io/modelcontextprotocol/server/transport/HttpServletSseServerCustomContextPathTests.java, mcp/src/test/java/io/modelcontextprotocol/server/transport/HttpServletSseServerTransportProviderIntegrationTests.java, mcp/src/test/java/io/modelcontextprotocol/server/transport/TomcatTestUtil.java
+  URL: https://github.com/modelcontextprotocol/java-sdk/pull/112
+--------------------------------------------------------------------------------

@@ -1,0 +1,12 @@
+
+Results:
+Found 1 PRs with 2-4 file changes that include test classes, merged after November 2024:
+
+--------------------------------------------------------------------------------
+PR #11745: Fix downloading/exporting when overwriting file would not truncate
+  Author: Stypox
+  Merged: 2024-11-27 16:37:53
+  Files changed: 4
+  Test files: app/src/test/java/org/schabi/newpipe/settings/ImportExportManagerTest.kt
+  URL: https://github.com/TeamNewPipe/NewPipe/pull/11745
+--------------------------------------------------------------------------------

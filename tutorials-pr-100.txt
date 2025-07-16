@@ -1,0 +1,509 @@
+
+Results:
+Found 63 PRs with 2-4 file changes that include both source code files and test classes, merged after November 2024:
+
+--------------------------------------------------------------------------------
+PR #18628: BAEL-9319: Parsing the Response Body When the HTTP Request Has Return…
+  Author: achraftt
+  Merged: 2025-06-22 01:36:26
+  Files changed: 3
+  Source files: spring-web-modules/spring-resttemplate/src/main/java/com/baeldung/resttemplate/web/exception/UnauthorizedException.java, spring-web-modules/spring-resttemplate/src/main/java/com/baeldung/resttemplate/web/service/BarConsumerService.java
+  Test files: spring-web-modules/spring-resttemplate/src/test/java/com/baeldung/resttemplate/web/service/BarConsumerServiceUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18628
+--------------------------------------------------------------------------------
+PR #18599: BAEL-9260: Hashmap Implementation to Count the Occurrences of Each Ch…
+  Author: achraftt
+  Merged: 2025-06-18 01:28:16
+  Files changed: 2
+  Source files: core-java-modules/core-java-string-algorithms-5/src/main/java/com/baeldung/countingchars/CharacterFrequencyCounter.java
+  Test files: core-java-modules/core-java-string-algorithms-5/src/test/java/com/baeldung/countingchars/CharacterFrequencyCounterUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18599
+--------------------------------------------------------------------------------
+PR #18614: updated print stack code
+  Author: Neetika23
+  Merged: 2025-06-07 02:54:16
+  Files changed: 2
+  Source files: core-java-modules/core-java-collections-7/src/main/java/com/baeldung/PrintStack.java
+  Test files: core-java-modules/core-java-collections-7/src/test/java/com/baeldung/printstack/PrintStackUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18614
+--------------------------------------------------------------------------------
+PR #18596: [spring-jdbc-col-count] resolving runtime error when using queryForLi…
+  Author: sk1418
+  Merged: 2025-06-03 23:41:28
+  Files changed: 4
+  Source files: persistence-modules/spring-jdbc-2/src/main/java/com/baeldung/spring/jdbc/queryforlist/QueryForListDemoApplication.java
+  Test files: persistence-modules/spring-jdbc-2/src/test/java/com/baeldung/spring/jdbc/queryforlist/JdbcTemplateIntegrationTest.java, persistence-modules/spring-jdbc-2/src/test/java/com/baeldung/spring/jdbc/queryforlist/Student.java
+  URL: https://github.com/eugenp/tutorials/pull/18596
+--------------------------------------------------------------------------------
+PR #18585: Bael 9316
+  Author: wynnteo
+  Merged: 2025-06-01 02:12:21
+  Files changed: 2
+  Source files: core-java-modules/core-java-lang-3/src/main/java/com/baeldung/comparedouble/DoubleComparator.java
+  Test files: core-java-modules/core-java-lang-3/src/test/java/com/baeldung/comparedouble/CompareDoubleUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18585
+--------------------------------------------------------------------------------
+PR #18595: BAEL-9227 (Spring boot 3.5): Triggering Quartz Jobs using Spring Boot…
+  Author: achraftt
+  Merged: 2025-06-01 02:03:37
+  Files changed: 4
+  Source files: spring-quartz/src/main/java/org/baeldung/springquartz/SpringQuartzApp.java
+  Test files: spring-quartz/src/test/java/org/baeldung/springquartz/actuator/QuartzActuatorUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18595
+--------------------------------------------------------------------------------
+PR #18557: Bael 9213
+  Author: wynnteo
+  Merged: 2025-05-26 01:59:38
+  Files changed: 2
+  Source files: web-modules/jakarta-ee/src/main/java/com/baeldung/stringtosoapmessage/StringToSOAPMsg.java
+  Test files: web-modules/jakarta-ee/src/test/java/com/baeldung/stringtosoapmessage/StringToSOAPMsgUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18557
+--------------------------------------------------------------------------------
+PR #18542: BAEL-9288 - A Guide to OpenAI Text-to-Speech (TTS) in Spring AI
+  Author: sIvanovKonstantyn
+  Merged: 2025-05-25 19:31:33
+  Files changed: 4
+  Source files: spring-ai-3/src/main/java/com/baeldung/springai/transcribe/controllers/TextToSpeechController.java, spring-ai-3/src/main/java/com/baeldung/springai/transcribe/services/TextToSpeechService.java
+  Test files: spring-ai-3/src/test/java/com/baeldung/springai/transcribe/TextToSpeechLiveTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18542
+--------------------------------------------------------------------------------
+PR #18547: BAEL-9178: Generate a Unique int from a Unique String
+  Author: LeoHelfferich
+  Merged: 2025-05-25 05:11:08
+  Files changed: 3
+  Source files: core-java-modules/core-java-string-algorithms-5/src/main/java/com/baeldung/uniqueint/StringToUniqueInt.java
+  Test files: core-java-modules/core-java-string-algorithms-5/src/test/java/com/baeldung/uniqueint/StringToUniqueIntUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18547
+--------------------------------------------------------------------------------
+PR #18524: BAEL-8213: Hibernate DuplicateMappingException: Column is Duplicated in Mapping For Entity
+  Author: azhwani
+  Merged: 2025-05-23 20:25:25
+  Files changed: 3
+  Source files: persistence-modules/hibernate-exceptions-2/src/main/java/com/baeldung/hibernate/columnduplicatedmapping/HibernateUtil.java, persistence-modules/hibernate-exceptions-2/src/main/java/com/baeldung/hibernate/columnduplicatedmapping/Person.java
+  Test files: persistence-modules/hibernate-exceptions-2/src/test/java/com/baeldung/hibernate/columnduplicatedmapping/ColumnDuplicatedMappingUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18524
+--------------------------------------------------------------------------------
+PR #18548: Bael 9261
+  Author: wynnteo
+  Merged: 2025-05-22 01:25:53
+  Files changed: 3
+  Source files: jsoup/src/main/java/com/baeldung/jsoup/HTMLSanitizer.java
+  Test files: jsoup/src/test/java/com/baeldung/jsoup/HTMLSanitizerUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18548
+--------------------------------------------------------------------------------
+PR #18492: [BAEL-6553] Gson Expose and SerializedName tests
+  Author: bhaskar16
+  Merged: 2025-05-21 15:08:20
+  Files changed: 4
+  Source files: json-modules/gson-3/src/main/java/com/baeldung/gson/entities/User.java
+  Test files: json-modules/gson-3/src/test/java/com/baeldung/gson/GsonUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18492
+--------------------------------------------------------------------------------
+PR #18497: BAEL-9259: https://jira.baeldung.com/browse/BAEL-9259
+  Author: LeoHelfferich
+  Merged: 2025-05-12 01:55:29
+  Files changed: 2
+  Source files: core-java-modules/core-java-string-operations-12/src/main/java/com/baeldung/minusoperation/StringMinusOperations.java
+  Test files: core-java-modules/core-java-string-operations-12/src/test/java/com/baeldung/minusoperation/StringMinusOperationsUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18497
+--------------------------------------------------------------------------------
+PR #18358: [BAEL-8962] Check if a code compiles in Java using JavaCompiler
+  Author: dhrubo55
+  Merged: 2025-05-05 16:21:04
+  Files changed: 4
+  Source files: core-java-modules/core-java-compiler/src/main/java/com/baeldung/compilerapi/InMemoryJavaFile.java, core-java-modules/core-java-compiler/src/main/java/com/baeldung/compilerapi/JavaCompilerUtils.java
+  Test files: core-java-modules/core-java-compiler/src/test/java/com/baeldung/compilerapi/JavaCompilerUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18358
+--------------------------------------------------------------------------------
+PR #18502: BAEL-9249 Code and Unit Tests for Extracting Keys from a JSONObject Using keySet()
+  Author: vBarbaros
+  Merged: 2025-05-02 02:20:11
+  Files changed: 2
+  Source files: json-modules/json-2/src/main/java/com/baeldung/jsongetvaluewithkeyset/JSONGetValueWithKeySet.java
+  Test files: json-modules/json-2/src/test/java/com/baeldung/jsongetvaluewithkeyset/JSONGetValueWithKeySetUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18502
+--------------------------------------------------------------------------------
+PR #18447: BAEL-9192
+  Author: Neetika23
+  Merged: 2025-05-02 02:14:34
+  Files changed: 3
+  Source files: core-java-modules/core-java-collections-7/src/main/java/com/baeldung/PrintStack.java
+  Test files: core-java-modules/core-java-collections-7/src/test/java/com/baeldung/printstack/PrintStackUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18447
+--------------------------------------------------------------------------------
+PR #18485: BAEL-9218 - Query in DynamoDB on the basis of HashKey and Range Key
+  Author: Alexandru-Borza
+  Merged: 2025-04-22 16:16:01
+  Files changed: 3
+  Source files: aws-modules/aws-dynamodb/src/main/java/com/baeldung/dynamodb/query/UserOrdersRepository.java
+  Test files: aws-modules/aws-dynamodb/src/test/java/com/baeldung/dynamodb/query/UserOrdersRepositoryIntegrationTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18485
+--------------------------------------------------------------------------------
+PR #18461: JAVA-45629 Moved article avro-storing-null-values-files from apache-l…
+  Author: Bipinkumar27
+  Merged: 2025-04-15 17:59:43
+  Files changed: 3
+  Source files: apache-libraries-3/src/main/java/com/baeldung/apache/avro/storingnullvaluesinavrofile/AvroUser.java
+  Test files: apache-libraries-3/src/test/java/com/baeldung/apache/avro/storingnullvaluesinavrofile/AvroUserUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18461
+--------------------------------------------------------------------------------
+PR #18452: BAEL-8822 - introduction to objenesis
+  Author: SmartyAnsh
+  Merged: 2025-04-15 15:03:35
+  Files changed: 3
+  Source files: libraries-5/src/main/java/com/baeldung/objenesis/User.java
+  Test files: libraries-5/src/test/java/com/baeldung/objenesis/ObjenesisUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18452
+--------------------------------------------------------------------------------
+PR #18469: [BAEL-8922] Generate a Valid Expression From a String of Numbers to G…
+  Author: martin-blazevic
+  Merged: 2025-04-14 17:28:08
+  Files changed: 2
+  Source files: core-java-modules/core-java-string-algorithms-5/src/main/java/com/baeldung/backtracking/Backtracking.java
+  Test files: core-java-modules/core-java-string-algorithms-5/src/test/java/com/baeldung/backtracking/BacktrackingUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18469
+--------------------------------------------------------------------------------
+PR #18422: Bael 9219
+  Author: wynnteo
+  Merged: 2025-04-02 02:43:34
+  Files changed: 4
+  Source files: core-java-modules/core-java-networking-6/src/main/java/com/baeldung/curltohttprequest/CurlToHttpRequest.java
+  Test files: core-java-modules/core-java-networking-6/src/test/java/com/baeldung/curltohttprequest/CurlToHttpRequestUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18422
+--------------------------------------------------------------------------------
+PR #18444: [JAVA-41583]
+  Author: panos-kakos
+  Merged: 2025-04-01 20:38:05
+  Files changed: 4
+  Source files: spring-boot-modules/spring-boot-3/src/main/java/com/baeldung/recordswithjpa/entity/Book.java
+  Test files: spring-boot-modules/spring-boot-3/src/test/java/com/baeldung/recordswithjpa/QueryServiceIntegrationTest.java, spring-boot-modules/spring-boot-3/src/test/java/com/baeldung/recordswithjpa/RecordsAsJpaIntegrationTest.java, spring-boot-modules/spring-boot-3/src/test/java/com/baeldung/recordswithjpa/repository/BookRepositoryIntegrationTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18444
+--------------------------------------------------------------------------------
+PR #18432: fix quarkus tests
+  Author: Alexandru-Borza
+  Merged: 2025-03-30 16:49:53
+  Files changed: 4
+  Source files: quarkus-modules/consume-rest-api/consume-api/src/main/java/com/baeldung/javahttpclient/JavaHttpClientPostService.java
+  Test files: quarkus-modules/consume-rest-api/consume-api/src/test/java/com/baeldung/javahttpclient/JavaHttpClientPostServiceIntegrationTest.java, quarkus-modules/consume-rest-api/consume-api/src/test/java/com/baeldung/restclient/PostRestClientIntegrationTest.java, quarkus-modules/consume-rest-api/consume-api/src/test/resources/application.properties
+  URL: https://github.com/eugenp/tutorials/pull/18432
+--------------------------------------------------------------------------------
+PR #18428: Rest API in Java
+  Author: karpado
+  Merged: 2025-03-28 15:44:20
+  Files changed: 2
+  Source files: core-java-modules/core-java-httpclient/src/main/java/com/baeldung/rest/RestApiServer.java
+  Test files: core-java-modules/core-java-httpclient/src/test/java/com/baeldung/rest/RestApiServerUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18428
+--------------------------------------------------------------------------------
+PR #18412: BAEL-6879 Reusing a PreparedStatement multiple times example code and tests
+  Author: sam-gardner
+  Merged: 2025-03-24 15:00:15
+  Files changed: 3
+  Source files: persistence-modules/core-java-persistence-4/src/main/java/com/baeldung/resusepreparedstatement/ReusePreparedStatement.java
+  Test files: persistence-modules/core-java-persistence-4/src/test/java/com/baeldung/reusepreparedstatement/ReusePreparedStatementUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18412
+--------------------------------------------------------------------------------
+PR #18414: Bael 9209
+  Author: wynnteo
+  Merged: 2025-03-20 00:04:14
+  Files changed: 2
+  Source files: core-java-modules/core-java-security-algorithms/src/main/java/com/baeldung/aes/AESUtil.java
+  Test files: core-java-modules/core-java-security-algorithms/src/test/java/com/baeldung/aes/AESUtilUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18414
+--------------------------------------------------------------------------------
+PR #18305: [impr-manual-id] manually set id before save()
+  Author: sk1418
+  Merged: 2025-03-16 11:07:53
+  Files changed: 4
+  Source files: persistence-modules/hibernate5/src/main/java/com/baeldung/hibernate/HibernateUtil.java, persistence-modules/hibernate5/src/main/java/com/baeldung/hibernate/pojo/BaseballPlayer.java, persistence-modules/hibernate5/src/main/java/com/baeldung/hibernate/pojo/TennisPlayer.java
+  Test files: persistence-modules/hibernate5/src/test/java/com/baeldung/hibernate/IdentifiersIntegrationTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18305
+--------------------------------------------------------------------------------
+PR #18337: Bael 9166
+  Author: wynnteo
+  Merged: 2025-03-05 02:29:27
+  Files changed: 4
+  Source files: google-cloud/src/main/java/com/baeldung/google/cloud/translator/Translator.java
+  Test files: google-cloud/src/test/java/com/baeldung/google/cloud/translator/TranslatorLiveTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18337
+--------------------------------------------------------------------------------
+PR #18349: BAEL-8505: Fix AuthenticationFilter flow.
+  Author: harry9656
+  Merged: 2025-03-04 04:17:32
+  Files changed: 2
+  Source files: spring-security-modules/spring-security-web-boot-1/src/main/java/com/baeldung/apikeyauthentication/configuration/AuthenticationFilter.java
+  Test files: spring-security-modules/spring-security-web-boot-1/src/test/java/com/baeldung/apikeyauthentication/configuration/AuthenticationFilterUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18349
+--------------------------------------------------------------------------------
+PR #18338: Bael 8722
+  Author: wynnteo
+  Merged: 2025-02-28 03:12:11
+  Files changed: 2
+  Source files: core-java-modules/core-java-streams/src/main/java/com/baeldung/stream/StreamIndices.java
+  Test files: core-java-modules/core-java-streams/src/test/java/com/baeldung/stream/StreamIndicesUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18338
+--------------------------------------------------------------------------------
+PR #18321: BAEL-9173: Getting Next Fire Time of Quartz
+  Author: achraftt
+  Merged: 2025-02-26 03:09:34
+  Files changed: 2
+  Source files: libraries/src/main/java/com/baeldung/quartz/SimpleJob.java
+  Test files: libraries/src/test/java/com/baeldung/quartz/QuartzUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18321
+--------------------------------------------------------------------------------
+PR #18289: https://jira.baeldung.com/browse/BAEL-9107
+  Author: Michaelin007
+  Merged: 2025-02-17 12:41:34
+  Files changed: 3
+  Source files: core-java-modules/core-java-collections-7/src/main/java/com/baeldung/customlinkedlist/CustomLinkedList.java, core-java-modules/core-java-collections-7/src/main/java/com/baeldung/customlinkedlist/Node.java
+  Test files: core-java-modules/core-java-collections-7/src/test/java/com/baeldung/customlinkedlist/CustomLinkedListUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18289
+--------------------------------------------------------------------------------
+PR #18160: [BAEL-8517] Multiple SQL statements as one in JDBC
+  Author: sdhiray7
+  Merged: 2025-02-13 00:14:56
+  Files changed: 3
+  Source files: persistence-modules/core-java-persistence-4/src/main/java/com/baeldung/sql/MultipleSQLExecution.java, persistence-modules/core-java-persistence-4/src/main/java/com/baeldung/sql/User.java
+  Test files: persistence-modules/core-java-persistence-4/src/test/java/com/baeldung/sql/MultipleSQLExecutionLiveTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18160
+--------------------------------------------------------------------------------
+PR #18284: BAEL-9065 Code and Unit Tests for Sorting a String Alphanumeric in Java
+  Author: vBarbaros
+  Merged: 2025-02-11 18:54:16
+  Files changed: 2
+  Source files: algorithms-modules/algorithms-sorting/src/main/java/com/baeldung/algorithms/stringsort/AlphanumericSort.java
+  Test files: algorithms-modules/algorithms-sorting/src/test/java/com/baeldung/algorithms/stringsort/AlphanumericSortUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18284
+--------------------------------------------------------------------------------
+PR #18261: BAEL-9021: Using Greater than or Equal in a Switch Statement in Java
+  Author: achraftt
+  Merged: 2025-02-11 02:08:25
+  Files changed: 2
+  Source files: core-java-modules/core-java-lang-syntax-3/src/main/java/com/baeldung/switchstatement/SwitchStatement.java
+  Test files: core-java-modules/core-java-lang-syntax-3/src/test/java/com/baeldung/switchstatement/SwitchStatementUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18261
+--------------------------------------------------------------------------------
+PR #18267: Log all requests
+  Author: Alexandru-Borza
+  Merged: 2025-02-05 17:45:01
+  Files changed: 2
+  Source files: logging-modules/log-all-requests/src/main/java/com/baeldung/logallrequests/ResponseWrapper.java
+  Test files: logging-modules/log-all-requests/src/test/java/com/baeldung/logallrequests/LoggingFilterIntegrationTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18267
+--------------------------------------------------------------------------------
+PR #18252: BAEL-9027: Apply Spring Security Filter Only on Secured Endpoints
+  Author: achraftt
+  Merged: 2025-02-05 03:29:30
+  Files changed: 4
+  Source files: spring-security-modules/spring-security-web-rest-basic-auth/src/main/java/com/baeldung/filter/CustomWebSecurityConfigurerAdapter.java, spring-security-modules/spring-security-web-rest-basic-auth/src/main/java/com/baeldung/filter/FilterApplication.java, spring-security-modules/spring-security-web-rest-basic-auth/src/main/java/com/baeldung/filter/FilterController.java
+  Test files: spring-security-modules/spring-security-web-rest-basic-auth/src/test/java/com/baeldung/filter/FilterControllerUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18252
+--------------------------------------------------------------------------------
+PR #18048: [BAEL-8923] Add files for Unique Digit Counter
+  Author: anujgaud
+  Merged: 2025-02-02 17:04:35
+  Files changed: 2
+  Source files: core-java-modules/core-java-numbers-9/src/main/java/com/baeldung/uniquedigitcounter/UniqueDigitCounter.java
+  Test files: core-java-modules/core-java-numbers-9/src/test/java/com/baeldung/uniquedigitcounter/UniqueDigitCounterUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18048
+--------------------------------------------------------------------------------
+PR #18086: https://jira.baeldung.com/browse/BAEL-8561
+  Author: Michaelin007
+  Merged: 2025-02-01 21:18:16
+  Files changed: 3
+  Source files: persistence-modules/spring-data-jpa-simple/src/main/java/com/baeldung/jpa/projection/repository/AddressRepository.java, persistence-modules/spring-data-jpa-simple/src/main/java/com/baeldung/jpa/projection/view/AddressDto.java
+  Test files: persistence-modules/spring-data-jpa-simple/src/test/java/com/baeldung/jpa/projection/JpaProjectionIntegrationTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18086
+--------------------------------------------------------------------------------
+PR #18224: BAEL-9043: avro schema test
+  Author: etrandafir93
+  Merged: 2025-01-28 17:02:33
+  Files changed: 4
+  Source files: apache-libraries/src/main/java/com/baeldung/apache/avro/util/AvroSchemaBuilder.java
+  Test files: apache-libraries/src/test/java/com/baeldung/apache/avro/util/AvroSchemaBuilderUnitTest.java, apache-libraries/src/test/java/com/baeldung/apache/avro/util/serialization/AvroSerializerDeSerializerIntegrationTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18224
+--------------------------------------------------------------------------------
+PR #18198: Bael 9102: Update articles on Spring Boot Bootstrap and Starters
+  Author: hmdrzsharifi
+  Merged: 2025-01-21 19:45:10
+  Files changed: 3
+  Source files: spring-boot-modules/spring-boot-simple/src/main/java/com/baeldung/bootstrap/config/SecurityConfig.java
+  Test files: spring-boot-modules/spring-boot-simple/src/test/java/com/baeldung/bootstrap/SpringBootBootstrapLiveTest.java, spring-boot-modules/spring-boot-simple/src/test/java/com/baeldung/starter/SpringBootApplicationIntegrationTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18198
+--------------------------------------------------------------------------------
+PR #18168: BAEL-8928-Convert-camel-to-snake-case
+  Author: vunamtien
+  Merged: 2025-01-19 01:51:58
+  Files changed: 2
+  Source files: core-java-modules/core-java-string-conversions-4/src/main/java/com/baeldung/cameltosnakecase/CamelToSnakeCaseConverter.java
+  Test files: core-java-modules/core-java-string-conversions-4/src/test/java/com/baeldung/cameltosnakecase/CamelToSnakeCaseConverterUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18168
+--------------------------------------------------------------------------------
+PR #17955: Bael 8741
+  Author: LeoHelfferich
+  Merged: 2025-01-16 02:47:42
+  Files changed: 3
+  Source files: core-java-modules/core-java-arrays-operations-basic-3/src/main/java/com/baeldung/nullablearraytolist/NullArray.java
+  Test files: core-java-modules/core-java-arrays-operations-basic-3/src/test/java/com/baeldung/nullablearraytolist/NullArrayUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/17955
+--------------------------------------------------------------------------------
+PR #18171: PR For BAEL-8984 Converting Between a List and a Set in Java
+  Author: Deepak-Vohra
+  Merged: 2025-01-15 18:23:22
+  Files changed: 3
+  Source files: core-java-modules/core-java-10/src/main/java/com/baeldung/java10/collections/conversion/Employee.java
+  Test files: core-java-modules/core-java-10/src/test/java/com/baeldung/java10/collections/conversion/ConvertBetweenListAndTreeSetUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18171
+--------------------------------------------------------------------------------
+PR #18127: [pub-class-filename] class name and filename
+  Author: sk1418
+  Merged: 2025-01-01 14:32:24
+  Files changed: 2
+  Source files: core-java-modules/core-java-compiler/src/main/java/com/baeldung/filenameandclassname/FootballGame.java
+  Test files: core-java-modules/core-java-compiler/src/test/java/com/baeldung/filenameandclassname/FilenameAndClassNameUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18127
+--------------------------------------------------------------------------------
+PR #18096: BAEL-6617-Get-Thread-by-Name-in-Java
+  Author: vunamtien
+  Merged: 2024-12-23 15:29:32
+  Files changed: 2
+  Source files: core-java-modules/core-java-concurrency-basic-4/src/main/java/com/baeldung/concurrent/getthreadbyname/ThreadFinder.java
+  Test files: core-java-modules/core-java-concurrency-basic-4/src/test/java/com/baeldung/concurrent/getthreadbyname/ThreadFinderUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18096
+--------------------------------------------------------------------------------
+PR #17986: BAEL-8773: Count peak and valleys in an array of integers
+  Author: vaibhav007jain
+  Merged: 2024-12-11 02:12:38
+  Files changed: 2
+  Source files: core-java-modules/core-java-arrays-operations-advanced-3/src/main/java/com/baeldung/hillsandvalleys/HillValleyCounter.java
+  Test files: core-java-modules/core-java-arrays-operations-advanced-3/src/test/java/com/baeldung/hillsandvalleys/HillValleyCounterUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/17986
+--------------------------------------------------------------------------------
+PR #18053: Bael 8733
+  Author: wynnteo
+  Merged: 2024-12-06 01:51:27
+  Files changed: 2
+  Source files: core-java-modules/core-java-concurrency-advanced-6/src/main/java/com/baeldung/futuretocompletablefuture/FutureToCompletableFuture.java
+  Test files: core-java-modules/core-java-concurrency-advanced-6/src/test/java/com/baeldung/futuretocompletablefuture/FutureToCompletableFutureUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18053
+--------------------------------------------------------------------------------
+PR #18029: BAEL-7935
+  Author: achraftt
+  Merged: 2024-12-03 02:32:18
+  Files changed: 3
+  Source files: spring-web-modules/spring-mvc-basics-4/src/main/java/com/baeldung/controller/controller/RestAnnotatedController.java
+  Test files: spring-web-modules/spring-mvc-basics-4/src/test/java/com/baeldung/controller/ControllerAnnotationIntegrationTest.java, spring-web-modules/spring-mvc-basics-4/src/test/java/com/baeldung/controller/ControllerIntegrationTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18029
+--------------------------------------------------------------------------------
+PR #17853: BAEL-8487: Fix the JsonMappingException: Can not deserialize instance of java.util.HashMap out of START_ARRAY token
+  Author: azhwani
+  Merged: 2024-11-29 18:23:59
+  Files changed: 2
+  Source files: jackson-modules/jackson-exceptions/src/main/java/com/baeldung/mappingexception/Person.java
+  Test files: jackson-modules/jackson-exceptions/src/test/java/com/baeldung/mappingexception/JacksonMappingExceptionUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/17853
+--------------------------------------------------------------------------------
+PR #18012: PR For BAEL-8808	Find the second largest element in an array without sorting
+  Author: Deepak-Vohra
+  Merged: 2024-11-23 17:39:33
+  Files changed: 2
+  Source files: algorithms-modules/algorithms-miscellaneous-9/src/main/java/com/baeldung/algorithms/kthlargest/FindKthLargest.java
+  Test files: algorithms-modules/algorithms-miscellaneous-9/src/test/java/com/baeldung/algorithms/kthlargest/FindKthLargestUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/18012
+--------------------------------------------------------------------------------
+PR #17971: BAEL-8934-Hibernate-Group-by-Criteria
+  Author: vunamtien
+  Merged: 2024-11-22 16:39:56
+  Files changed: 4
+  Source files: persistence-modules/hibernate-queries-2/src/main/java/com/baeldung/hibernate/groupby/Product.java, persistence-modules/hibernate-queries-2/src/main/java/com/baeldung/hibernate/groupby/ProductService.java
+  Test files: persistence-modules/hibernate-queries-2/src/test/java/com/baeldung/hibernate/groupby/ProductServiceUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/17971
+--------------------------------------------------------------------------------
+PR #17841: Add a method to check if a string can become a palindrome by any rear…
+  Author: thibaultfaure
+  Merged: 2024-11-22 14:36:20
+  Files changed: 2
+  Source files: core-java-modules/core-java-string-algorithms/src/main/java/com/baeldung/palindrom/Palindrome.java
+  Test files: core-java-modules/core-java-string-algorithms/src/test/java/com/baeldung/palindrom/PalindromeUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/17841
+--------------------------------------------------------------------------------
+PR #17967: BAEL-8862 - Turn Unstructured Data Into Structured Data with Camel Quarkus and Quarkus LangChain4j
+  Author: sIvanovKonstantyn
+  Merged: 2024-11-21 12:08:53
+  Files changed: 4
+  Source files: quarkus-modules/quarkus-langchain4j/src/main/java/com/baeldung/quarkus/langchain4j/camel/Routes.java, quarkus-modules/quarkus-langchain4j/src/main/java/com/baeldung/quarkus/langchain4j/camel/StructurizingService.java
+  Test files: quarkus-modules/quarkus-langchain4j/src/test/java/com/baeldung/quarkus/langchain4j/camel/CamelStructurizeAPIResourceLiveTest.java
+  URL: https://github.com/eugenp/tutorials/pull/17967
+--------------------------------------------------------------------------------
+PR #17847: BAEL-7020 - Mono Defer() vs Create() vs Just() in Reactive Programming
+  Author: rajnikantpandey50
+  Merged: 2024-11-21 12:03:38
+  Files changed: 2
+  Source files: spring-5-webflux-2/src/main/java/com/baeldung/webflux/monojustvsdefervsjust/MonoValueGenerator.java
+  Test files: spring-5-webflux-2/src/test/java/com/baeldung/webflux/monojustvsdefervsjust/MonoValueGeneratorUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/17847
+--------------------------------------------------------------------------------
+PR #17984: BAEL-8875: Finding Key Associated with MAX Value in a Java Map
+  Author: achraftt
+  Merged: 2024-11-21 01:59:42
+  Files changed: 2
+  Source files: core-java-modules/core-java-collections-maps-2/src/main/java/com/baeldung/map/mapmax/MapMax.java
+  Test files: core-java-modules/core-java-collections-maps-2/src/test/java/com/baeldung/map/mapmax/MapMaxUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/17984
+--------------------------------------------------------------------------------
+PR #17980: PR For https://jira.baeldung.com/browse/BAEL-8331
+  Author: Deepak-Vohra
+  Merged: 2024-11-19 16:36:56
+  Files changed: 2
+  Source files: core-java-modules/core-java-arrays-operations-advanced-2/src/main/java/com/baeldung/closesttozero/BruteForce.java
+  Test files: core-java-modules/core-java-arrays-operations-advanced-2/src/test/java/com/baeldung/closesttozero/BruteForceUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/17980
+--------------------------------------------------------------------------------
+PR #17981: [bael-8098]code for removing non alphabetic characters article
+  Author: ukhan1980
+  Merged: 2024-11-18 15:11:18
+  Files changed: 3
+  Source files: core-java-modules/core-java-string-operations-11/src/main/java/com/baeldung/removenonalpahabeticchars/StringManipulator.java
+  Test files: core-java-modules/core-java-string-operations-11/src/test/java/com/baeldung/removenonalpahabeticchars/StringManipulatorUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/17981
+--------------------------------------------------------------------------------
+PR #17884: [BAEL-8736] by sgrverma23: Java Guide to verify if all values in map are same
+  Author: sgrverma23
+  Merged: 2024-11-16 18:25:10
+  Files changed: 2
+  Source files: core-java-modules/core-java-collections-maps-8/src/main/java/com/baeldung/map/maptruevaluecheck/MapValuesCheck.java
+  Test files: core-java-modules/core-java-collections-maps-8/src/test/java/com/baeldung/map/maptruevaluecheck/MapValuesCheckUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/17884
+--------------------------------------------------------------------------------
+PR #17933: [BAEL-4760] Add test for resource bundle inheritance
+  Author: rajat-garg
+  Merged: 2024-11-12 17:36:21
+  Files changed: 4
+  Source files: core-java-modules/core-java-locale/src/main/java/com/baeldung/resourcebundle/CustomListResourceBundle.java
+  Test files: core-java-modules/core-java-locale/src/test/java/com/baeldung/resourcebundle/PropertyResourceUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/17933
+--------------------------------------------------------------------------------
+PR #17922: Bael 8047 convert json to avro object
+  Author: AndreiBranza
+  Merged: 2024-11-12 15:50:55
+  Files changed: 2
+  Source files: apache-libraries/src/main/java/com/baeldung/apache/avro/jsontoavroobject/JsonToAvroConverter.java
+  Test files: apache-libraries/src/test/java/com/baeldung/apache/avro/jsontoavroobject/JsonToAvroObjectUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/17922
+--------------------------------------------------------------------------------
+PR #17924: Create MethodsToInitializeLinkedList.java
+  Author: Deepak-Vohra
+  Merged: 2024-11-07 20:17:27
+  Files changed: 2
+  Source files: core-java-modules/core-java-collections-list-2/src/main/java/com/baeldung/linkedlist/MethodsToInitializeLinkedList.java
+  Test files: core-java-modules/core-java-collections-list-2/src/test/java/com/baeldung/linkedlist/LinkedListJUnitTest.java
+  URL: https://github.com/eugenp/tutorials/pull/17924
+--------------------------------------------------------------------------------
+PR #17812: BAEL-8684: Comparison with HSSFWorkbook, XSSFWorkbook, and SXSSFWorkbook in Apache POI
+  Author: manfred106
+  Merged: 2024-11-02 00:43:30
+  Files changed: 3
+  Source files: apache-poi-3/src/main/java/com/baeldung/poi/benchmark/WorkbookBenchmark.java
+  Test files: apache-poi-3/src/test/java/com/baeldung/poi/benchmark/SXSSFWorkbookFunctionTest.java
+  URL: https://github.com/eugenp/tutorials/pull/17812
+--------------------------------------------------------------------------------

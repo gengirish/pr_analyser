@@ -1,0 +1,89 @@
+
+Results:
+Found 12 PRs with 2-4 file changes that include test classes, merged after November 2024:
+
+--------------------------------------------------------------------------------
+PR #19034: timers: update mark of darkness cooldown for yama changes
+  Author: Minhaul
+  Merged: 2025-06-12 00:36:06
+  Files changed: 3
+  Test files: runelite-client/src/test/java/net/runelite/client/plugins/timersandbuffs/TimersAndBuffsPluginTest.java
+  URL: https://github.com/runelite/runelite/pull/19034
+--------------------------------------------------------------------------------
+PR #19008: screenshot: match yama kc message
+  Author: cdfisher
+  Merged: 2025-05-19 12:57:50
+  Files changed: 2
+  Test files: runelite-client/src/test/java/net/runelite/client/plugins/screenshot/ScreenshotPluginTest.java
+  URL: https://github.com/runelite/runelite/pull/19008
+--------------------------------------------------------------------------------
+PR #19002: timers: update death charge for yama changes
+  Author: Minhaul
+  Merged: 2025-05-16 14:48:02
+  Files changed: 3
+  Test files: runelite-client/src/test/java/net/runelite/client/plugins/timersandbuffs/TimersAndBuffsPluginTest.java
+  URL: https://github.com/runelite/runelite/pull/19002
+--------------------------------------------------------------------------------
+PR #18795: loot tracker: fix grubby chest false positive loot
+  Author: Macweese
+  Merged: 2025-04-30 21:41:46
+  Files changed: 2
+  Test files: runelite-client/src/test/java/net/runelite/client/plugins/loottracker/LootTrackerPluginTest.java
+  URL: https://github.com/runelite/runelite/pull/18795
+--------------------------------------------------------------------------------
+PR #18787: item stats: fix ancient brew obo
+  Author: Macweese
+  Merged: 2025-02-25 07:39:10
+  Files changed: 2
+  Test files: runelite-client/src/test/java/net/runelite/client/plugins/itemstats/ItemStatEffectTest.java
+  URL: https://github.com/runelite/runelite/pull/18787
+--------------------------------------------------------------------------------
+PR #18789: loot tracker: capture unique wintertodt rewards
+  Author: Macweese
+  Merged: 2025-02-25 01:30:26
+  Files changed: 2
+  Test files: runelite-client/src/test/java/net/runelite/client/plugins/loottracker/LootTrackerPluginTest.java
+  URL: https://github.com/runelite/runelite/pull/18789
+--------------------------------------------------------------------------------
+PR #18773: loottracker: track Barbarian Assault high gamble rewards
+  Author: cdfisher
+  Merged: 2025-02-19 15:45:59
+  Files changed: 2
+  Test files: runelite-client/src/test/java/net/runelite/client/plugins/loottracker/LootTrackerPluginTest.java
+  URL: https://github.com/runelite/runelite/pull/18773
+--------------------------------------------------------------------------------
+PR #18240: clues: clean up CoordinateClue
+  Author: tylerwgrass
+  Merged: 2025-02-19 04:34:51
+  Files changed: 4
+  Test files: runelite-client/src/test/java/net/runelite/client/plugins/cluescrolls/clues/ConfigKeyTest.java, runelite-client/src/test/java/net/runelite/client/plugins/cluescrolls/clues/CoordinateClueTest.java
+  URL: https://github.com/runelite/runelite/pull/18240
+--------------------------------------------------------------------------------
+PR #18661: runenergy: Update Run Energy Formulas
+  Author: coopermor
+  Merged: 2025-01-13 18:57:22
+  Files changed: 2
+  Test files: runelite-client/src/test/java/net/runelite/client/plugins/runenergy/RunEnergyPluginTest.java
+  URL: https://github.com/runelite/runelite/pull/18661
+--------------------------------------------------------------------------------
+PR #18592: entityhider: selectively hide party members
+  Author: LlemonDuck
+  Merged: 2024-12-08 08:44:05
+  Files changed: 3
+  Test files: runelite-client/src/test/java/net/runelite/client/plugins/entityhider/EntityHiderPluginTest.java
+  URL: https://github.com/runelite/runelite/pull/18592
+--------------------------------------------------------------------------------
+PR #18571: kc: remove color tag from boss name
+  Author: iProdigy
+  Merged: 2024-12-06 15:36:32
+  Files changed: 4
+  Test files: runelite-client/src/test/java/net/runelite/client/plugins/chatcommands/ChatCommandsPluginTest.java, runelite-client/src/test/java/net/runelite/client/plugins/screenshot/ScreenshotPluginTest.java
+  URL: https://github.com/runelite/runelite/pull/18571
+--------------------------------------------------------------------------------
+PR #18537: chat commands: add chests
+  Author: Breina
+  Merged: 2024-11-22 20:14:07
+  Files changed: 2
+  Test files: runelite-client/src/test/java/net/runelite/client/plugins/chatcommands/ChatCommandsPluginTest.java
+  URL: https://github.com/runelite/runelite/pull/18537
+--------------------------------------------------------------------------------

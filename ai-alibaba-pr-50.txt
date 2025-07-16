@@ -1,0 +1,189 @@
+
+Results:
+Found 23 PRs with 2-4 file changes that include both source code files and test classes, merged after November 2024:
+
+--------------------------------------------------------------------------------
+PR #1328: infra(ci): mvnd support 
+  Author: Aias00
+  Merged: 2025-06-23 12:39:59
+  Files changed: 4
+  Source files: tools/scripts/new-line-check.py
+  Test files: .github/workflows/build-and-test.yml
+  URL: https://github.com/alibaba/spring-ai-alibaba/pull/1328
+--------------------------------------------------------------------------------
+PR #1311: feat(core): Added support for dimension fields to the embedding model
+  Author: YunKuiLu
+  Merged: 2025-06-22 11:09:51
+  Files changed: 4
+  Source files: spring-ai-alibaba-core/src/main/java/com/alibaba/cloud/ai/dashscope/api/DashScopeApi.java, spring-ai-alibaba-core/src/main/java/com/alibaba/cloud/ai/dashscope/embedding/DashScopeEmbeddingModel.java
+  Test files: auto-configurations/spring-ai-alibaba-autoconfigure-dashscope/src/test/java/com/alibaba/cloud/ai/autoconfigure/dashscope/DashScopeAutoConfigurationIT.java, spring-ai-alibaba-core/src/test/java/com/alibaba/cloud/ai/dashscope/embedding/DashScopeEmbeddingModelTests.java
+  URL: https://github.com/alibaba/spring-ai-alibaba/pull/1311
+--------------------------------------------------------------------------------
+PR #1237: refactor(graph): improve checkpoint saver
+  Author: Aias00
+  Merged: 2025-06-16 07:24:28
+  Files changed: 3
+  Source files: spring-ai-alibaba-graph/spring-ai-alibaba-graph-core/src/main/java/com/alibaba/cloud/ai/graph/checkpoint/savers/MemorySaver.java, spring-ai-alibaba-graph/spring-ai-alibaba-graph-core/src/main/java/com/alibaba/cloud/ai/graph/checkpoint/savers/RedisSaver.java
+  Test files: spring-ai-alibaba-graph/spring-ai-alibaba-graph-core/src/test/java/com/alibaba/cloud/ai/graph/checkpoint/RedisSaverTest.java
+  URL: https://github.com/alibaba/spring-ai-alibaba/pull/1237
+--------------------------------------------------------------------------------
+PR #1173: feat(tool-calls): add Baidu translate unit test
+  Author: wang123494
+  Merged: 2025-06-15 09:08:29
+  Files changed: 3
+  Source files: community/tool-calls/spring-ai-alibaba-starter-tool-calling-baidutranslate/src/main/java/com/alibaba/cloud/ai/toolcalling/baidutranslate/BaiduTranslateService.java
+  Test files: community/tool-calls/spring-ai-alibaba-starter-tool-calling-baidutranslate/src/test/java/com/alibaba/cloud/ai/toolcalling/baidutranslate/BaiduTranslateTest.java
+  URL: https://github.com/alibaba/spring-ai-alibaba/pull/1173
+--------------------------------------------------------------------------------
+PR #1145: feat(graph): add variableAggregatorNode and unit test
+  Author: Wangzy455
+  Merged: 2025-06-10 13:13:05
+  Files changed: 2
+  Source files: spring-ai-alibaba-graph/spring-ai-alibaba-graph-core/src/main/java/com/alibaba/cloud/ai/graph/node/VariableAggregatorNode.java
+  Test files: spring-ai-alibaba-graph/spring-ai-alibaba-graph-core/src/test/java/com/alibaba/cloud/ai/graph/node/VariableAggregatorNodeTest.java
+  URL: https://github.com/alibaba/spring-ai-alibaba/pull/1145
+--------------------------------------------------------------------------------
+PR #1134: ReactAgent add preLlmHook postLlmHook preToolHook postToolHook
+  Author: zhouyou9505
+  Merged: 2025-06-10 05:26:20
+  Files changed: 2
+  Source files: spring-ai-alibaba-graph/spring-ai-alibaba-graph-core/src/main/java/com/alibaba/cloud/ai/graph/agent/ReactAgent.java
+  Test files: spring-ai-alibaba-graph/spring-ai-alibaba-graph-core/src/test/java/com/alibaba/cloud/ai/graph/agent/ReactAgentTest.java
+  URL: https://github.com/alibaba/spring-ai-alibaba/pull/1134
+--------------------------------------------------------------------------------
+PR #1138: feat(graph): llmnode stream support
+  Author: disaster1-tesk
+  Merged: 2025-06-10 02:55:23
+  Files changed: 3
+  Source files: spring-ai-alibaba-graph/spring-ai-alibaba-graph-core/src/main/java/com/alibaba/cloud/ai/graph/CompiledGraph.java, spring-ai-alibaba-graph/spring-ai-alibaba-graph-core/src/main/java/com/alibaba/cloud/ai/graph/node/LlmNode.java
+  Test files: spring-ai-alibaba-graph/spring-ai-alibaba-graph-core/src/test/java/com/alibaba/cloud/ai/graph/StateGraphTest.java
+  URL: https://github.com/alibaba/spring-ai-alibaba/pull/1138
+--------------------------------------------------------------------------------
+PR #1066: refactor: Refactored the uploadFile method
+  Author: joerulau
+  Merged: 2025-06-07 14:35:35
+  Files changed: 3
+  Source files: spring-ai-alibaba-core/src/main/java/com/alibaba/cloud/ai/dashscope/api/DashScopeApi.java
+  Test files: spring-ai-alibaba-core/src/test/java/com/alibaba/cloud/ai/dashscope/api/DashScopeApiUploadFileTests.java
+  URL: https://github.com/alibaba/spring-ai-alibaba/pull/1066
+--------------------------------------------------------------------------------
+PR #843: feat(embedding): embedding model compatibale with M8 
+  Author: jackxu2011
+  Merged: 2025-05-13 09:29:12
+  Files changed: 3
+  Source files: spring-ai-alibaba-core/src/main/java/com/alibaba/cloud/ai/dashscope/embedding/DashScopeEmbeddingModel.java
+  Test files: community/document-parsers/spring-ai-alibaba-starter-document-parser-tika/src/test/resources/test-file.pptx
+  URL: https://github.com/alibaba/spring-ai-alibaba/pull/843
+--------------------------------------------------------------------------------
+PR #817: feat:add KnowledgeRetrievalNode to graph.node
+  Author: ALSoryu
+  Merged: 2025-05-13 03:04:24
+  Files changed: 3
+  Source files: spring-ai-alibaba-graph/spring-ai-alibaba-graph-core/src/main/java/com/alibaba/cloud/ai/graph/node/KnowledgeRetrievalNode.java
+  Test files: spring-ai-alibaba-graph/spring-ai-alibaba-graph-core/src/test/java/com/alibaba/cloud/ai/graph/node/KnowledgeRetrievalNodeTest.java
+  URL: https://github.com/alibaba/spring-ai-alibaba/pull/817
+--------------------------------------------------------------------------------
+PR #824: fix: fix test failed
+  Author: jackxu2011
+  Merged: 2025-05-12 08:36:55
+  Files changed: 4
+  Source files: community/tool-calls/spring-ai-alibaba-starter-tool-calling-baidusearch/src/main/java/com/alibaba/cloud/ai/toolcalling/baidusearch/BaiduSearchService.java, spring-ai-alibaba-graph/spring-ai-alibaba-graph-core/src/main/java/com/alibaba/cloud/ai/graph/node/HttpNode.java
+  Test files: community/tool-calls/spring-ai-alibaba-starter-tool-calling-baidusearch/src/test/java/com/alibaba/cloud/ai/toolcalling/baidusearch/BaiduSearchServiceTest.java, spring-ai-alibaba-graph/spring-ai-alibaba-graph-core/src/test/java/com/alibaba/cloud/ai/graph/node/HttpNodeTest.java
+  URL: https://github.com/alibaba/spring-ai-alibaba/pull/824
+--------------------------------------------------------------------------------
+PR #734: feat: add ListOperatorNode to graph module
+  Author: VLSMB
+  Merged: 2025-05-12 03:19:27
+  Files changed: 2
+  Source files: spring-ai-alibaba-graph/spring-ai-alibaba-graph-core/src/main/java/com/alibaba/cloud/ai/graph/node/ListOperatorNode.java
+  Test files: spring-ai-alibaba-graph/spring-ai-alibaba-graph-core/src/test/java/com/alibaba/cloud/ai/graph/node/ListOperatorNodeTest.java
+  URL: https://github.com/alibaba/spring-ai-alibaba/pull/734
+--------------------------------------------------------------------------------
+PR #783: improve saver checkpoint 
+  Author: zhangshenghang
+  Merged: 2025-05-07 13:01:41
+  Files changed: 2
+  Source files: spring-ai-alibaba-graph/spring-ai-alibaba-graph-core/src/main/java/com/alibaba/cloud/ai/graph/RunnableConfig.java
+  Test files: spring-ai-alibaba-graph/spring-ai-alibaba-graph-core/src/test/java/com/alibaba/cloud/ai/graph/SubGraphTest.java
+  URL: https://github.com/alibaba/spring-ai-alibaba/pull/783
+--------------------------------------------------------------------------------
+PR #762: fix baidu tool
+  Author: zhangshenghang
+  Merged: 2025-04-30 12:42:43
+  Files changed: 2
+  Source files: community/tool-calls/spring-ai-alibaba-starter-tool-calling-baidusearch/src/main/java/com/alibaba/cloud/ai/toolcalling/baidusearch/BaiduSearchService.java
+  Test files: community/tool-calls/spring-ai-alibaba-starter-tool-calling-baidusearch/src/test/java/com/alibaba/cloud/ai/toolcalling/baidusearch/BaiduSearchServiceTest.java
+  URL: https://github.com/alibaba/spring-ai-alibaba/pull/762
+--------------------------------------------------------------------------------
+PR #694: improve: Add sinanews test
+  Author: zhangshenghang
+  Merged: 2025-04-23 02:01:51
+  Files changed: 3
+  Source files: community/tool-calls/spring-ai-alibaba-starter-tool-calling-sinanews/src/main/java/com/alibaba/cloud/ai/toolcalling/sinanews/SinaNewsService.java
+  Test files: community/tool-calls/spring-ai-alibaba-starter-tool-calling-sinanews/src/test/java/com/alibaba/cloud/ai/toolcalling/sinanews/SinaNewsServiceTest.java
+  URL: https://github.com/alibaba/spring-ai-alibaba/pull/694
+--------------------------------------------------------------------------------
+PR #684: Adjust the parameters of DashscopeImageOptions and update the URL of the ImageModel's request
+  Author: ALSoryu
+  Merged: 2025-04-23 01:56:48
+  Files changed: 4
+  Source files: spring-ai-alibaba-core/src/main/java/com/alibaba/cloud/ai/dashscope/api/DashScopeImageApi.java, spring-ai-alibaba-core/src/main/java/com/alibaba/cloud/ai/dashscope/image/DashScopeImageModel.java, spring-ai-alibaba-core/src/main/java/com/alibaba/cloud/ai/dashscope/image/DashScopeImageOptions.java
+  Test files: spring-ai-alibaba-core/src/test/java/com/alibaba/cloud/ai/dashscope/api/DashScopeImageApiTests.java
+  URL: https://github.com/alibaba/spring-ai-alibaba/pull/684
+--------------------------------------------------------------------------------
+PR #481: Optimize: arxiv pagination
+  Author: brianxiadong
+  Merged: 2025-03-18 06:54:29
+  Files changed: 2
+  Source files: community/document-readers/spring-ai-alibaba-starter-document-reader-arxiv/src/main/java/com/alibaba/cloud/ai/reader/arxiv/client/ArxivClient.java
+  Test files: community/document-readers/spring-ai-alibaba-starter-document-reader-arxiv/src/test/java/com/alibaba/cloud/ai/reader/arxiv/ArxivClientTest.java
+  URL: https://github.com/alibaba/spring-ai-alibaba/pull/481
+--------------------------------------------------------------------------------
+PR #450: :bug: Fixbugs
+  Author: disaster1-tesk
+  Merged: 2025-03-10 01:39:48
+  Files changed: 4
+  Source files: spring-ai-alibaba-graph/spring-ai-alibaba-graph-core/src/main/java/com/alibaba/cloud/ai/graph/StateGraph.java
+  Test files: spring-ai-alibaba-graph/spring-ai-alibaba-graph-core/src/test/java/com/alibaba/cloud/ai/graph/StateGraphTest.java
+  URL: https://github.com/alibaba/spring-ai-alibaba/pull/450
+--------------------------------------------------------------------------------
+PR #437: Add Integration Test for DashScope Deepseek-r1 Model And Multi Modal Chat
+  Author: brianxiadong
+  Merged: 2025-03-04 13:10:21
+  Files changed: 3
+  Source files: community/tool-calls/spring-ai-alibaba-starter-tool-calling-microsofttranslate/src/main/java/com/alibaba/cloud/ai/toolcalling/microsofttranslate/MicroSoftTranslateAutoConfiguration.java
+  Test files: spring-ai-alibaba-core/src/test/java/com/alibaba/cloud/ai/dashscope/chat/DashScopeChatModelTests.java, spring-ai-alibaba-core/src/test/java/com/alibaba/cloud/ai/dashscope/chat/DashScopeMultiModalChatTests.java
+  URL: https://github.com/alibaba/spring-ai-alibaba/pull/437
+--------------------------------------------------------------------------------
+PR #359: feat: update DashScopeChatModel toolFunctionCallbacks auto configuration logic
+  Author: yuluo-yx
+  Merged: 2025-01-09 09:41:02
+  Files changed: 3
+  Source files: spring-ai-alibaba-autoconfigure/src/main/java/com/alibaba/cloud/ai/autoconfigure/dashscope/DashScopeAutoConfiguration.java, spring-ai-alibaba-core/src/main/java/com/alibaba/cloud/ai/dashscope/chat/DashScopeChatModel.java
+  Test files: spring-ai-alibaba-core/src/test/java/com/alibaba/cloud/ai/dashscope/DashscopeAiTestConfiguration.java
+  URL: https://github.com/alibaba/spring-ai-alibaba/pull/359
+--------------------------------------------------------------------------------
+PR #231: [doc]: modified spring-ai-alibaba-core README.md
+  Author: PolarishT
+  Merged: 2024-12-20 01:48:17
+  Files changed: 4
+  Source files: community/function-calling/spring-ai-alibaba-starter-function-calling-amap/src/main/java/com/alibaba/cloud/ai/functioncalling/amp/AmapConfiguration.java, spring-ai-alibaba-core/src/main/java/com/alibaba/cloud/ai/agent/Agent.java
+  Test files: spring-ai-alibaba-core/src/test/resources/data/acme/intro.txt
+  URL: https://github.com/alibaba/spring-ai-alibaba/pull/231
+--------------------------------------------------------------------------------
+PR #150: Feature:add yuque reader
+  Author: LoongYun
+  Merged: 2024-12-10 08:45:26
+  Files changed: 4
+  Source files: community/document-readers/yuque-reader/src/main/java/com/alibaba/cloud/ai/reader/yuque/YuQueDocumentReader.java, community/document-readers/yuque-reader/src/main/java/com/alibaba/cloud/ai/reader/yuque/YuQueResource.java
+  Test files: community/document-readers/yuque-reader/src/test/java/com/alibaba/cloud/ai/reader/yuque/YuQueDocumentLoaderIT.java
+  URL: https://github.com/alibaba/spring-ai-alibaba/pull/150
+--------------------------------------------------------------------------------
+PR #159: feat: add Workflow LLMNode Action Impl
+  Author: PolarishT
+  Merged: 2024-12-10 08:33:43
+  Files changed: 4
+  Source files: spring-ai-alibaba-graph/spring-ai-alibaba-graph-core/src/main/java/com/alibaba/cloud/ai/graph/node/AbstractNode.java, spring-ai-alibaba-graph/spring-ai-alibaba-graph-core/src/main/java/com/alibaba/cloud/ai/graph/node/LLMNodeAction.java
+  Test files: spring-ai-alibaba-graph/spring-ai-alibaba-graph-core/src/test/java/com/alibaba/cloud/ai/graph/LLMNodeActionTest.java
+  URL: https://github.com/alibaba/spring-ai-alibaba/pull/159
+--------------------------------------------------------------------------------

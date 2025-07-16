@@ -1,0 +1,13 @@
+
+Results:
+Found 1 PRs with 2-4 file changes that include both source code files and test classes, merged after November 2024:
+
+--------------------------------------------------------------------------------
+PR #101: Feature: Add new component
+  Author: user1
+  Merged: 2024-12-15 10:30:00
+  Files changed: 3
+  Source files: src/component.js, src/utils.js
+  Test files: tests/component.test.js
+  URL: https://github.com/test/repo/pull/101
+--------------------------------------------------------------------------------

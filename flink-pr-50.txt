@@ -1,0 +1,406 @@
+
+Results:
+Found 50 PRs with 2-4 file changes that include both source code files and test classes, merged after November 2024:
+
+--------------------------------------------------------------------------------
+Note: Analysis stopped after finding 50 matching PRs.
+PR #26779: [FLINK-38082][datastream] Avoid unexpected retries when user async function invokes completeExceptionally
+  Author: lincoln-lil
+  Merged: 2025-07-13 02:01:08
+  Files changed: 2
+  Source files: flink-streaming-java/src/main/java/org/apache/flink/streaming/api/operators/async/AsyncWaitOperator.java
+  Test files: flink-streaming-java/src/test/java/org/apache/flink/streaming/api/operators/async/AsyncWaitOperatorTest.java
+  URL: https://github.com/apache/flink/pull/26779
+--------------------------------------------------------------------------------
+PR #26767: [FLINK-38062][table] `ENCODE` function behaves wrong
+  Author: snuyanzin
+  Merged: 2025-07-08 20:01:25
+  Files changed: 2
+  Source files: flink-table/flink-table-planner/src/main/java/org/apache/flink/table/planner/functions/sql/FlinkSqlOperatorTable.java
+  Test files: flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/functions/MiscFunctionsITCase.java
+  URL: https://github.com/apache/flink/pull/26767
+--------------------------------------------------------------------------------
+PR #26757: [FLINK-38022][table] Throw exception in main thread in tests when any exception is thrown in async thread during looking up
+  Author: xuyangzhong
+  Merged: 2025-07-08 02:34:48
+  Files changed: 4
+  Source files: flink-table/flink-table-runtime/src/main/java/org/apache/flink/table/runtime/operators/join/deltajoin/StreamingDeltaJoinOperator.java
+  Test files: flink-runtime/src/test/java/org/apache/flink/runtime/operators/testutils/MockEnvironment.java, flink-runtime/src/test/java/org/apache/flink/streaming/util/KeyedTwoInputStreamOperatorTestHarness.java, flink-table/flink-table-runtime/src/test/java/org/apache/flink/table/runtime/operators/join/deltajoin/StreamingDeltaJoinOperatorTest.java
+  URL: https://github.com/apache/flink/pull/26757
+--------------------------------------------------------------------------------
+PR #26752: [FLINK-38022][table] Throw exception in main thread in tests when any exception is thrown in async thread during looking up
+  Author: xuyangzhong
+  Merged: 2025-07-07 11:20:32
+  Files changed: 4
+  Source files: flink-table/flink-table-runtime/src/main/java/org/apache/flink/table/runtime/operators/join/deltajoin/StreamingDeltaJoinOperator.java
+  Test files: flink-runtime/src/test/java/org/apache/flink/runtime/operators/testutils/MockEnvironment.java, flink-runtime/src/test/java/org/apache/flink/streaming/util/KeyedTwoInputStreamOperatorTestHarness.java, flink-table/flink-table-runtime/src/test/java/org/apache/flink/table/runtime/operators/join/deltajoin/StreamingDeltaJoinOperatorTest.java
+  URL: https://github.com/apache/flink/pull/26752
+--------------------------------------------------------------------------------
+PR #26743: [BP-2.0][FLINK-33926][k8s] Allow using job JARs in the system classpath in native mode
+  Author: ferenc-csaky
+  Merged: 2025-07-03 05:18:03
+  Files changed: 4
+  Source files: flink-clients/src/main/java/org/apache/flink/client/program/PackagedProgramUtils.java, flink-kubernetes/src/main/java/org/apache/flink/kubernetes/KubernetesClusterDescriptor.java, flink-kubernetes/src/main/java/org/apache/flink/kubernetes/entrypoint/KubernetesApplicationClusterEntrypoint.java
+  Test files: flink-kubernetes/src/test/java/org/apache/flink/kubernetes/KubernetesClusterDescriptorTest.java
+  URL: https://github.com/apache/flink/pull/26743
+--------------------------------------------------------------------------------
+PR #26742: [BP-2.1][FLINK-33926][k8s] Allow using job JARs in the system classpath in native mode
+  Author: ferenc-csaky
+  Merged: 2025-07-03 05:17:27
+  Files changed: 4
+  Source files: flink-clients/src/main/java/org/apache/flink/client/program/PackagedProgramUtils.java, flink-kubernetes/src/main/java/org/apache/flink/kubernetes/KubernetesClusterDescriptor.java, flink-kubernetes/src/main/java/org/apache/flink/kubernetes/entrypoint/KubernetesApplicationClusterEntrypoint.java
+  Test files: flink-kubernetes/src/test/java/org/apache/flink/kubernetes/KubernetesClusterDescriptorTest.java
+  URL: https://github.com/apache/flink/pull/26742
+--------------------------------------------------------------------------------
+PR #26741: [FLINK-38041] Fix Schema.Builder#fromResolvedSchema dropping comments
+  Author: AHeise
+  Merged: 2025-07-02 18:56:22
+  Files changed: 3
+  Source files: flink-table/flink-table-common/src/main/java/org/apache/flink/table/api/Schema.java
+  Test files: flink-table/flink-table-common/src/test/java/org/apache/flink/table/api/SchemaTest.java, flink-table/flink-table-common/src/test/java/org/apache/flink/table/catalog/TestSchemaResolver.java
+  URL: https://github.com/apache/flink/pull/26741
+--------------------------------------------------------------------------------
+PR #26700: [FLINK-37868][state/forst] Respect the `maxTransferBytes` when using path copying in ForSt.
+  Author: AlexYinHan
+  Merged: 2025-06-20 15:42:50
+  Files changed: 2
+  Source files: flink-state-backends/flink-statebackend-forst/src/main/java/org/apache/flink/state/forst/datatransfer/CopyDataTransferStrategy.java
+  Test files: flink-state-backends/flink-statebackend-forst/src/test/java/org/apache/flink/state/forst/datatransfer/DataTransferStrategyTest.java
+  URL: https://github.com/apache/flink/pull/26700
+--------------------------------------------------------------------------------
+PR #26696: [FLINK-37867][state/forst] Ensure files of half-uploaded checkpoints are cleaned when using path copying.
+  Author: AlexYinHan
+  Merged: 2025-06-19 16:43:31
+  Files changed: 2
+  Source files: flink-state-backends/flink-statebackend-forst/src/main/java/org/apache/flink/state/forst/datatransfer/CopyDataTransferStrategy.java
+  Test files: flink-state-backends/flink-statebackend-forst/src/test/java/org/apache/flink/state/forst/datatransfer/DataTransferStrategyTest.java
+  URL: https://github.com/apache/flink/pull/26696
+--------------------------------------------------------------------------------
+PR #26669: [hotfix][table] Fix StreamExecMLPredictTableFunction doesn't respect …
+  Author: fsk119
+  Merged: 2025-06-12 01:19:14
+  Files changed: 2
+  Source files: flink-table/flink-table-planner/src/main/java/org/apache/flink/table/planner/plan/nodes/exec/stream/StreamExecMLPredictTableFunction.java
+  Test files: flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/plan/nodes/exec/stream/MLPredictRestoreTest.java
+  URL: https://github.com/apache/flink/pull/26669
+--------------------------------------------------------------------------------
+PR #26627: [FLINK-37814][table-planner] Add FlinkRightJoinToLeftJoinRule
+  Author: SteveStevenpoor
+  Merged: 2025-06-09 14:44:46
+  Files changed: 3
+  Source files: flink-table/flink-table-planner/src/main/java/org/apache/flink/table/planner/plan/rules/logical/FlinkRightJoinToLeftJoinRule.java
+  Test files: flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/plan/rules/logical/FlinkRightJoinToLeftJoinRuleTest.java, flink-table/flink-table-planner/src/test/resources/org/apache/flink/table/planner/plan/rules/logical/FlinkRightJoinToLeftJoinRuleTest.xml
+  URL: https://github.com/apache/flink/pull/26627
+--------------------------------------------------------------------------------
+PR #26650: [FLINK-37822][tests] Fix flaky test: OpenTelemetryMetricReporterITCase.testReport
+  Author: Izeren
+  Merged: 2025-06-09 08:44:38
+  Files changed: 2
+  Source files: flink-metrics/flink-metrics-otel/src/main/java/org/apache/flink/metrics/otel/OpenTelemetryMetricReporter.java
+  Test files: flink-metrics/flink-metrics-otel/src/test/java/org/apache/flink/metrics/otel/OpenTelemetryMetricReporterITCase.java
+  URL: https://github.com/apache/flink/pull/26650
+--------------------------------------------------------------------------------
+PR #26628: [FLINK-37870][checkpoint] Fix the bug that unaligned checkpoint is disabled for all connections unexpectedly
+  Author: 1996fanrui
+  Merged: 2025-06-04 07:29:46
+  Files changed: 3
+  Source files: flink-streaming-java/src/main/java/org/apache/flink/streaming/runtime/translators/SinkTransformationTranslator.java
+  Test files: flink-streaming-java/src/test/java/org/apache/flink/streaming/api/graph/SinkTransformationTranslatorITCaseBase.java, flink-tests/src/test/java/org/apache/flink/test/streaming/runtime/SinkV2ITCase.java
+  URL: https://github.com/apache/flink/pull/26628
+--------------------------------------------------------------------------------
+PR #26629: [FLINK-37870][checkpoint] Fix the bug that unaligned checkpoint is disabled for all connections unexpectedly
+  Author: 1996fanrui
+  Merged: 2025-06-04 07:27:31
+  Files changed: 3
+  Source files: flink-streaming-java/src/main/java/org/apache/flink/streaming/runtime/translators/SinkTransformationTranslator.java
+  Test files: flink-streaming-java/src/test/java/org/apache/flink/streaming/api/graph/SinkTransformationTranslatorITCaseBase.java, flink-tests/src/test/java/org/apache/flink/test/streaming/runtime/SinkV2ITCase.java
+  URL: https://github.com/apache/flink/pull/26629
+--------------------------------------------------------------------------------
+PR #26626: [FLINK-37870][checkpoint] Fix the bug that unaligned checkpoint is disabled for all connections unexpectedly
+  Author: 1996fanrui
+  Merged: 2025-06-03 16:24:30
+  Files changed: 3
+  Source files: flink-runtime/src/main/java/org/apache/flink/streaming/runtime/translators/SinkTransformationTranslator.java
+  Test files: flink-streaming-java/src/test/java/org/apache/flink/streaming/api/graph/SinkV2TransformationTranslatorITCase.java, flink-tests/src/test/java/org/apache/flink/test/streaming/runtime/SinkV2ITCase.java
+  URL: https://github.com/apache/flink/pull/26626
+--------------------------------------------------------------------------------
+PR #26619: [FLINK-37870][checkpoint] Fix the bug that unaligned checkpoint is disabled for all connections unexpectedly
+  Author: 1996fanrui
+  Merged: 2025-06-03 12:06:25
+  Files changed: 3
+  Source files: flink-runtime/src/main/java/org/apache/flink/streaming/runtime/translators/SinkTransformationTranslator.java
+  Test files: flink-streaming-java/src/test/java/org/apache/flink/streaming/api/graph/SinkV2TransformationTranslatorITCase.java, flink-tests/src/test/java/org/apache/flink/test/streaming/runtime/SinkV2ITCase.java
+  URL: https://github.com/apache/flink/pull/26619
+--------------------------------------------------------------------------------
+PR #26597: [FLINK-37850][table] Several Union, Except, Intersect with one wrong column type fail with UnsupportedOperationException
+  Author: snuyanzin
+  Merged: 2025-05-27 10:22:10
+  Files changed: 2
+  Source files: flink-table/flink-table-planner/src/main/java/org/apache/calcite/sql/SqlUtil.java
+  Test files: flink-table/flink-table-planner/src/test/scala/org/apache/flink/table/planner/plan/stream/sql/UnionTest.scala
+  URL: https://github.com/apache/flink/pull/26597
+--------------------------------------------------------------------------------
+PR #26589: [BP-1.19][FLINK-37820][table-planner] Support `AsyncScalarFunction` registration via `CompiledPlan`
+  Author: ferenc-csaky
+  Merged: 2025-05-27 05:22:05
+  Files changed: 2
+  Source files: flink-table/flink-table-planner/src/main/java/org/apache/flink/table/planner/plan/nodes/exec/serde/RexNodeJsonDeserializer.java
+  Test files: flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/plan/nodes/exec/serde/RexNodeJsonSerdeTest.java
+  URL: https://github.com/apache/flink/pull/26589
+--------------------------------------------------------------------------------
+PR #26588: [BP-1.20][FLINK-37820][table-planner] Support `AsyncScalarFunction` registration via `CompiledPlan`
+  Author: ferenc-csaky
+  Merged: 2025-05-27 05:21:38
+  Files changed: 2
+  Source files: flink-table/flink-table-planner/src/main/java/org/apache/flink/table/planner/plan/nodes/exec/serde/RexNodeJsonDeserializer.java
+  Test files: flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/plan/nodes/exec/serde/RexNodeJsonSerdeTest.java
+  URL: https://github.com/apache/flink/pull/26588
+--------------------------------------------------------------------------------
+PR #26587: [BP-2.0][FLINK-37820][table-planner] Support `AsyncScalarFunction` registration via `CompiledPlan`
+  Author: ferenc-csaky
+  Merged: 2025-05-27 05:21:15
+  Files changed: 2
+  Source files: flink-table/flink-table-planner/src/main/java/org/apache/flink/table/planner/plan/nodes/exec/serde/RexNodeJsonDeserializer.java
+  Test files: flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/plan/nodes/exec/serde/RexNodeJsonSerdeTest.java
+  URL: https://github.com/apache/flink/pull/26587
+--------------------------------------------------------------------------------
+PR #26586: [FLINK-37820][table-planner] Support `AsyncScalarFunction` registration via `CompiledPlan`
+  Author: ferenc-csaky
+  Merged: 2025-05-27 05:20:07
+  Files changed: 2
+  Source files: flink-table/flink-table-planner/src/main/java/org/apache/flink/table/planner/plan/nodes/exec/serde/RexNodeJsonDeserializer.java
+  Test files: flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/plan/nodes/exec/serde/RexNodeJsonSerdeTest.java
+  URL: https://github.com/apache/flink/pull/26586
+--------------------------------------------------------------------------------
+PR #26595: [FLINK-37845][table] Remove FlinkRexBuilder#makeIn
+  Author: snuyanzin
+  Merged: 2025-05-26 20:25:28
+  Files changed: 2
+  Source files: flink-table/flink-table-planner/src/main/java/org/apache/flink/table/planner/calcite/FlinkRexBuilder.java
+  Test files: flink-table/flink-table-planner/src/test/resources/org/apache/flink/table/planner/plan/rules/logical/ConvertToNotInOrInRuleTest.xml
+  URL: https://github.com/apache/flink/pull/26595
+--------------------------------------------------------------------------------
+PR #26522: [FLINK-37752][json] Make configuration 'json.decode.json-parser.enabled' take effect
+  Author: lianghongjia6
+  Merged: 2025-05-23 02:19:28
+  Files changed: 2
+  Source files: flink-formats/flink-json/src/main/java/org/apache/flink/formats/json/JsonFormatFactory.java
+  Test files: flink-formats/flink-json/src/test/java/org/apache/flink/formats/json/JsonFormatFactoryTest.java
+  URL: https://github.com/apache/flink/pull/26522
+--------------------------------------------------------------------------------
+PR #26561: [BP-2.0][FLINK-37803][table] Fix SQL serialization when using LocalTime value literal without seconds
+  Author: autophagy
+  Merged: 2025-05-15 14:18:29
+  Files changed: 3
+  Source files: flink-table/flink-table-common/src/main/java/org/apache/flink/table/expressions/ValueLiteralExpression.java
+  Test files: flink-table/flink-table-planner/src/test/java/org/apache/flink/table/api/QueryOperationTestPrograms.java, flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/expressions/LiteralExpressionsSerializationITCase.java
+  URL: https://github.com/apache/flink/pull/26561
+--------------------------------------------------------------------------------
+PR #26562: [BP-1.20][FLINK-37803][table] Fix SQL serialization when using LocalTime value literal without seconds
+  Author: autophagy
+  Merged: 2025-05-15 14:18:04
+  Files changed: 3
+  Source files: flink-table/flink-table-common/src/main/java/org/apache/flink/table/expressions/ValueLiteralExpression.java
+  Test files: flink-table/flink-table-planner/src/test/java/org/apache/flink/table/api/QueryOperationTestPrograms.java, flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/expressions/LiteralExpressionsSerializationITCase.java
+  URL: https://github.com/apache/flink/pull/26562
+--------------------------------------------------------------------------------
+PR #26563: [BP-1.19][FLINK-37803][table] Fix SQL serialization when using LocalTime value literal without seconds
+  Author: autophagy
+  Merged: 2025-05-15 14:17:59
+  Files changed: 3
+  Source files: flink-table/flink-table-common/src/main/java/org/apache/flink/table/expressions/ValueLiteralExpression.java
+  Test files: flink-table/flink-table-planner/src/test/java/org/apache/flink/table/api/QueryOperationTestPrograms.java, flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/expressions/LiteralExpressionsSerializationITCase.java
+  URL: https://github.com/apache/flink/pull/26563
+--------------------------------------------------------------------------------
+PR #26555: [FLINK-37803][table] Fix SQL serialization when using LocalTime value literal without seconds
+  Author: autophagy
+  Merged: 2025-05-15 07:39:04
+  Files changed: 3
+  Source files: flink-table/flink-table-common/src/main/java/org/apache/flink/table/expressions/ValueLiteralExpression.java
+  Test files: flink-table/flink-table-planner/src/test/java/org/apache/flink/table/api/QueryOperationTestPrograms.java, flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/expressions/LiteralExpressionsSerializationITCase.java
+  URL: https://github.com/apache/flink/pull/26555
+--------------------------------------------------------------------------------
+PR #26504: [FLINK-37721] Fixes janino bug returning incorrect results
+  Author: AlanConfluent
+  Merged: 2025-05-13 19:14:58
+  Files changed: 4
+  Source files: flink-table/flink-table-planner/src/main/java/org/apache/flink/table/planner/codegen/AsyncCodeGenerator.java, flink-table/flink-table-runtime/src/main/java/org/apache/flink/table/runtime/operators/calc/async/DelegatingAsyncResultFuture.java
+  Test files: flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/codegen/AsyncCodeGeneratorTest.java, flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/runtime/stream/table/AsyncCalcITCase.java
+  URL: https://github.com/apache/flink/pull/26504
+--------------------------------------------------------------------------------
+PR #26430: [FLINK-37640][table-planner] Fix timestamp_ltz is converted timestamp in scan reuse
+  Author: xishuaidelin
+  Merged: 2025-05-13 01:52:00
+  Files changed: 3
+  Source files: flink-table/flink-table-planner/src/main/java/org/apache/flink/table/planner/plan/reuse/ScanReuserUtils.java
+  Test files: flink-table/flink-table-planner/src/test/java/org/apache/flink/table/planner/plan/optimize/ScanReuseTest.java, flink-table/flink-table-planner/src/test/resources/org/apache/flink/table/planner/plan/optimize/ScanReuseTest.xml
+  URL: https://github.com/apache/flink/pull/26430
+--------------------------------------------------------------------------------
+PR #26541: [FLINK-37545][metrics] Fix StackOverflowError when using MetricGroup in custom WatermarkStrategy (2.0)
+  Author: pnowojski
+  Merged: 2025-05-09 07:00:41
+  Files changed: 2
+  Source files: flink-runtime/src/main/java/org/apache/flink/streaming/runtime/operators/TimestampsAndWatermarksOperator.java
+  Test files: flink-runtime/src/test/java/org/apache/flink/streaming/runtime/operators/TimestampsAndWatermarksOperatorTest.java
+  URL: https://github.com/apache/flink/pull/26541
+--------------------------------------------------------------------------------
+PR #26542: [FLINK-37545][metrics] Fix StackOverflowError when using MetricGroup in custom WatermarkStrategy (1.20)
+  Author: pnowojski
+  Merged: 2025-05-09 07:00:10
+  Files changed: 2
+  Source files: flink-streaming-java/src/main/java/org/apache/flink/streaming/runtime/operators/TimestampsAndWatermarksOperator.java
+  Test files: flink-streaming-java/src/test/java/org/apache/flink/streaming/runtime/operators/TimestampsAndWatermarksOperatorTest.java
+  URL: https://github.com/apache/flink/pull/26542
+--------------------------------------------------------------------------------
+PR #26539: [FLINK-37545][metrics] Fix StackOverflowError when using MetricGroup in custom WatermarkStrategy
+  Author: pnowojski
+  Merged: 2025-05-08 15:56:15
+  Files changed: 2
+  Source files: flink-runtime/src/main/java/org/apache/flink/streaming/runtime/operators/TimestampsAndWatermarksOperator.java
+  Test files: flink-runtime/src/test/java/org/apache/flink/streaming/runtime/operators/TimestampsAndWatermarksOperatorTest.java
+  URL: https://github.com/apache/flink/pull/26539
+--------------------------------------------------------------------------------
+PR #26518: [FLINK-37747][runtime] Use old subtask count for restored committable objects
+  Author: bjlovegithub
+  Merged: 2025-05-08 06:27:49
+  Files changed: 3
+  Source files: flink-runtime/src/main/java/org/apache/flink/streaming/runtime/operators/sink/CommitterOperator.java
+  Test files: flink-streaming-java/src/test/java/org/apache/flink/streaming/runtime/operators/sink/SinkV2CommitterOperatorTest.java, flink-tests/src/test/java/org/apache/flink/test/streaming/runtime/SinkV2ITCase.java
+  URL: https://github.com/apache/flink/pull/26518
+--------------------------------------------------------------------------------
+PR #26414: [FLINK-37625][python] Don't skip type validation for Rows made with positional arguments
+  Author: autophagy
+  Merged: 2025-05-05 08:25:04
+  Files changed: 3
+  Source files: flink-python/pyflink/common/types.py, flink-python/pyflink/table/types.py
+  Test files: flink-python/pyflink/table/tests/test_table_environment_api.py
+  URL: https://github.com/apache/flink/pull/26414
+--------------------------------------------------------------------------------
+PR #26506: [FLINK-37728][python] add support org.apache.flink.table.runtime.operators.window.GlobalWindow
+  Author: suez1224
+  Merged: 2025-04-29 08:36:36
+  Files changed: 4
+  Source files: flink-python/pyflink/datastream/data_stream.py, flink-python/pyflink/fn_execution/embedded/converters.py, flink-table/flink-table-runtime/src/main/java/org/apache/flink/table/runtime/operators/window/GlobalWindow.java
+  Test files: flink-tests/src/test/java/org/apache/flink/test/completeness/TypeSerializerTestCoverageTest.java
+  URL: https://github.com/apache/flink/pull/26506
+--------------------------------------------------------------------------------
+PR #26497: [FLINK-37693][state] Avoid reading NOT_OWNED file by local file system when restoring
+  Author: masteryhx
+  Merged: 2025-04-28 11:24:07
+  Files changed: 3
+  Source files: flink-state-backends/flink-statebackend-forst/src/main/java/org/apache/flink/state/forst/fs/ForStFlinkFileSystem.java, flink-state-backends/flink-statebackend-forst/src/main/java/org/apache/flink/state/forst/fs/filemapping/FileOwnershipDecider.java
+  Test files: flink-state-backends/flink-statebackend-forst/src/test/java/org/apache/flink/state/forst/fs/ForStFlinkFileSystemTest.java
+  URL: https://github.com/apache/flink/pull/26497
+--------------------------------------------------------------------------------
+PR #26508: [FLINK-26425][yarn] Support rolling log aggregation
+  Author: ferenc-csaky
+  Merged: 2025-04-28 07:53:09
+  Files changed: 4
+  Source files: flink-yarn/src/main/java/org/apache/flink/yarn/YarnClusterDescriptor.java, flink-yarn/src/main/java/org/apache/flink/yarn/configuration/YarnConfigOptions.java
+  Test files: flink-yarn/src/test/java/org/apache/flink/yarn/YarnClusterDescriptorTest.java
+  URL: https://github.com/apache/flink/pull/26508
+--------------------------------------------------------------------------------
+PR #26489: [FLINK-37697][runtime] Fix application mode cluster shut down before …
+  Author: eemario
+  Merged: 2025-04-23 02:14:14
+  Files changed: 2
+  Source files: flink-runtime/src/main/java/org/apache/flink/runtime/dispatcher/Dispatcher.java
+  Test files: flink-runtime/src/test/java/org/apache/flink/runtime/dispatcher/DispatcherTest.java
+  URL: https://github.com/apache/flink/pull/26489
+--------------------------------------------------------------------------------
+PR #26428: [FLINK-37638] Avoid duplicate call on getEffectiveConfiguration
+  Author: beliefer
+  Merged: 2025-04-15 04:18:36
+  Files changed: 2
+  Source files: flink-clients/src/main/java/org/apache/flink/client/cli/CliFrontend.java
+  Test files: flink-clients/src/test/java/org/apache/flink/client/cli/CliFrontendRunTest.java
+  URL: https://github.com/apache/flink/pull/26428
+--------------------------------------------------------------------------------
+PR #26439: [BP-2.0][FLINK-37623][datastream] Async state support for process() in Datastream API
+  Author: fredia
+  Merged: 2025-04-15 02:39:16
+  Files changed: 2
+  Source files: flink-runtime/src/main/java/org/apache/flink/streaming/api/datastream/KeyedStream.java
+  Test files: flink-streaming-java/src/test/java/org/apache/flink/streaming/api/DataStreamTest.java
+  URL: https://github.com/apache/flink/pull/26439
+--------------------------------------------------------------------------------
+PR #26437: [FLINK-37649][datagen] Datagen connector cannot set length for collection type
+  Author: reswqa
+  Merged: 2025-04-14 03:25:27
+  Files changed: 2
+  Source files: flink-table/flink-table-api-java-bridge/src/main/java/org/apache/flink/connector/datagen/table/RandomGeneratorVisitor.java
+  Test files: flink-table/flink-table-api-java-bridge/src/test/java/org/apache/flink/table/factories/DataGenTableSourceFactoryTest.java
+  URL: https://github.com/apache/flink/pull/26437
+--------------------------------------------------------------------------------
+PR #26436: [FLINK-37643] Support partial deletes when converting to external data structures
+  Author: dawidwys
+  Merged: 2025-04-11 08:17:33
+  Files changed: 4
+  Source files: flink-table/flink-table-common/src/main/java/org/apache/flink/table/data/ArrayData.java, flink-table/flink-table-common/src/main/java/org/apache/flink/table/data/RowData.java
+  Test files: flink-table/flink-table-runtime/src/test/java/org/apache/flink/table/data/DataStructureConvertersTest.java, flink-table/flink-table-runtime/src/test/java/org/apache/flink/table/runtime/typeutils/RowDataSerializerTest.java
+  URL: https://github.com/apache/flink/pull/26436
+--------------------------------------------------------------------------------
+PR #26419: [FLINK-37623][datastream] Async state support for process() in Datastream API
+  Author: fredia
+  Merged: 2025-04-11 02:21:51
+  Files changed: 2
+  Source files: flink-runtime/src/main/java/org/apache/flink/streaming/api/datastream/KeyedStream.java
+  Test files: flink-streaming-java/src/test/java/org/apache/flink/streaming/api/DataStreamTest.java
+  URL: https://github.com/apache/flink/pull/26419
+--------------------------------------------------------------------------------
+PR #26421: [BP-2.0][FLINK-37628] Fix reference counting in ForSt file cache
+  Author: Zakelly
+  Merged: 2025-04-09 12:02:49
+  Files changed: 3
+  Source files: flink-state-backends/flink-statebackend-forst/src/main/java/org/apache/flink/state/forst/fs/cache/CachedDataInputStream.java, flink-state-backends/flink-statebackend-forst/src/main/java/org/apache/flink/state/forst/fs/cache/FileBasedCache.java
+  Test files: flink-state-backends/flink-statebackend-forst/src/test/java/org/apache/flink/state/forst/fs/ForStFlinkFileSystemTest.java
+  URL: https://github.com/apache/flink/pull/26421
+--------------------------------------------------------------------------------
+PR #26416: [FLINK-37553] Make ForStKeyedStateBackend update NamespaceSerializer during restoring state
+  Author: mayuehappy
+  Merged: 2025-04-09 11:42:29
+  Files changed: 3
+  Source files: flink-runtime/src/main/java/org/apache/flink/runtime/state/v2/RegisteredKeyValueStateBackendMetaInfo.java, flink-state-backends/flink-statebackend-forst/src/main/java/org/apache/flink/state/forst/ForStKeyedStateBackend.java
+  Test files: flink-state-backends/flink-statebackend-forst/src/test/java/org/apache/flink/state/forst/ForStStateMigrationTest.java
+  URL: https://github.com/apache/flink/pull/26416
+--------------------------------------------------------------------------------
+PR #26415: [FLINK-37628] Fix reference counting in ForSt file cache
+  Author: Zakelly
+  Merged: 2025-04-09 02:39:37
+  Files changed: 3
+  Source files: flink-state-backends/flink-statebackend-forst/src/main/java/org/apache/flink/state/forst/fs/cache/CachedDataInputStream.java, flink-state-backends/flink-statebackend-forst/src/main/java/org/apache/flink/state/forst/fs/cache/FileBasedCache.java
+  Test files: flink-state-backends/flink-statebackend-forst/src/test/java/org/apache/flink/state/forst/fs/ForStFlinkFileSystemTest.java
+  URL: https://github.com/apache/flink/pull/26415
+--------------------------------------------------------------------------------
+PR #26388: [FLINK-37596][metrics] Close metric group of a finished split
+  Author: Efrat19
+  Merged: 2025-04-08 12:14:49
+  Files changed: 4
+  Source files: flink-runtime/src/main/java/org/apache/flink/runtime/metrics/groups/InternalSourceSplitMetricGroup.java, flink-runtime/src/main/java/org/apache/flink/streaming/api/operators/SourceOperator.java
+  Test files: flink-runtime/src/test/java/org/apache/flink/streaming/api/operators/SourceOperatorSplitWatermarkAlignmentTest.java, flink-runtime/src/test/java/org/apache/flink/streaming/api/operators/source/TestingSourceOperator.java
+  URL: https://github.com/apache/flink/pull/26388
+--------------------------------------------------------------------------------
+PR #26403: [FLINK-37616][python] Fix incorrect unpickling of Row fields
+  Author: autophagy
+  Merged: 2025-04-08 07:59:03
+  Files changed: 2
+  Source files: flink-python/pyflink/table/utils.py
+  Test files: flink-python/pyflink/table/tests/test_table_environment_api.py
+  URL: https://github.com/apache/flink/pull/26403
+--------------------------------------------------------------------------------
+PR #26395: [BP-2.0][FLINK-37458][datastream] Forbid enableAsyncState() for synchronous operators
+  Author: fredia
+  Merged: 2025-04-08 04:13:58
+  Files changed: 2
+  Source files: flink-runtime/src/main/java/org/apache/flink/streaming/api/transformations/OneInputTransformation.java
+  Test files: flink-streaming-java/src/test/java/org/apache/flink/streaming/api/graph/JobGraphGeneratorTestBase.java
+  URL: https://github.com/apache/flink/pull/26395
+--------------------------------------------------------------------------------
+PR #26370: [BP-2.0][FLINK-37576][runtime] Fix the incorrect status of the isBroadcast field in AllToAllBlockingResultInfo when submitting a job graph.
+  Author: JunRuiLee
+  Merged: 2025-03-31 01:50:59
+  Files changed: 2
+  Source files: flink-runtime/src/main/java/org/apache/flink/runtime/scheduler/adaptivebatch/AllToAllBlockingResultInfo.java
+  Test files: flink-tests/src/test/java/org/apache/flink/test/scheduling/AdaptiveBatchSchedulerITCase.java
+  URL: https://github.com/apache/flink/pull/26370
+--------------------------------------------------------------------------------
