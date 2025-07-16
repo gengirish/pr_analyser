@@ -106,7 +106,7 @@ def analyze_repository(repo, token=None, pr_limit=20):
     """
     # Create a unique output filename for this repository
     timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-    output_filename = f"{repo.replace('/', '-')}-pr-{pr_limit}.txt"
+    output_filename = f"pr-output/{repo.replace('/', '-')}-pr-{pr_limit}.txt"
     
     # Build the command to run github_pr_analyzer.py
     cmd = [sys.executable, 'github_pr_analyzer.py']
