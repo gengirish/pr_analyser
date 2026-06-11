@@ -1,1 +1,0 @@
-"""GitLab REST API client."""
