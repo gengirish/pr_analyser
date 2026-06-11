@@ -1,0 +1,61 @@
+
+Results:
+Found 7 MRs with 2-4 file changes that include both source code files and test classes, merged after November 2024:
+
+--------------------------------------------------------------------------------
+MR !130: Override post-synthesis judge ClarificationVerdict with just two verdict types.
+  Author: JovanMCO
+  Merged: 2026-06-02 14:39:50
+  Files changed: 2
+  Source files: mco_assistant/core/rag/clarification_hook.py
+  Test files: tests/mco_assistant/observability/test_datadog_tools.py
+  URL: https://gitlab.com/mycomplianceoffice/mco-ai/mco-assistant/-/merge_requests/130
+--------------------------------------------------------------------------------
+MR !129: fix(tools): configure clickhouse-connect to send invalid settings
+  Author: mco-marian-stefanescu
+  Merged: 2026-05-27 12:34:44
+  Files changed: 2
+  Source files: mco_assistant/core/agents/tools/clickhouse.py
+  Test files: tests/mco_assistant/core/agents/tools/test_clickhouse.py
+  URL: https://gitlab.com/mycomplianceoffice/mco-ai/mco-assistant/-/merge_requests/129
+--------------------------------------------------------------------------------
+MR !126: chore(api): cleanup deprecated clarification metadata logic
+  Author: mco-marian-stefanescu
+  Merged: 2026-05-20 10:54:41
+  Files changed: 4
+  Source files: mco_assistant/api/models.py, mco_assistant/api/pipeline_runner.py, mco_assistant/core/rag/clarification_hook.py
+  Test files: tests/mco_assistant/api/test_pipeline_runner.py
+  URL: https://gitlab.com/mycomplianceoffice/mco-ai/mco-assistant/-/merge_requests/126
+--------------------------------------------------------------------------------
+MR !122: Parralelize clarification judge and synthesis step
+  Author: JovanMCO
+  Merged: 2026-05-05 12:51:45
+  Files changed: 3
+  Source files: mco_assistant/core/rag/pipelines/base.py, mco_assistant/settings.py
+  Test files: tests/mco_assistant/core/rag/pipelines/test_base.py
+  URL: https://gitlab.com/mycomplianceoffice/mco-ai/mco-assistant/-/merge_requests/122
+--------------------------------------------------------------------------------
+MR !112: LLM updated to gpt-4.1 + Prompt updates
+  Author: JovanMCO
+  Merged: 2026-04-03 06:07:56
+  Files changed: 4
+  Source files: mco_assistant/api/models.py, mco_assistant/core/rag/prompts.py, mco_assistant/settings.py
+  Test files: tests/mco_assistant/api/test_models.py
+  URL: https://gitlab.com/mycomplianceoffice/mco-ai/mco-assistant/-/merge_requests/112
+--------------------------------------------------------------------------------
+MR !111: LLM updated to gpt-4.1 + Prompt updates
+  Author: JovanMCO
+  Merged: 2026-04-01 12:16:06
+  Files changed: 4
+  Source files: mco_assistant/api/models.py, mco_assistant/core/rag/prompts.py, mco_assistant/settings.py
+  Test files: tests/mco_assistant/api/test_models.py
+  URL: https://gitlab.com/mycomplianceoffice/mco-ai/mco-assistant/-/merge_requests/111
+--------------------------------------------------------------------------------
+MR !79: Add non-stream chat completion endpoints
+  Author: mco-marian-stefanescu
+  Merged: 2026-01-21 14:52:16
+  Files changed: 4
+  Source files: mco_assistant/api/routers/chat.py
+  Test files: tests/mco_assistant/api/routers/test_chat_completions_endpoint.py, tests/mco_assistant/api/routers/test_chat_completions_stream_endpoints.py, tests/mco_assistant/conftest.py
+  URL: https://gitlab.com/mycomplianceoffice/mco-ai/mco-assistant/-/merge_requests/79
+--------------------------------------------------------------------------------

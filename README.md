@@ -1,4 +1,20 @@
-# GitHub PR Analyzer
+
+# PR/MR Analyzer
+
+This project provides tools to analyze pull requests (GitHub) and merge requests (GitLab) to find high-quality code changes with tests.
+
+## 🆕 GitLab Support Now Available!
+
+**For GitLab users**: See [QUICKSTART_GITLAB.md](QUICKSTART_GITLAB.md) for a quick start guide or [GITLAB_README.md](GITLAB_README.md) for full documentation.
+
+**Example for your repository:**
+```bash
+python gitlab_mr_analyzer.py --token glpat-YOUR-TOKEN mycomplianceoffice/mco
+```
+
+---
+
+## GitHub PR Analyzer
 
 This Python script analyzes a GitHub repository to find pull requests that:
 
@@ -333,6 +349,25 @@ This test script uses mock data to simulate GitHub API responses and verifies th
 - Testing the script without a GitHub token
 - Avoiding GitHub API rate limits during development
 - Verifying changes to the script's logic
+
+## GitLab Support
+
+This project now includes full support for GitLab repositories! 
+
+### GitLab Files:
+- **`gitlab_mr_analyzer.py`** - Main GitLab analyzer script
+- **`GITLAB_README.md`** - Complete GitLab documentation
+- **`QUICKSTART_GITLAB.md`** - Quick start guide for GitLab
+- **`gitlab_example.bat`** / **`gitlab_example.sh`** - Example scripts
+- **`set_gitlab_token.bat`** / **`set_gitlab_token.sh`** - Token setup scripts
+
+### Quick Start for GitLab:
+
+1. Install dependencies: `install.bat` (Windows) or `./install.sh` (Linux/macOS)
+2. Get a GitLab token from: https://gitlab.com/-/profile/personal_access_tokens
+3. Run: `python gitlab_mr_analyzer.py --token YOUR-TOKEN mycomplianceoffice/mco`
+
+See [QUICKSTART_GITLAB.md](QUICKSTART_GITLAB.md) for detailed instructions.
 
 ## License
 
