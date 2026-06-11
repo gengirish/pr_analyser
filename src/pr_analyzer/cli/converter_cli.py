@@ -46,9 +46,9 @@ def main():
             if mr_data_list and 'url' in mr_data_list[0]:
                 url = mr_data_list[0]['url']
                 # Extract project path from URL
-                # Example: https://gitlab.com/mycomplianceoffice/mco/-/merge_requests/123
-                parts = url.split('/-/merge_requests/')[0].split('/')
-                project = '/'.join(parts[-2:])
+                # Example: https://gitlab.com/mycomplianceoffice/mco-ai/mco-assistant/-/merge_requests/123
+                parts = url.split('/-/merge_requests/')[0].split('gitlab.com/')[-1]
+                project = parts
             elif args.project:
                 project = args.project
             else:
